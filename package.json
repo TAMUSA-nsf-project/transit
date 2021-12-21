@@ -20,11 +20,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TransitGuys/SWE-I-Project.git"
+    "url": "git+https://github.com/TAMUSA-nsf-project/transit.git"
   },
   "bugs": {
-    "url": "https://github.com/TransitGuys/SWE-I-Project/issues"
+    "url": "https://github.com/TAMUSA-nsf-project/transit/issues"
   },
-  "homepage": "https://github.com/TransitGuys/SWE-I-Project#readme",
+  "homepage": "https://github.com/TAMUSA-nsf-project/transit.git#readme",
   "description": ""
 }
