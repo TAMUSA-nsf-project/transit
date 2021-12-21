@@ -1,0 +1,54 @@
+<%- include('layout/header.ejs') %>
+    <!-- Custom script tags here... -->
+    </head>
+
+    <body>
+        <%- include('layout/nav.ejs') %>
+
+            <!-- Page goes here -->
+            <div id="intro" class="bg-image shadow-2-strong">
+                <!-- <img src="img/dsBuffer.jpg" alt="shutterstock_627370652.jpg"> -->
+                <!-- <img src="img/39584_white-bus-on-road-near-in-high-rise-building.jpeg" class="img-fluid" alt="shutterstock_627370652.jpg"> -->
+                <img src="img/shutterstock_627370652.jpg" class="img-fluid" alt="shutterstock_627370652.jpg">
+                <!-- <img src="img/shutterstock_145981052.jpg" class="img-fluid" alt="shutterstock_627370652.jpg"> -->
+                
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
+                    
+                    <div class="container text-align-center">
+                        <h3>This is the contactUs page <p>(functionality in progress)</p></h3>
+                        <form class="bg-light" style="width: 50%;">
+                            <!-- Name input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form4Example1" class="form-control" />
+                                <label class="form-label" for="form4Example1">Name</label>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form4Example2" class="form-control" />
+                                <label class="form-label" for="form4Example2">Email address</label>
+                            </div>
+
+                            <!-- Message input -->
+                            <div class="form-outline mb-4">
+                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                <label class="form-label" for="form4Example3">Message</label>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4"
+                                    checked />
+                                <label class="form-check-label" for="form4Example4">
+                                    Send me a copy of this message
+                                </label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('layout/footer.ejs') %>
