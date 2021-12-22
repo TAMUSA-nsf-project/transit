@@ -18,3 +18,7 @@ Now all commits will go to your branch!
 
 ### Run Project on Local Machine
 <img src="start_local_server.gif" alt="npm install / npm start">
+
+***Notes***:
+- DB_KEY is specific to my MongoDB accout at this time (see line 39 of server.js).  (better solutions for defining and keeping our data will be implemented as we go)
+- API_KEY is for google APIs like 'maps', 'directions', 'distance matrix', etc.  
