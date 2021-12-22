@@ -1,18 +1,21 @@
 # TAMUSA NSF transit project
 
-**Clone repository**: (for VSCode)
+**Clone repository**: (easy VSCode method  ***just one of many ways***)
 
-1. ensure VSCode is signed in to your github account
+1. ensure VSCode is signed in to your github account and your github has been linked to this project as a collaborator (invites sent via email)
 2. clone repo to local machine
 <img src="vscode1.png" alt="Clone Repo">
 
-3. open folder and go to the source control tab
-4. click the <...> menu button and select 'Checkout to...'
+3. click Clone from GitHub (can also use URL)
+4. type 'TAMUSA-nsf-project/transit' to search github (wont work if your account is not linked as collaborator or VSCode is not signed in)
+5. choose where to save project
+6. open project and go to the source control tab
+7. click the <...> menu button and select 'Checkout to...'
 <img src="vscode2.png" alt="Checkout Branch">
 
-5. click '+Create new branch'
-6. name your branch
-7. publish branch
+8. click '+Create new branch'
+9. name your branch
+10. publish branch
 
 Now all commits will go to your branch!
 
