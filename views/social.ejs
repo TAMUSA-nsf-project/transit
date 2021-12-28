@@ -4,19 +4,55 @@
 
     <body>
         <%- include('layout/nav.ejs') %>
-
             <!-- Page goes here -->
-            <div id="intro" class="bg-image shadow-2-strong">
-                <!-- <img src="img/dsBuffer.jpg" alt="shutterstock_627370652.jpg"> -->
-                <!-- <img src="img/39584_white-bus-on-road-near-in-high-rise-building.jpeg" class="img-fluid" alt="shutterstock_627370652.jpg"> -->
-                <img src="img/shutterstock_627370652.jpg" class="img-fluid" alt="shutterstock_627370652.jpg">
-                <!-- <img src="img/shutterstock_145981052.jpg" class="img-fluid" alt="shutterstock_627370652.jpg"> -->
+            <div class="container d-flex justify-content-center" style="color: black;">
+                <div class="row">
 
-                <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
-
-                    <div class="container d-flex justify-content-center text-center h-100">
-                        <h3 style="text-decoration-color: white;">This is the Social Impact Research Page</h3>
+                    <div class="col-md-5 align-self-center">
+                        <a href="https://tamusa.co1.qualtrics.com/jfe/form/SV_7WF9vwgK7BUyoxE"
+                        title="Take the Survey">
+                        <img src="img/flyer2.png" class="img-fluid" alt="Survey"
+                        style="margin-top: 1.5%; object-fit: cover;">                            
+                    </a>
                     </div>
+                    <div class="col-md-7">
+
+                    <article class="container d-flex flex-column align-items-start justify-content-md-start"
+                        style="margin-bottom: 5%; margin-top: 5%;">
+                        <h3 style="text-align: center; ">Social Impact Research</h3>
+                        <!-- <article class="text-white mb-0"> -->
+                            <!-- <article class="text-white mb-0" style="background-color: rgba(51, 46, 112, 0.02);"> -->
+                                
+                            <p> In San Antonio, there is a significant digital divide separating much of the community's access to the internet, however, a significant portion of those who do
+                                not have internet access in their homes do have access through their smart phones. Moreover, it's
+                                through their smart phones that those in poverty access the internet and in San Antonio its these individuals
+                                who represent a significant portion of ridership on VIA transit. Targeting these riders' experiences and likelihood to ride will be the primary
+                                focus for understanding the importance of via buses in the lives of those living in poverty in San
+                                Antonio. This application will provide a real-world impact on these communities by providing them with
+                                updated data on arrivals, departures, and capacity of buses thus enabling efficient use of bus systems in
+                                their daily lives. Ultimately enabling those who are poor greater access to previously difficult-to-access
+                                parts of San Antonio. The reduction of barriers to spatial access by providing greater accuracy in
+                                scheduling and other commuting data represents significant strides in the reduction of class and racial
+                                inequalities overall. Those in poverty will not be the only users addressed as our project also aims to increase ridership across the city and hope to expand the
+                                ridership among all socioeconomic strata and racial/ethnic demographics with increased reliability in data
+                                for commuting. </p>
+                            
+                            <h5>Research Questions</h5>
+                            <p>(1) How do racial/ethnic and class stratified communities in San Antonio access buses?     </p>
+                            <p>(2) How will issues of race and class be reduced by the introduction of applications, such as SmartSAT,
+                                aimed at clearer and more functional schedules for buses?</p>
+                            <p>(3) How will greater accuracy in bus arrival times and other transit information increase reliability for
+                                riders? </p>
+                            <p>(4) What will this mean for the overall facilitation of greater equity and access throughout the city of
+                                San Antonio? </p>
+                      
+                    </article>
                 </div>
+
+            </div>
+            </div>
+            <div class="row" style="height: 100px;">
+                <!-- This row is just meant to ensure the the footer does not float up the page
+                        a better solution is pending -->
             </div>
             <%- include('layout/footer.ejs') %>
