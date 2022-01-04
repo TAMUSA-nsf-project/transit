@@ -15,6 +15,7 @@
     "express": "^4.17.1",
     "mdb-ui-kit": "^3.9.0",
     "mongoose": "^6.0.10",
+    "nodemailer": "^6.7.2",
     "nodemon": "^2.0.13",
     "save": "^2.4.0"
   },

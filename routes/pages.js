@@ -3,14 +3,27 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const Stop = require('../models/stops');
 const Route = require('../models/route');
+const Mailer = require('nodemailer');
 
 
 // These next two lines needed to get API_KEY from file
 require('dotenv').config();
 const API_KEY = process.env.API_KEY;
+const MAIL_PW = process.env.MAIL_PW;
 
 const router = express.Router();
 // const route1 = {};
+
+// mail transporter
+const transporter = Mailer.createTransport({
+    service: 'gmail',
+    // secure: false,
+    // requireTLS: true,
+    auth: {
+        user: 'mysmartsat@gmail.com',
+        pass: MAIL_PW
+    }
+});
 
 router.get('/', (req, res) => {
     res.render('home');
@@ -23,6 +36,39 @@ router.get('/team', (req, res) => {
 router.get('/contact', (req, res) => {
     res.render('contact');
 });
+
+router.post('/contact', (req, res) => {
+    var user = req.body.name;
+    var email = req.body.emailAddress;
+    var message = req.body.emailBody;
+    console.log(message, email, user);
+
+    var mailMessage = {
+        from: email,
+        to: 'mysmartsat@gmail.com',
+        subject: "Sent From mySmartSA",
+        text: 'Name: ' + user + '\nEmail: ' + email + '\n\nMessage: \n\n' + message
+    };
+
+    // var mailOptions = {
+    //     from: 'codingstatus@gmail.com',
+    //     to: receiver,
+    //     subject: subject,
+    //     text: message
+    // };
+
+    transporter.sendMail(mailMessage, function (error, info) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Email was sent successfully: ' + info.response);
+        }
+    });
+
+    // probably need to use a redirect here
+    res.render('contact');
+});
+
 
 router.get('/social', (req, res) => {
     res.render('social');
