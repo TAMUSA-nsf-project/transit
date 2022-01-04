@@ -50,14 +50,14 @@ router.get('/ETA_research', (req, res) => {
 */
 router.get('/stops', (req, res) => {
     // get JSON with all stops
-    Stop.find().sort({_id: 1})  // added sort() function to ensure stops in order
+    Stop.find().sort({ _id: 1 })  // added sort() function to ensure stops in order
         .then(stops => {
             // get JSON with all routes
             Route.find()
                 .then(routes => {
                     // send the JSONs to map
                     // res.send({ data: [stops, routes]});
-                    res.send({data:{stops: stops, routes: routes}});
+                    res.send({ data: { stops: stops, routes: routes } });
                     // console.log(stops);
                     console.log(routes);
                 })
@@ -65,6 +65,23 @@ router.get('/stops', (req, res) => {
             // res.send({ data: stops });
             // console.log(stops);
         })
+        .catch(err => console.log(err));
+});
+
+router.get('/addstop', (req, res) => {
+    // get JSON with all stops
+    console.log(req.body.stopNum);
+
+    Routec.collection.insertOne({
+        "title": "test",
+        "lat": 123,
+        "lng": 456,
+        "routes": {
+            "r1": 6,
+            "r2": 7
+        }
+    })
+        .then(res => console.log(res))
         .catch(err => console.log(err));
 });
 
