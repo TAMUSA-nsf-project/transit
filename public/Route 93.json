@@ -2,357 +2,357 @@
     "Route 93": [
         {
             "Stop Name": "La Cantera at Hobby Lobby",
-            "Stop Number": "75379",
-            "Lat": "29.6111118680462",
-            "Lng": "-98.5951684057002",
+            "Stop Number": 75379,
+            "Lat": 29.6111118680462,
+            "Lng": -98.5951684057002,
             "route": "Route 93",
-            "Order on Route": "1"
+            "Order on Route": 1
         },
         {
             "Stop Name": "La Cantera & Vance Jackson",
-            "Stop Number": "75359",
-            "Lat": "29.6081417626945",
-            "Lng": "-98.5976326049695",
+            "Stop Number": 75359,
+            "Lat": 29.6081417626945,
+            "Lng": -98.5976326049695,
             "route": "Route 93",
-            "Order on Route": "2"
+            "Order on Route": 2
         },
         {
             "Stop Name": "La Cantera & Rim Drive",
-            "Stop Number": "75369",
-            "Lat": "29.6067129656901",
-            "Lng": "-98.5997924702464",
+            "Stop Number": 75369,
+            "Lat": 29.6067129656901,
+            "Lng": -98.5997924702464,
             "route": "Route 93",
-            "Order on Route": "3"
+            "Order on Route": 3
         },
         {
             "Stop Name": "La Cantera & Fiesta Texas Dr.",
-            "Stop Number": "75229",
-            "Lat": "29.6046563063584",
-            "Lng": "-98.6037036738700",
+            "Stop Number": 75229,
+            "Lat": 29.6046563063584,
+            "Lng": -98.60370367387,
             "route": "Route 93",
-            "Order on Route": "4"
+            "Order on Route": 4
         },
         {
             "Stop Name": "La Cantera Pkwy & La Cantera Terrace",
-            "Stop Number": "75219",
-            "Lat": "29.6057638896647",
-            "Lng": "-98.6099504390848",
+            "Stop Number": 75219,
+            "Lat": 29.6057638896647,
+            "Lng": -98.6099504390848,
             "route": "Route 93",
-            "Order on Route": "5"
+            "Order on Route": 5
         },
         {
             "Stop Name": "La Cantera In Front Of 16211",
-            "Stop Number": "72279",
-            "Lat": "29.6044498023930",
-            "Lng": "-98.6146613752924",
+            "Stop Number": 72279,
+            "Lat": 29.604449802393,
+            "Lng": -98.6146613752924,
             "route": "Route 93",
-            "Order on Route": "6"
+            "Order on Route": 6
         },
         {
             "Stop Name": "La Cantera In Front Of 16641",
-            "Stop Number": "72427",
-            "Lat": "29.6021750124950",
-            "Lng": "-98.6153965233805",
+            "Stop Number": 72427,
+            "Lat": 29.602175012495,
+            "Lng": -98.6153965233805,
             "route": "Route 93",
-            "Order on Route": "7"
+            "Order on Route": 7
         },
         {
             "Stop Name": "La Cantera & Cantera Vista",
-            "Stop Number": "99377",
-            "Lat": "29.5975235911965",
-            "Lng": "-98.6166723985115",
+            "Stop Number": 99377,
+            "Lat": 29.5975235911965,
+            "Lng": -98.6166723985115,
             "route": "Route 93",
-            "Order on Route": "8"
+            "Order on Route": 8
         },
         {
             "Stop Name": "La Cantera Opp. Entr/Shops La Cant.",
-            "Stop Number": "11667",
-            "Lat": "29.5948498520372",
-            "Lng": "-98.6189954353469",
+            "Stop Number": 11667,
+            "Lat": 29.5948498520372,
+            "Lng": -98.6189954353469,
             "route": "Route 93",
-            "Order on Route": "9"
+            "Order on Route": 9
         },
         {
             "Stop Name": "La Cantera & Loop 1604 W Access R",
-            "Stop Number": "11517",
-            "Lat": "29.5893455884849",
-            "Lng": "-98.6198113900290",
+            "Stop Number": 11517,
+            "Lat": 29.5893455884849,
+            "Lng": -98.619811390029,
             "route": "Route 93",
-            "Order on Route": "10"
+            "Order on Route": 10
         },
         {
             "Stop Name": "Utsa Loop 1604 Campus",
-            "Stop Number": "11907",
-            "Lat": "29.5864115070282",
-            "Lng": "-98.6185077659543",
+            "Stop Number": 11907,
+            "Lat": 29.5864115070282,
+            "Lng": -98.6185077659543,
             "route": "Route 93",
-            "Order on Route": "11"
+            "Order on Route": 11
         },
         {
             "Stop Name": "Loop 1604 E Acces Rd & Valero Way",
-            "Stop Number": "14423",
-            "Lat": "29.5894672869877",
-            "Lng": "-98.6075107284891",
+            "Stop Number": 14423,
+            "Lat": 29.5894672869877,
+            "Lng": -98.6075107284891,
             "route": "Route 93",
-            "Order on Route": "12"
+            "Order on Route": 12
         },
         {
             "Stop Name": "University Park & Ride",
-            "Stop Number": "17116",
-            "Lat": "29.5908014639659",
-            "Lng": "-98.5979995527233",
+            "Stop Number": 17116,
+            "Lat": 29.5908014639659,
+            "Lng": -98.5979995527233,
             "route": "Route 93",
-            "Order on Route": "13"
+            "Order on Route": 13
         },
         {
             "Stop Name": "Crossroads Park & Ride",
-            "Stop Number": "32167",
-            "Lat": "29.4938455674208",
-            "Lng": "-98.5482826429783",
+            "Stop Number": 32167,
+            "Lat": 29.4938455674208,
+            "Lng": -98.5482826429783,
             "route": "Route 93",
-            "Order on Route": "14"
+            "Order on Route": 14
         },
         {
             "Stop Name": "Laredo & Medina",
-            "Stop Number": "86577",
-            "Lat": "29.4322988568676",
-            "Lng": "-98.5017756453620",
+            "Stop Number": 86577,
+            "Lat": 29.4322988568676,
+            "Lng": -98.501775645362,
             "route": "Route 93",
-            "Order on Route": "15"
+            "Order on Route": 15
         },
         {
             "Stop Name": "Martin & Leona",
-            "Stop Number": "76779",
-            "Lat": "29.4300155068158",
-            "Lng": "-98.5019839731467",
+            "Stop Number": 76779,
+            "Lat": 29.4300155068158,
+            "Lng": -98.5019839731467,
             "route": "Route 93",
-            "Order on Route": "16"
+            "Order on Route": 16
         },
         {
             "Stop Name": "Centro Plaza - Mid Block East",
-            "Stop Number": "60017",
-            "Lat": "29.4274087604366",
-            "Lng": "-98.5037954587798",
+            "Stop Number": 60017,
+            "Lat": 29.4274087604366,
+            "Lng": -98.5037954587798,
             "route": "Route 93",
-            "Order on Route": "17"
+            "Order on Route": 17
         }
     ],
     "Route 93 (reverse)": [
         {
             "Stop Name": "Commerce & Presa",
-            "Stop Number": "91139",
-            "Lat": "29.4240258277816",
-            "Lng": "-98.4888870887900",
+            "Stop Number": 91139,
+            "Lat": 29.4240258277816,
+            "Lng": -98.48888708879,
             "route": "Route 93 (reverse)",
-            "Order on Route": "1"
+            "Order on Route": 1
         },
         {
             "Stop Name": "Commerce & Navarro",
-            "Stop Number": "81929",
-            "Lat": "29.4241877941060",
-            "Lng": "-98.4897013874130",
+            "Stop Number": 81929,
+            "Lat": 29.424187794106,
+            "Lng": -98.489701387413,
             "route": "Route 93 (reverse)",
-            "Order on Route": "2"
+            "Order on Route": 2
         },
         {
             "Stop Name": "Commerce & St. Mary's",
-            "Stop Number": "89869",
-            "Lat": "29.4244973304154",
-            "Lng": "-98.4911246255969",
+            "Stop Number": 89869,
+            "Lat": 29.4244973304154,
+            "Lng": -98.4911246255969,
             "route": "Route 93 (reverse)",
-            "Order on Route": "3"
+            "Order on Route": 3
         },
         {
             "Stop Name": "Commerce & Main",
-            "Stop Number": "54339",
-            "Lat": "29.4250728002954",
-            "Lng": "-98.4936298756008",
+            "Stop Number": 54339,
+            "Lat": 29.4250728002954,
+            "Lng": -98.4936298756008,
             "route": "Route 93 (reverse)",
-            "Order on Route": "4"
+            "Order on Route": 4
         },
         {
             "Stop Name": "Commerce & Flores",
-            "Stop Number": "88779",
-            "Lat": "29.4252160822284",
-            "Lng": "-98.4950509654365",
+            "Stop Number": 88779,
+            "Lat": 29.4252160822284,
+            "Lng": -98.4950509654365,
             "route": "Route 93 (reverse)",
-            "Order on Route": "5"
+            "Order on Route": 5
         },
         {
             "Stop Name": "Commerce & Santa Rosa",
-            "Stop Number": "87799",
-            "Lat": "29.4253080262719",
-            "Lng": "-98.4977878443920",
+            "Stop Number": 87799,
+            "Lat": 29.4253080262719,
+            "Lng": -98.497787844392,
             "route": "Route 93 (reverse)",
-            "Order on Route": "6"
+            "Order on Route": 6
         },
         {
             "Stop Name": "Commerce & San Saba",
-            "Stop Number": "87639",
-            "Lat": "29.4257250865573",
-            "Lng": "-98.4999919520960",
+            "Stop Number": 87639,
+            "Lat": 29.4257250865573,
+            "Lng": -98.499991952096,
             "route": "Route 93 (reverse)",
-            "Order on Route": "7"
+            "Order on Route": 7
         },
         {
             "Stop Name": "Pecos-La Trinidad & Buena Vista",
-            "Stop Number": "86877",
-            "Lat": "29.4238626445867",
-            "Lng": "-98.5018696628644",
+            "Stop Number": 86877,
+            "Lat": 29.4238626445867,
+            "Lng": -98.5018696628644,
             "route": "Route 93 (reverse)",
-            "Order on Route": "8"
+            "Order on Route": 8
         },
         {
             "Stop Name": "S. Frio In Front Of Utsa Downtown C",
-            "Stop Number": "86926",
-            "Lat": "29.4233642034236",
-            "Lng": "-98.5040816257292",
+            "Stop Number": 86926,
+            "Lat": 29.4233642034236,
+            "Lng": -98.5040816257292,
             "route": "Route 93 (reverse)",
-            "Order on Route": "9"
+            "Order on Route": 9
         },
         {
             "Stop Name": "Centro Plaza - SW Corner",
-            "Stop Number": "60029",
-            "Lat": "29.4270765192744",
-            "Lng": "-98.5048155841294",
+            "Stop Number": 60029,
+            "Lat": 29.4270765192744,
+            "Lng": -98.5048155841294,
             "route": "Route 93 (reverse)",
-            "Order on Route": "10"
+            "Order on Route": 10
         },
         {
             "Stop Name": "Martin Opposite Leona",
-            "Stop Number": "76773",
-            "Lat": "29.4298300853023",
-            "Lng": "-98.5023247247252",
+            "Stop Number": 76773,
+            "Lat": 29.4298300853023,
+            "Lng": -98.5023247247252,
             "route": "Route 93 (reverse)",
-            "Order on Route": "11"
+            "Order on Route": 11
         },
         {
             "Stop Name": "Crossroads Park & Ride",
-            "Stop Number": "32166",
-            "Lat": "29.4935290498701",
-            "Lng": "-98.5489138999051",
+            "Stop Number": 32166,
+            "Lat": 29.4935290498701,
+            "Lng": -98.5489138999051,
             "route": "Route 93 (reverse)",
-            "Order on Route": "12"
+            "Order on Route": 12
         },
         {
             "Stop Name": "University Park & Ride",
-            "Stop Number": "17116",
-            "Lat": "29.5908014639659",
-            "Lng": "-98.5979995527233",
+            "Stop Number": 17116,
+            "Lat": 29.5908014639659,
+            "Lng": -98.5979995527233,
             "route": "Route 93 (reverse)",
-            "Order on Route": "13"
+            "Order on Route": 13
         },
         {
             "Stop Name": "Loop 1604 W Access/Entr. La Cantera",
-            "Stop Number": "22479",
-            "Lat": "29.5897598519977",
-            "Lng": "-98.6123818109454",
+            "Stop Number": 22479,
+            "Lat": 29.5897598519977,
+            "Lng": -98.6123818109454,
             "route": "Route 93 (reverse)",
-            "Order on Route": "14"
+            "Order on Route": 14
         },
         {
             "Stop Name": "Utsa Loop 1604 Campus",
-            "Stop Number": "11907",
-            "Lat": "29.5864115070282",
-            "Lng": "-98.6185077659543",
+            "Stop Number": 11907,
+            "Lat": 29.5864115070282,
+            "Lng": -98.6185077659543,
             "route": "Route 93 (reverse)",
-            "Order on Route": "15"
+            "Order on Route": 15
         },
         {
             "Stop Name": "John Peace & Loop 1604 E Access R",
-            "Stop Number": "11636",
-            "Lat": "29.5885598991142",
-            "Lng": "-98.6194670364804",
+            "Stop Number": 11636,
+            "Lat": 29.5885598991142,
+            "Lng": -98.6194670364804,
             "route": "Route 93 (reverse)",
-            "Order on Route": "16"
+            "Order on Route": 16
         },
         {
             "Stop Name": "La Cantera Entran. Shops La Cantera",
-            "Stop Number": "11666",
-            "Lat": "29.5954112898299",
-            "Lng": "-98.6182145935612",
+            "Stop Number": 11666,
+            "Lat": 29.5954112898299,
+            "Lng": -98.6182145935612,
             "route": "Route 93 (reverse)",
-            "Order on Route": "17"
+            "Order on Route": 17
         },
         {
             "Stop Name": "La Cantera Opposite 16505",
-            "Stop Number": "99376",
-            "Lat": "29.5974133086044",
-            "Lng": "-98.6164999427394",
+            "Stop Number": 99376,
+            "Lat": 29.5974133086044,
+            "Lng": -98.6164999427394,
             "route": "Route 93 (reverse)",
-            "Order on Route": "18"
+            "Order on Route": 18
         },
         {
             "Stop Name": "La Cantera Opp Lacantera-Westin Res",
-            "Stop Number": "72426",
-            "Lat": "29.6021722655674",
-            "Lng": "-98.6152152063942",
+            "Stop Number": 72426,
+            "Lat": 29.6021722655674,
+            "Lng": -98.6152152063942,
             "route": "Route 93 (reverse)",
-            "Order on Route": "19"
+            "Order on Route": 19
         },
         {
             "Stop Name": "La Cantera Opposite 16211",
-            "Stop Number": "72293",
-            "Lat": "29.6047770307846",
-            "Lng": "-98.6140376194277",
+            "Stop Number": 72293,
+            "Lat": 29.6047770307846,
+            "Lng": -98.6140376194277,
             "route": "Route 93 (reverse)",
-            "Order on Route": "20"
+            "Order on Route": 20
         },
         {
             "Stop Name": "La Cantera Pkwy Opposite La Cantera Terrace",
-            "Stop Number": "75313",
-            "Lat": "29.6055840602114",
-            "Lng": "-98.6097869472823",
+            "Stop Number": 75313,
+            "Lat": 29.6055840602114,
+            "Lng": -98.6097869472823,
             "route": "Route 93 (reverse)",
-            "Order on Route": "21"
+            "Order on Route": 21
         },
         {
             "Stop Name": "Fiesta Texas Opp Entr. To Employee",
-            "Stop Number": "83469",
-            "Lat": "29.6005726029472",
-            "Lng": "-98.6059802730002",
+            "Stop Number": 83469,
+            "Lat": 29.6005726029472,
+            "Lng": -98.6059802730002,
             "route": "Route 93 (reverse)",
-            "Order on Route": "22"
+            "Order on Route": 22
         },
         {
             "Stop Name": "Fiesta Texas Main Entrance",
-            "Stop Number": "82459",
-            "Lat": "29.5988802357811",
-            "Lng": "-98.6073076245993",
+            "Stop Number": 82459,
+            "Lat": 29.5988802357811,
+            "Lng": -98.6073076245993,
             "route": "Route 93 (reverse)",
-            "Order on Route": "23"
+            "Order on Route": 23
         },
         {
             "Stop Name": "Fiesta Texas Employee Entrance",
-            "Stop Number": "83463",
-            "Lat": "29.6004943967487",
-            "Lng": "-98.6059733172680",
+            "Stop Number": 83463,
+            "Lat": 29.6004943967487,
+            "Lng": -98.605973317268,
             "route": "Route 93 (reverse)",
-            "Order on Route": "24"
+            "Order on Route": 24
         },
         {
             "Stop Name": "La Cantera & Fiesta Texas Dr.",
-            "Stop Number": "75323",
-            "Lat": "29.6043277802350",
-            "Lng": "-98.6038312819841",
+            "Stop Number": 75323,
+            "Lat": 29.604327780235,
+            "Lng": -98.6038312819841,
             "route": "Route 93 (reverse)",
-            "Order on Route": "25"
+            "Order on Route": 25
         },
         {
             "Stop Name": "Worth Pkwy at Side Bass Pro Shops",
-            "Stop Number": "75393",
-            "Lat": "29.6128164973024",
-            "Lng": "-98.6005219034038",
+            "Stop Number": 75393,
+            "Lat": 29.6128164973024,
+            "Lng": -98.6005219034038,
             "route": "Route 93 (reverse)",
-            "Order on Route": "26"
+            "Order on Route": 26
         },
         {
             "Stop Name": "La Cantera at Hobby Lobby",
-            "Stop Number": "75379",
-            "Lat": "29.6111118680462",
-            "Lng": "-98.5951684057002",
+            "Stop Number": 75379,
+            "Lat": 29.6111118680462,
+            "Lng": -98.5951684057002,
             "route": "Route 93 (reverse)",
-            "Order on Route": "27"
+            "Order on Route": 27
         }
     ]
 }
