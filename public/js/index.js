@@ -178,6 +178,17 @@ function initMap() {
         calcRouteAll();
       })
 
+      // Populate origin dropdown list
+      var dropdownOptions = "";
+      
+      for( let i = 0; i < markers.length; i++ ) {
+        dropdownOptions += "<li><button class='dropdown-item' type='button'>" + (i+1) + " - " + markers[i].getTitle() + "</button></li>";
+      }
+
+      document.getElementById("origin-input-dropdown").innerHTML = dropdownOptions;
+
+      // TODO: Populate destination dropdown list
+
       const locationButton = document.createElement("button");
 
       locationButton.textContent = "Pan to Current Location";
@@ -225,7 +236,8 @@ function initMap() {
       this.directionsRenderer = new google.maps.DirectionsRenderer();
       this.directionsRenderer.setMap(map);
 
-      const originInput = document.getElementById("origin-input");
+      const originInput           = document.getElementById("origin-input");
+      const originInputContainer  = document.getElementById("origin-input-container");
       const destinationInput = document.getElementById("destination-input");
       const modeSelector = document.getElementById("mode-selector");
       const originAutocomplete = new google.maps.places.Autocomplete(originInput);
@@ -253,7 +265,7 @@ function initMap() {
       );
       this.setupPlaceChangedListener(originAutocomplete, "ORIG");
       this.setupPlaceChangedListener(destinationAutocomplete, "DEST");
-      this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
+      this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInputContainer);
       this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(
         destinationInput
       );

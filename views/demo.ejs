@@ -7,9 +7,24 @@
   <body>
     <%- include('layout/nav.ejs') %>
       <div style="display: none">
-        <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location" />
+        <!--<input id="origin-input" class="controls" type="text" placeholder="Select an origin location" /> -->
 
-        <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location" />
+        <input id="destination-input" class="controls" type="text" placeholder="Select a destination location" />
+
+        <div id="origin-input-container" class="dropdown" overflow="auto" height="10px">
+          <button
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            id="origin-input-button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Select an origin location
+          </button>
+          <ul id="origin-input-dropdown" class="dropdown-menu" aria-labelledby="origin-input-button" size="5">
+            <!-- List items will be added dynamically via index.js -->
+          </ul>
+        </div>
 
         <div id="mode-selector" class="controls">
           <input type="radio" name="type" id="changemode-walking" checked="checked" />
