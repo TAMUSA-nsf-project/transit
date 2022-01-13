@@ -3,8 +3,9 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const Stop = require('../models/stops');
 const Route = require('../models/route');
+const testRoute = require('../models/testRoute');
 const Mailer = require('nodemailer');
-
+const { $where } = require('../models/route');
 
 // These next two lines needed to get API_KEY from file
 require('dotenv').config();
@@ -95,24 +96,35 @@ router.get('/ETA_research', (req, res) => {
 *   Ultimately would like to request and return only one object
 */
 router.get('/stops', (req, res) => {
-    // get JSON with all stops
-    Stop.find().sort({ _id: 1 })  // added sort() function to ensure stops in order
-        .then(stops => {
-            // get JSON with all routes
-            Route.find()
-                .then(routes => {
-                    // send the JSONs to map
-                    // res.send({ data: [stops, routes]});
-                    res.send({ data: { stops: stops, routes: routes } });
-                    // console.log(stops);
-                    console.log(routes);
-                })
-                .catch(err => console.log(err));
-            // res.send({ data: stops });
-            // console.log(stops);
+    testRoute.find({}).select('-_id') // returns all documents minus the '_id' field
+        .then(result => {
+            
+            console.log(result);
+            res.send({data: result});
         })
         .catch(err => console.log(err));
+    
 });
+
+// router.get('/stops', (req, res) => {
+//     // get JSON with all stops
+//     Stop.find().sort({ _id: 1 })  // added sort() function to ensure stops in order
+//         .then(stops => {
+//             // get JSON with all routes
+//             Route.find()
+//                 .then(routes => {
+//                     // send the JSONs to map
+//                     // res.send({ data: [stops, routes]});
+//                     res.send({ data: { stops: stops, routes: routes } });
+//                     // console.log(stops);
+//                     console.log(routes);
+//                 })
+//                 .catch(err => console.log(err));
+//             // res.send({ data: stops });
+//             // console.log(stops);
+//         })
+//         .catch(err => console.log(err));
+// });
 
 router.get('/addstop', (req, res) => {
     // get JSON with all stops

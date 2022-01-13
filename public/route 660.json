@@ -1,0 +1,686 @@
+{
+    "Route 660": [
+        {
+            "Stop Name": "Northwest Vista College",
+            "Stop Number": 83439,
+            "Lat": 29.4700227104889,
+            "Lng": -98.7064141145465,
+            "route": "Route 660",
+            "Order on Route": 1
+        },
+        {
+            "Stop Name": "Ellison Dr. & Wiseman Blvd.",
+            "Stop Number": 84643,
+            "Lat": 29.4676745723921,
+            "Lng": -98.7052417610101,
+            "route": "Route 660",
+            "Order on Route": 2
+        },
+        {
+            "Stop Name": "Ellison Dr. Opp. Westover Link",
+            "Stop Number": 84733,
+            "Lat": 29.4659158301811,
+            "Lng": -98.7010112750428,
+            "route": "Route 660",
+            "Order on Route": 3
+        },
+        {
+            "Stop Name": "Ellison Dr. & Westover Hills",
+            "Stop Number": 16327,
+            "Lat": 29.4624075269884,
+            "Lng": -98.6977606496521,
+            "route": "Route 660",
+            "Order on Route": 4
+        },
+        {
+            "Stop Name": "Westover Hills & Hwy. 151 W. (Ns)",
+            "Stop Number": 98863,
+            "Lat": 29.462013120887,
+            "Lng": -98.6935769817983,
+            "route": "Route 660",
+            "Order on Route": 5
+        },
+        {
+            "Stop Name": "Westover Hills & Hwy. 151 W. (Fs)",
+            "Stop Number": 98843,
+            "Lat": 29.463393571191,
+            "Lng": -98.6900818360229,
+            "route": "Route 660",
+            "Order on Route": 6
+        },
+        {
+            "Stop Name": "Rogers & Hyatt Resort Dr",
+            "Stop Number": 98597,
+            "Lat": 29.4595799778259,
+            "Lng": -98.6854850065589,
+            "route": "Route 660",
+            "Order on Route": 7
+        },
+        {
+            "Stop Name": "Rogers Btwn Hyatt Resort Dr & Natio",
+            "Stop Number": 98607,
+            "Lat": 29.4573506637267,
+            "Lng": -98.6848321732108,
+            "route": "Route 660",
+            "Order on Route": 8
+        },
+        {
+            "Stop Name": "Nationwide Dr Btwn Rogers & Sh 151",
+            "Stop Number": 98609,
+            "Lat": 29.4555414950519,
+            "Lng": -98.6852549646405,
+            "route": "Route 660",
+            "Order on Route": 9
+        },
+        {
+            "Stop Name": "Hyatt Resort Dr Btwn 151 & Rogers",
+            "Stop Number": 98603,
+            "Lat": 29.4593310484584,
+            "Lng": -98.6868731683952,
+            "route": "Route 660",
+            "Order on Route": 10
+        },
+        {
+            "Stop Name": "Rogers & Westover Hills",
+            "Stop Number": 98586,
+            "Lat": 29.4659727988137,
+            "Lng": -98.6892006298448,
+            "route": "Route 660",
+            "Order on Route": 11
+        },
+        {
+            "Stop Name": "Rogers Btwen Rogers Run & Western",
+            "Stop Number": 98556,
+            "Lat": 29.4716653269476,
+            "Lng": -98.6920700579782,
+            "route": "Route 660",
+            "Order on Route": 12
+        },
+        {
+            "Stop Name": "Rogers at Entrance To Chase Service",
+            "Stop Number": 98536,
+            "Lat": 29.4753044197055,
+            "Lng": -98.6930933918193,
+            "route": "Route 660",
+            "Order on Route": 13
+        },
+        {
+            "Stop Name": "Rogers Rd. & Wiseman Blvd",
+            "Stop Number": 98406,
+            "Lat": 29.4776602957187,
+            "Lng": -98.6938049629362,
+            "route": "Route 660",
+            "Order on Route": 14
+        },
+        {
+            "Stop Name": "Rogers Btw Wiseman & Mt Evans",
+            "Stop Number": 98506,
+            "Lat": 29.4818858918514,
+            "Lng": -98.6999750787778,
+            "route": "Route 660",
+            "Order on Route": 15
+        },
+        {
+            "Stop Name": "Rogers Between Mt Evans & Mt Baker",
+            "Stop Number": 41406,
+            "Lat": 29.4851050316138,
+            "Lng": -98.7001836256569,
+            "route": "Route 660",
+            "Order on Route": 16
+        },
+        {
+            "Stop Name": "Rogers Rd. & Mountain View",
+            "Stop Number": 41306,
+            "Lat": 29.4903950515301,
+            "Lng": -98.7000638842071,
+            "route": "Route 660",
+            "Order on Route": 17
+        },
+        {
+            "Stop Name": "Culebra Opposite Heb Plus",
+            "Stop Number": 41339,
+            "Lat": 29.492482626624,
+            "Lng": -98.7003865461996,
+            "route": "Route 660",
+            "Order on Route": 18
+        },
+        {
+            "Stop Name": "Westwood Loop & Culebra",
+            "Stop Number": 81116,
+            "Lat": 29.4965126619506,
+            "Lng": -98.709317886952,
+            "route": "Route 660",
+            "Order on Route": 19
+        },
+        {
+            "Stop Name": "Westwood Loop Opposite Walmart",
+            "Stop Number": 81143,
+            "Lat": 29.49889792812,
+            "Lng": -98.7044337475655,
+            "route": "Route 660",
+            "Order on Route": 20
+        },
+        {
+            "Stop Name": "Oscar Wood Pl. Opp. Ceders Pl.",
+            "Stop Number": 81179,
+            "Lat": 29.5119676446219,
+            "Lng": -98.700133487349,
+            "route": "Route 660",
+            "Order on Route": 21
+        },
+        {
+            "Stop Name": "Oscar Wood & Bluegrass Pond",
+            "Stop Number": 81186,
+            "Lat": 29.513520791926,
+            "Lng": -98.7017007327332,
+            "route": "Route 660",
+            "Order on Route": 22
+        },
+        {
+            "Stop Name": "Oscar Wood & Expedition Crk",
+            "Stop Number": 81196,
+            "Lat": 29.5158671818195,
+            "Lng": -98.7005343880763,
+            "route": "Route 660",
+            "Order on Route": 23
+        },
+        {
+            "Stop Name": "Shaenfield & Leslie Rd.",
+            "Stop Number": 81193,
+            "Lat": 29.5160745191428,
+            "Lng": -98.6973032652586,
+            "route": "Route 660",
+            "Order on Route": 24
+        },
+        {
+            "Stop Name": "Loop 1604 N Access Rd & Bet Bowens Crossing & New Guilbeau",
+            "Stop Number": 81236,
+            "Lat": 29.5276301021258,
+            "Lng": -98.6859803061232,
+            "route": "Route 660",
+            "Order on Route": 25
+        },
+        {
+            "Stop Name": "Loop 1604 N Access Rd & Braun",
+            "Stop Number": 81266,
+            "Lat": 29.5367631288741,
+            "Lng": -98.6811040519937,
+            "route": "Route 660",
+            "Order on Route": 26
+        },
+        {
+            "Stop Name": "1604 Access & Las Palapas",
+            "Stop Number": 77136,
+            "Lat": 29.5509412120823,
+            "Lng": -98.6688283876142,
+            "route": "Route 660",
+            "Order on Route": 27
+        },
+        {
+            "Stop Name": "Loop 1604 N Access Rd & Bandera",
+            "Stop Number": 77156,
+            "Lat": 29.5551800125627,
+            "Lng": -98.6644168599439,
+            "route": "Route 660",
+            "Order on Route": 28
+        },
+        {
+            "Stop Name": "L1604n Acc Rd Front Nisd Sports Com",
+            "Stop Number": 77166,
+            "Lat": 29.5648808502259,
+            "Lng": -98.6546919256359,
+            "route": "Route 660",
+            "Order on Route": 29
+        },
+        {
+            "Stop Name": "L1604 N Acc Rd In Front 8202",
+            "Stop Number": 77176,
+            "Lat": 29.5730343372217,
+            "Lng": -98.6481689672802,
+            "route": "Route 660",
+            "Order on Route": 30
+        },
+        {
+            "Stop Name": "Loop 1604n Acc Rd & Kyle Seale",
+            "Stop Number": 77186,
+            "Lat": 29.5769665894767,
+            "Lng": -98.6444571076884,
+            "route": "Route 660",
+            "Order on Route": 31
+        },
+        {
+            "Stop Name": "Loop 1604 N Access Rd In Front 7502",
+            "Stop Number": 77196,
+            "Lat": 29.5840995374798,
+            "Lng": -98.6380977445634,
+            "route": "Route 660",
+            "Order on Route": 32
+        },
+        {
+            "Stop Name": "Babcock Opposite Green Glen",
+            "Stop Number": 16786,
+            "Lat": 29.5885341482766,
+            "Lng": -98.630526184235,
+            "route": "Route 660",
+            "Order on Route": 33
+        },
+        {
+            "Stop Name": "Babcock Opposite Shady Hollow",
+            "Stop Number": 17126,
+            "Lat": 29.5909885940939,
+            "Lng": -98.6290981467762,
+            "route": "Route 660",
+            "Order on Route": 34
+        },
+        {
+            "Stop Name": "Babcock at Rear Ent. To Chase Hill",
+            "Stop Number": 86996,
+            "Lat": 29.5935671908261,
+            "Lng": -98.629016446367,
+            "route": "Route 660",
+            "Order on Route": 35
+        },
+        {
+            "Stop Name": "Chase Hill Blvd. & Babcock",
+            "Stop Number": 87827,
+            "Lat": 29.5963891107051,
+            "Lng": -98.6287282715694,
+            "route": "Route 660",
+            "Order on Route": 36
+        },
+        {
+            "Stop Name": "Chase Hill Blvd. at Chase Hill Apts",
+            "Stop Number": 98627,
+            "Lat": 29.5937900190862,
+            "Lng": -98.6259464025016,
+            "route": "Route 660",
+            "Order on Route": 37
+        },
+        {
+            "Stop Name": "Chase Hill Blvd. In Front Of 15651",
+            "Stop Number": 18367,
+            "Lat": 29.5906544539976,
+            "Lng": -98.6248608127682,
+            "route": "Route 660",
+            "Order on Route": 38
+        },
+        {
+            "Stop Name": "Chase Hill Blvd. & 1604 W Access",
+            "Stop Number": 18777,
+            "Lat": 29.5886546587319,
+            "Lng": -98.6240182614651,
+            "route": "Route 660",
+            "Order on Route": 39
+        },
+        {
+            "Stop Name": "Utsa Loop 1604 Campus",
+            "Stop Number": 11907,
+            "Lat": 29.5864452861773,
+            "Lng": -98.6185465852292,
+            "route": "Route 660",
+            "Order on Route": 40
+        },
+        {
+            "Stop Name": "Loop 1604 E Acces Rd & Valero Way",
+            "Stop Number": 14423,
+            "Lat": 29.5894550092858,
+            "Lng": -98.6075282438144,
+            "route": "Route 660",
+            "Order on Route": 41
+        },
+        {
+            "Stop Name": "University Park & Ride",
+            "Stop Number": 17116,
+            "Lat": 29.5908038767791,
+            "Lng": -98.597991175366,
+            "route": "Route 660",
+            "Order on Route": 42
+        }
+    ],
+    "Route 660 (reverse)": [
+        {
+            "Stop Name": "University Park & Ride",
+            "Stop Number": 17116,
+            "Lat": 29.5908038767791,
+            "Lng": -98.597991175366,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 1
+        },
+        {
+            "Stop Name": "Loop 1604 W Access/Entr. La Cantera",
+            "Stop Number": 22479,
+            "Lat": 29.5897645900823,
+            "Lng": -98.61240653718,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 2
+        },
+        {
+            "Stop Name": "Utsa Loop 1604 Campus",
+            "Stop Number": 11907,
+            "Lat": 29.5908038767791,
+            "Lng": -98.597991175366,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 3
+        },
+        {
+            "Stop Name": "Chase Hill Blvd. & 1604 W Access",
+            "Stop Number": 18676,
+            "Lat": 29.5891219288824,
+            "Lng": -98.623797260216,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 4
+        },
+        {
+            "Stop Name": "Chase Hill Blvd. Opposite 15651",
+            "Stop Number": 18366,
+            "Lat": 29.5907300134229,
+            "Lng": -98.6247549730757,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 5
+        },
+        {
+            "Stop Name": "Chase Hill Blvd. at Las Colimas Apt",
+            "Stop Number": 98626,
+            "Lat": 29.5940054991509,
+            "Lng": -98.6260153492926,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 6
+        },
+        {
+            "Stop Name": "Chase Hill Blvd. & Babcock",
+            "Stop Number": 87836,
+            "Lat": 29.5972575422612,
+            "Lng": -98.6297771344978,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 7
+        },
+        {
+            "Stop Name": "Babcock Opp. Rear Entrance To Chase",
+            "Stop Number": 86987,
+            "Lat": 29.5936984665101,
+            "Lng": -98.629161993449,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 8
+        },
+        {
+            "Stop Name": "Babcock & Shady Hollow",
+            "Stop Number": 17137,
+            "Lat": 29.5912122348947,
+            "Lng": -98.6291734898655,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 9
+        },
+        {
+            "Stop Name": "Babcock & 1604 W Access Rd.",
+            "Stop Number": 16877,
+            "Lat": 29.5882071069041,
+            "Lng": -98.6308584347037,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 10
+        },
+        {
+            "Stop Name": "Loop 1604 S Access Rd & Cotton Tail",
+            "Stop Number": 77197,
+            "Lat": 29.5858006297479,
+            "Lng": -98.6373433840835,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 11
+        },
+        {
+            "Stop Name": "Loop 1604 S Access Rd & Red Robin (Nearside)",
+            "Stop Number": 77217,
+            "Lat": 29.5834985948754,
+            "Lng": -98.6398476017536,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 12
+        },
+        {
+            "Stop Name": "Loop 1604 S Access Rd & Kyle Seale",
+            "Stop Number": 77187,
+            "Lat": 29.5773254714454,
+            "Lng": -98.6460343196769,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 13
+        },
+        {
+            "Stop Name": "Loop 1604 S Access Rd & Hausman",
+            "Stop Number": 77177,
+            "Lat": 29.5714786442082,
+            "Lng": -98.6513378227496,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 14
+        },
+        {
+            "Stop Name": "Loop 1604 S Access Rd In Front 8603",
+            "Stop Number": 77167,
+            "Lat": 29.5602669339631,
+            "Lng": -98.6603276227015,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 15
+        },
+        {
+            "Stop Name": "Loop 1604 S Access Rd In Front 9111",
+            "Stop Number": 77157,
+            "Lat": 29.557617894048,
+            "Lng": -98.6636942791071,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 16
+        },
+        {
+            "Stop Name": "1604 Access & Silverado Theatre",
+            "Stop Number": 77127,
+            "Lat": 29.5513869474839,
+            "Lng": -98.6703280978066,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 17
+        },
+        {
+            "Stop Name": "Loop 1604 N Access & Brimhall",
+            "Stop Number": 81227,
+            "Lat": 29.5464451116922,
+            "Lng": -98.6747402321834,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 18
+        },
+        {
+            "Stop Name": "Loop 1604 S Access Rd In Front 9681",
+            "Stop Number": 81267,
+            "Lat": 29.5344086877188,
+            "Lng": -98.6836709145269,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 19
+        },
+        {
+            "Stop Name": "Loop 1604 S Access Rd Opp N Guibeau",
+            "Stop Number": 81237,
+            "Lat": 29.5301781380644,
+            "Lng": -98.6851125836354,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 20
+        },
+        {
+            "Stop Name": "Shaenfield And Leslie Rd.",
+            "Stop Number": 81199,
+            "Lat": 29.5160186506398,
+            "Lng": -98.6966453221768,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 21
+        },
+        {
+            "Stop Name": "Oscar Wood & Expedition Crk",
+            "Stop Number": 81197,
+            "Lat": 29.5161763262589,
+            "Lng": -98.7004773460353,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 22
+        },
+        {
+            "Stop Name": "Oscar Wood & Vollmer",
+            "Stop Number": 81187,
+            "Lat": 29.5133086693214,
+            "Lng": -98.701780543637,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 23
+        },
+        {
+            "Stop Name": "Oscar Wood & Ceders Pl.",
+            "Stop Number": 81173,
+            "Lat": 29.5120266417647,
+            "Lng": -98.7005944818114,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 24
+        },
+        {
+            "Stop Name": "Leslie Rd & Creston Gate",
+            "Stop Number": 81177,
+            "Lat": 29.5051949624312,
+            "Lng": -98.6999938269232,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 25
+        },
+        {
+            "Stop Name": "Westwood at Walmart",
+            "Stop Number": 81149,
+            "Lat": 29.499066766462,
+            "Lng": -98.7045690524118,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 26
+        },
+        {
+            "Stop Name": "Culebra & Westwood Loop",
+            "Stop Number": 81123,
+            "Lat": 29.4957130438304,
+            "Lng": -98.7091209168102,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 27
+        },
+        {
+            "Stop Name": "Culebra at Heb Plus",
+            "Stop Number": 41333,
+            "Lat": 29.4929058779405,
+            "Lng": -98.7019302933754,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 28
+        },
+        {
+            "Stop Name": "Rogers Rd. Opposite Mountain View",
+            "Stop Number": 41307,
+            "Lat": 29.4901194953786,
+            "Lng": -98.7002563872434,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 29
+        },
+        {
+            "Stop Name": "Rogers Between Mt Baker & Mt Evans",
+            "Stop Number": 41407,
+            "Lat": 29.4851138813068,
+            "Lng": -98.7003749403251,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 30
+        },
+        {
+            "Stop Name": "Rogers Btwn Mt Evans & Wiseman",
+            "Stop Number": 98507,
+            "Lat": 29.4809020975519,
+            "Lng": -98.6992680337271,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 31
+        },
+        {
+            "Stop Name": "Rogers Rs. & Wiseman Blvd",
+            "Stop Number": 98407,
+            "Lat": 29.477377894493,
+            "Lng": -98.6938359212671,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 32
+        },
+        {
+            "Stop Name": "Rogers Opp Chase Service Center",
+            "Stop Number": 98537,
+            "Lat": 29.4757536815992,
+            "Lng": -98.6932946731269,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 33
+        },
+        {
+            "Stop Name": "Rogers Opp Rogers Run",
+            "Stop Number": 98557,
+            "Lat": 29.470924575671,
+            "Lng": -98.6916759481604,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 34
+        },
+        {
+            "Stop Name": "Rogers & Westover Hills",
+            "Stop Number": 98587,
+            "Lat": 29.4652083729055,
+            "Lng": -98.6888906431172,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 35
+        },
+        {
+            "Stop Name": "Rogers & Hyatt Resort Dr",
+            "Stop Number": 98597,
+            "Lat": 29.4595799778259,
+            "Lng": -98.6854850065589,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 36
+        },
+        {
+            "Stop Name": "Rogers Btwn Hyatt Resort Dr & Natio",
+            "Stop Number": 98607,
+            "Lat": 29.4573506637267,
+            "Lng": -98.6848321732108,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 37
+        },
+        {
+            "Stop Name": "Nationwide Dr Btwn Rogers & Sh 151",
+            "Stop Number": 98609,
+            "Lat": 29.4555414950519,
+            "Lng": -98.6852549646405,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 38
+        },
+        {
+            "Stop Name": "Westover Hills & Hwy. 151 (Fs)",
+            "Stop Number": 98869,
+            "Lat": 29.462269649458,
+            "Lng": -98.6935945484589,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 39
+        },
+        {
+            "Stop Name": "Ellison Dr. & Westover Hills",
+            "Stop Number": 16336,
+            "Lat": 29.4617345232951,
+            "Lng": -98.6971318975385,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 40
+        },
+        {
+            "Stop Name": "Ellison Dr. & Entrance To Christus Santa Rosa",
+            "Stop Number": 84729,
+            "Lat": 29.4646082932743,
+            "Lng": -98.6987825864319,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 41
+        },
+        {
+            "Stop Name": "Ellison Dr. & Wiseman Blvd.",
+            "Stop Number": 84749,
+            "Lat": 29.4672140502365,
+            "Lng": -98.704406648811,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 42
+        },
+        {
+            "Stop Name": "Northwest Vista College",
+            "Stop Number": 83439,
+            "Lat": 29.4676745723921,
+            "Lng": -98.7052417610101,
+            "route": "Route 660 (reverse)",
+            "Order on Route": 43
+        }
+    ]
+}
