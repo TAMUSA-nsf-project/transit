@@ -1,0 +1,350 @@
+{
+    "Route 672": [
+        {
+            "Stop Name": "Verano Pkwy & University Way",
+            "Stop Number": 26183,
+            "Lat": 29.3053789270092,
+            "Lng": -98.5242501304062,
+            "route": "Route 672",
+            "Order on Route": 1
+        },
+        {
+            "Stop Name": "Zarzamora Opp. Hunter's Pond",
+            "Stop Number": 26206,
+            "Lat": 29.3077731849319,
+            "Lng": -98.5349121294295,
+            "route": "Route 672",
+            "Order on Route": 2
+        },
+        {
+            "Stop Name": "S. Zarzamora Btwn Jennifer Dr & Vil",
+            "Stop Number": 27626,
+            "Lat": 29.3245724472011,
+            "Lng": -98.53254022852,
+            "route": "Route 672",
+            "Order on Route": 3
+        },
+        {
+            "Stop Name": "Villaret Btwn Rhoda & Cadiz",
+            "Stop Number": 24699,
+            "Lat": 29.3255090845949,
+            "Lng": -98.5388255643489,
+            "route": "Route 672",
+            "Order on Route": 4
+        },
+        {
+            "Stop Name": "Palo Alto College",
+            "Stop Number": 23953,
+            "Lat": 29.3245875087721,
+            "Lng": -98.5439863087328,
+            "route": "Route 672",
+            "Order on Route": 5
+        },
+        {
+            "Stop Name": "Lytle & Bruni",
+            "Stop Number": 24486,
+            "Lat": 29.3270274580387,
+            "Lng": -98.5411765809445,
+            "route": "Route 672",
+            "Order on Route": 6
+        },
+        {
+            "Stop Name": "Lytle & Mally",
+            "Stop Number": 24196,
+            "Lat": 29.3282557132703,
+            "Lng": -98.541182981134,
+            "route": "Route 672",
+            "Order on Route": 7
+        },
+        {
+            "Stop Name": "Lytle & Gillette",
+            "Stop Number": 14696,
+            "Lat": 29.3300485296992,
+            "Lng": -98.5411827009558,
+            "route": "Route 672",
+            "Order on Route": 8
+        },
+        {
+            "Stop Name": "Gillete & Rhoda",
+            "Stop Number": 15783,
+            "Lat": 29.3301242951326,
+            "Lng": -98.5379052594094,
+            "route": "Route 672",
+            "Order on Route": 9
+        },
+        {
+            "Stop Name": "Gillete In Front Of 1134",
+            "Stop Number": 16783,
+            "Lat": 29.3301373367682,
+            "Lng": -98.5350958501265,
+            "route": "Route 672",
+            "Order on Route": 10
+        },
+        {
+            "Stop Name": "S. Zarzamora & Hunter",
+            "Stop Number": 96996,
+            "Lat": 29.3328754796464,
+            "Lng": -98.5336932770055,
+            "route": "Route 672",
+            "Order on Route": 11
+        },
+        {
+            "Stop Name": "S. Zarzamora & Ansley",
+            "Stop Number": 96596,
+            "Lat": 29.3354717977063,
+            "Lng": -98.534011803806,
+            "route": "Route 672",
+            "Order on Route": 12
+        },
+        {
+            "Stop Name": "S. Zarzamora In Front Of Garden Valley",
+            "Stop Number": 96196,
+            "Lat": 29.3375685978086,
+            "Lng": -98.5340261854689,
+            "route": "Route 672",
+            "Order on Route": 13
+        },
+        {
+            "Stop Name": "S. Zarzamora In Front Of St. Leonards",
+            "Stop Number": 86786,
+            "Lat": 29.3401675029252,
+            "Lng": -98.5340403819186,
+            "route": "Route 672",
+            "Order on Route": 14
+        },
+        {
+            "Stop Name": "S. Zarzamora In Front Of Bethesda",
+            "Stop Number": 86386,
+            "Lat": 29.3418331258311,
+            "Lng": -98.5340520984197,
+            "route": "Route 672",
+            "Order on Route": 15
+        },
+        {
+            "Stop Name": "S. Zarzamora & Peterson",
+            "Stop Number": 76786,
+            "Lat": 29.3441163625912,
+            "Lng": -98.5340701987041,
+            "route": "Route 672",
+            "Order on Route": 16
+        },
+        {
+            "Stop Name": "S. Zarzamora & Hutchins",
+            "Stop Number": 76486,
+            "Lat": 29.3453281231155,
+            "Lng": -98.5340432248791,
+            "route": "Route 672",
+            "Order on Route": 17
+        },
+        {
+            "Stop Name": "S. Zarzamora Opposite Vestal",
+            "Stop Number": 66986,
+            "Lat": 29.3472679354282,
+            "Lng": -98.5340684523038,
+            "route": "Route 672",
+            "Order on Route": 18
+        },
+        {
+            "Stop Name": "S. Zarzamora Opposite Cantrell",
+            "Stop Number": 66786,
+            "Lat": 29.3492531532432,
+            "Lng": -98.5340645904603,
+            "route": "Route 672",
+            "Order on Route": 19
+        },
+        {
+            "Stop Name": "Madla Transit Center",
+            "Stop Number": 11346,
+            "Lat": 29.3502457731536,
+            "Lng": -98.5324420555703,
+            "route": "Route 672",
+            "Order on Route": 20
+        }
+    ],
+    "Route 672 (reverse)": [
+        {
+            "Stop Name": "Madla Transit Center",
+            "Stop Number": 11137,
+            "Lat": 29.3502362288988,
+            "Lng": -98.5321902108779,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 1
+        },
+        {
+            "Stop Name": "I-35 Nb Access Rd. at Grosvenor",
+            "Stop Number": 58226,
+            "Lat": 29.3542376001374,
+            "Lng": -98.5274687510976,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 2
+        },
+        {
+            "Stop Name": "I35 Sb Acc. Rd. at 2nd Ent. SP Mall",
+            "Stop Number": 58227,
+            "Lat": 29.3537939128825,
+            "Lng": -98.5291257264282,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 3
+        },
+        {
+            "Stop Name": "S. Zarzamora & Cantrell",
+            "Stop Number": 66787,
+            "Lat": 29.349175107996,
+            "Lng": -98.5342837580617,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 4
+        },
+        {
+            "Stop Name": "S. Zarzamora & Vestal",
+            "Stop Number": 66987,
+            "Lat": 29.3472567299064,
+            "Lng": -98.5342418241303,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 5
+        },
+        {
+            "Stop Name": "S. Zarzamora & Hutchins",
+            "Stop Number": 76487,
+            "Lat": 29.3459264949931,
+            "Lng": -98.53424303726,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 6
+        },
+        {
+            "Stop Name": "S. Zarzamora & Peterson",
+            "Stop Number": 76787,
+            "Lat": 29.3443369700045,
+            "Lng": -98.5342548944493,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 7
+        },
+        {
+            "Stop Name": "S. Zarzamora In Front Of Bethesda",
+            "Stop Number": 86387,
+            "Lat": 29.3422308003118,
+            "Lng": -98.5342499388465,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 8
+        },
+        {
+            "Stop Name": "S. Zarzamora Opp. 8606",
+            "Stop Number": 86878,
+            "Lat": 29.3395013096126,
+            "Lng": -98.5342402777193,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 9
+        },
+        {
+            "Stop Name": "S. Zarzamora Opp. Ent To Garden Val",
+            "Stop Number": 96197,
+            "Lat": 29.3380210171509,
+            "Lng": -98.5342291091081,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 10
+        },
+        {
+            "Stop Name": "S. Zarzamora Opposite Ansley",
+            "Stop Number": 96587,
+            "Lat": 29.3361017871364,
+            "Lng": -98.5342197509796,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 11
+        },
+        {
+            "Stop Name": "S. Zarzamora & Hunter",
+            "Stop Number": 96997,
+            "Lat": 29.3334728053947,
+            "Lng": -98.5340334221081,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 12
+        },
+        {
+            "Stop Name": "S. Zarzamora & Gillette",
+            "Stop Number": 17627,
+            "Lat": 29.3304265880652,
+            "Lng": -98.533331312203,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 13
+        },
+        {
+            "Stop Name": "Gillette & Rhoda",
+            "Stop Number": 15699,
+            "Lat": 29.330284892288,
+            "Lng": -98.5372943171768,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 14
+        },
+        {
+            "Stop Name": "Gillette & Lytle",
+            "Stop Number": 14689,
+            "Lat": 29.3302732419598,
+            "Lng": -98.5404237927716,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 15
+        },
+        {
+            "Stop Name": "Lytle & Mally",
+            "Stop Number": 24297,
+            "Lat": 29.3283650265052,
+            "Lng": -98.5412502337408,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 16
+        },
+        {
+            "Stop Name": "Lytle Opposite Bruni",
+            "Stop Number": 24397,
+            "Lat": 29.3271887053476,
+            "Lng": -98.5412516698199,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 17
+        },
+        {
+            "Stop Name": "Lytle & Villaret",
+            "Stop Number": 24697,
+            "Lat": 29.32557325694,
+            "Lng": -98.541252865801,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 18
+        },
+        {
+            "Stop Name": "Palo Alto College",
+            "Stop Number": 23953,
+            "Lat": 29.3245875087721,
+            "Lng": -98.5439863087328,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 19
+        },
+        {
+            "Stop Name": "Villaret & Rhoda",
+            "Stop Number": 25693,
+            "Lat": 29.3254418688233,
+            "Lng": -98.5378077245173,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 20
+        },
+        {
+            "Stop Name": "S. Zarzamora & Villaret",
+            "Stop Number": 27637,
+            "Lat": 29.3250451224723,
+            "Lng": -98.5327493919905,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 21
+        },
+        {
+            "Stop Name": "Zarzamora & Hunter's Pond",
+            "Stop Number": 26207,
+            "Lat": 29.3078773149448,
+            "Lng": -98.5350647034303,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 22
+        },
+        {
+            "Stop Name": "Verano Pkwy & University Way",
+            "Stop Number": 26183,
+            "Lat": 29.3053789270092,
+            "Lng": -98.5242501304062,
+            "route": "Route 672 (reverse)",
+            "Order on Route": 23
+        }
+    ]
+}
