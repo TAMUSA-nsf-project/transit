@@ -1,0 +1,14 @@
+route-response.json is response from maps.googleapis.com when line 452 in index.js is executed
+route-data-closer-look.json is the inner Object from above-mentioned response 
+
+Analysis of this data can be used to see how google draws the route and measures distances between waypoints... 
+Some data may be useful to display on map:
+    -analysis of complete response necessary to grab specific data from JSON    
+Other data may be useful to generate more accurate route drawing
+    -analysis of inner Object useful to determine what data google is using
+
+Other Notes:
+    - new route definitions will not start and end at the same points
+    - new route definitions might contain data to be displayed to user 
+        (meaning we can grab the data initial DB response and not from maps.googleapis.com response)
+    - new stop definitions in progress

@@ -6,7 +6,8 @@ var markers = [];
 var user_markers = [];
 let path;
 var circles = [];
-var allStops;
+// var allStops;
+var DBresult;
 var allRoutes = {};
 const allRouteNames = new Set();
 var route1 = [];
@@ -14,6 +15,8 @@ var route2 = [];
 
 let map;
 let poly;
+let directionsService;
+let directionsRenderer;
 
 function initMap() {
   /**
@@ -27,6 +30,17 @@ function initMap() {
    * - []color routes to differentiate
    * - []display information to user in a better way
    */
+  
+  const tamusa = new google.maps.LatLng(29.30428893171069, -98.52470397949219);
+  var mapOptions = {
+    // Centered on Tamusa
+    center: tamusa,
+    zoom: 13,
+  }
+  map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  directionsService = new google.maps.DirectionsService();
+  directionsRenderer = new google.maps.DirectionsRenderer();
+  directionsRenderer.setMap(map);
   // get all the data from DB and then go from there
   fetch('/stops')         // changed for any server
     .then(function (resp) {
@@ -35,68 +49,45 @@ function initMap() {
     })
     .then(function (sent) {
       // allStops = sent.data.stops;
-      allStops = sent.data.routes;
+      // allStops = sent.data.routes;
+      DBresult = sent.data;
+      console.log(DBresult);
       // console.log(sent.data.stops);
       // console.log(sent.data.routes);
 
+      var dropdownOptions = "";
 
-      for (var x in allStops) {
-        /**
-         * sets the amount of routes to include based on object's data
-         */
-        // console.log(Object.getOwnPropertyNames(allRoutes[x].routes));
-        var routeName = Object.getOwnPropertyNames(allStops[x].routes);
-        routeName.forEach(element => {
-          allRouteNames.add(element);
-
-        });
+      for (var key in DBresult[0]) {
+        console.log(key);
+        dropdownOptions += "<li><button id='" + key + "' class='dropdown-item' type='button'>" + key + "</button></li>";
+        // var routeName = Object.getOwnPropertyNames(DBresult[x]);
+        // var routeName = keys;
+        // var stops = Object.values(DBresult[x]);
+        // var myObj = [];
+        // routeName.forEach(element => {
+        //   allRouteNames.add(element); // adds unique route name to set   
+        // });
       }
+
       console.log(allRouteNames);
 
       for (var route of allRouteNames.values()) {
-        console.log(route)
-        allRoutes[route] = [];
-        for (var stop of allStops) {
-          /**
-           * Gathers all stops defined in each route
-           */
+        // Populate origin dropdown list
+        // console.log(route);
+      }
 
-          if (Object.hasOwn(stop.routes, route)) {
-            allRoutes[route].push(stop);
-            // console.log(allRoutes[x].routes.r1);
-          }
+      document.getElementById("origin-input-dropdown").innerHTML = dropdownOptions;
+
+      const container = document.querySelector('#origin-input-dropdown');
+
+      // Click handler for entire dropdown menu
+      container.addEventListener('click', function (e) {
+        // But only call function for elements added dynamically
+        if (e.target.classList.contains('dropdown-item')) {
+          calcRouteSelect(e.target.innerHTML);
         }
-      }
+      });
 
-      console.log(allRoutes);
-      // if(Object.hasOwn(allRoutes[x].routes, "r2")){
-      //   route2.push(allRoutes[x]);
-      //   // console.log(allRoutes[x].routes);
-      // }
-
-      // console.log(allRoutes);
-      // console.log(route1.sort((a, b) => a.routes.r2 - b.routes.r2));
-      // console.log(route2.sort((a, b) => a.routes.r2 - b.routes.r2));
-      // console.log(route2.sort({(route2[a].routes.r2, route2[b].routes.r2): 1 } ));
-      // route2 = sent.data.routes.routes.r2
-      // console.log(route1);
-      // console.log(JSON.stringify(route2));
-      // allRoutes.forEach(element => {
-      // console.log(element.title)
-
-      // });
-
-
-      const tamusa = new google.maps.LatLng(29.30428893171069, -98.52470397949219);
-      var mapOptions = {
-        // Centered on Tamusa
-        center: tamusa,
-        zoom: 13,
-      }
-      map = new google.maps.Map(document.getElementById("map"), mapOptions);
-      directionsService = new google.maps.DirectionsService();
-      directionsRenderer = new google.maps.DirectionsRenderer();
-      directionsRenderer.setMap(map);
       new AutocompleteDirectionsHandler(map);
 
       // needed for drawing line but not used
@@ -108,8 +99,11 @@ function initMap() {
 
       // This event listener calls addMarker() when the map is clicked.
       google.maps.event.addListener(map, "rightclick", (event) => {
+        console.log(event);
         addMarker(event.latLng);
         addLatLngToPoly(event.latLng, poly);   // fun to draw line on the map
+        addStop();
+
       });
 
       google.maps.event.addListener(map, "click", (event) => {
@@ -129,13 +123,13 @@ function initMap() {
 
       for (let route in allRoutes) {
         //sorts the stops along route based on data definition... Might be a better way to do this from original DB query
-        allRoutes[route].sort((a, b) => a.routes.r2 - b.routes.r2);
+        allRoutes[route].sort((a, b) => a.routes[route] - b.routes[route]);
 
-        console.log('label=', label)
         // Create the markers.
         for (var i = 0; i < allRoutes[route].length; i++) {
           var data = allRoutes[route][i];
           var label = JSON.stringify(data.routes);
+          console.log('label=', label);
           // console.log(allStops[i]);
           var myLatlng = new google.maps.LatLng(data.lat, data.lng);
           // if(data.routes.length() > 1)
@@ -178,6 +172,7 @@ function initMap() {
         calcRouteAll();
       })
 
+
       const locationButton = document.createElement("button");
 
       locationButton.textContent = "Pan to Current Location";
@@ -209,6 +204,7 @@ function initMap() {
       });
 
     })
+
   class AutocompleteDirectionsHandler {
     map;
     originPlaceId;
@@ -225,7 +221,9 @@ function initMap() {
       this.directionsRenderer = new google.maps.DirectionsRenderer();
       this.directionsRenderer.setMap(map);
 
+      // const originInput = document.getElementById("origin-input");
       const originInput = document.getElementById("origin-input");
+      const originInputContainer = document.getElementById("origin-input-container");
       const destinationInput = document.getElementById("destination-input");
       const modeSelector = document.getElementById("mode-selector");
       const originAutocomplete = new google.maps.places.Autocomplete(originInput);
@@ -253,7 +251,8 @@ function initMap() {
       );
       this.setupPlaceChangedListener(originAutocomplete, "ORIG");
       this.setupPlaceChangedListener(destinationAutocomplete, "DEST");
-      this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
+      // this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
+      this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInputContainer);
       this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(
         destinationInput
       );
@@ -338,6 +337,12 @@ function initMap() {
 
   }
 
+
+  function addStop() {
+    // fetch('/addstop');
+
+  }
+
   // Removes the markers from the map, but keeps them in the array.
   function hideMarkers() {
     setMapOnAll(null);
@@ -361,7 +366,6 @@ function initMap() {
     // console.log(path);
   }
 }
-
 
 function addCircle(center) {
   console.log(JSON.stringify(center));
@@ -391,20 +395,102 @@ function addCircle(center) {
   }
 }
 
-function calcRouteAll() {
+function calcRouteSelect(route) {
   /**
-   * Function calculates and draws route for every stop that was returned from the DB query 
+   * Function calculates and draws route for routes selected from dropdown menu
+   *  - Need to figure better way to draw routes (too many waypoints)
+   *  - Researching breaking the route up (how to draw if multiple route 'chunks')
+   *  - Researching using the polyline from directionsService response
    */
-  var origin = new google.maps.LatLng(allStops[0].lat, allStops[0].lng);
-  var dest = new google.maps.LatLng(allStops[0].lat, allStops[0].lng);
+  console.log(route);
+  var len = DBresult[0][route].length - 1;
+  var origin = new google.maps.LatLng(DBresult[0][route][0].Lat, DBresult[0][route][0].Lng);
+  var dest = new google.maps.LatLng(DBresult[0][route][len].Lat, DBresult[0][route][len].Lng);
 
   var waypoints = [];
-  for (var i = 1; i < allStops.length; i++) {
+  for (var i = 1; i < len; i++) {
     waypoints.push({
-      location: new google.maps.LatLng(allStops[i].lat, allStops[i].lng),
+      location: new google.maps.LatLng(DBresult[0][route][i].Lat, DBresult[0][route][i].Lng),
       stopover: false
     })
-    
+  }
+
+  var selectedMode = "DRIVING"
+  var request = {
+    origin: origin,
+    destination: dest,
+    travelMode: google.maps.TravelMode[selectedMode],
+    waypoints: waypoints,
+    provideRouteAlternatives: false,
+    travelMode: 'DRIVING',
+    unitSystem: google.maps.UnitSystem.IMPERIAL
+  };
+  directionsService.route(request, function (response, status) {
+    if (status == 'OK') {
+      console.log("Polyline Overview: ", response.routes[0].overview_polyline);
+      console.log(status);
+
+      directionsRenderer.setDirections(response);
+    }
+    else {
+      console.log(status, response);
+    }
+  });
+}
+
+// function calcRouteAll() {
+//   /**
+//    * Function calculates and draws route for every stop that was returned from the DB query 
+//    */
+//   var origin = new google.maps.LatLng(allStops[0].lat, allStops[0].lng);
+//   var dest = new google.maps.LatLng(allStops[0].lat, allStops[0].lng);
+
+//   var waypoints = [];
+//   for (var i = 1; i < allStops.length; i++) {
+//     waypoints.push({
+//       location: new google.maps.LatLng(allStops[i].lat, allStops[i].lng),
+//       stopover: false
+//     })
+
+//   }
+
+//   var selectedMode = "Driving"
+//   var request = {
+//     origin: origin,
+//     destination: dest,
+//     travelMode: google.maps.TravelMode[selectedMode],
+//     waypoints: waypoints,
+//     provideRouteAlternatives: false,
+//     travelMode: 'DRIVING',
+//     unitSystem: google.maps.UnitSystem.IMPERIAL
+//   };
+//   directionsService.route(request, function (response, status) {
+//     if (status == 'OK') {
+//       console.log(response);
+//       console.log(status);
+
+//       directionsRenderer.setDirections(response);
+//     }
+//   });
+// }
+
+function calcRoute(route) {
+  /**
+   * Function calculates and draws route based on specific route which is local to data definition of stop
+   */
+  // for(let route in routes){
+  console.log("route = ", route);
+
+  var origin = new google.maps.LatLng(allRoutes[route][0].lat, allRoutes[route][0].lng);
+  var dest = new google.maps.LatLng(allRoutes[route][0].lat, allRoutes[route][0].lng);
+
+  var waypoints = [];
+  for (var i = 1; i < allRoutes[route].length; i++) {
+    waypoints.push({
+      location: new google.maps.LatLng(allRoutes[route][i].lat, allRoutes[route][i].lng),
+      stopover: false
+    })
+
   }
 
   var selectedMode = "Driving"
@@ -425,45 +511,6 @@ function calcRouteAll() {
       directionsRenderer.setDirections(response);
     }
   });
-}
-
-function calcRoute(route) {
-  /**
-   * Function calculates and draws route based on specific route which is local to data definition of stop
-   */
-  // for(let route in routes){
-    console.log("route = ", route);
-
-    var origin = new google.maps.LatLng(allRoutes[route][0].lat, allRoutes[route][0].lng);
-    var dest = new google.maps.LatLng(allRoutes[route][0].lat, allRoutes[route][0].lng);
-  
-    var waypoints = [];
-    for (var i = 1; i < allRoutes[route].length; i++) {
-      waypoints.push({
-        location: new google.maps.LatLng(allRoutes[route][i].lat, allRoutes[route][i].lng),
-        stopover: false
-      })
-      
-    }
-  
-    var selectedMode = "Driving"
-    var request = {
-      origin: origin,
-      destination: dest,
-      travelMode: google.maps.TravelMode[selectedMode],
-      waypoints: waypoints,
-      provideRouteAlternatives: false,
-      travelMode: 'DRIVING',
-      unitSystem: google.maps.UnitSystem.IMPERIAL
-    };
-    directionsService.route(request, function (response, status) {
-      if (status == 'OK') {
-        console.log(response);
-        console.log(status);
-  
-        directionsRenderer.setDirections(response);
-      }
-    });
 
   // }
 }
