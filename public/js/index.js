@@ -38,7 +38,7 @@ function initMap() {
     center: tamusa,
     zoom: 13,
   }
-  bounds = new google.maps.LatLngBounds();
+
   map = new google.maps.Map(document.getElementById("map"), mapOptions);
   directionsService = new google.maps.DirectionsService();
   directionsRenderer = new google.maps.DirectionsRenderer();
@@ -86,7 +86,13 @@ function initMap() {
       container.addEventListener('click', function (e) {
         // But only call function for elements added dynamically
         if (e.target.classList.contains('dropdown-item')) {
+          if (directionsRenderer != null) {
+            directionsRenderer.setMap(null);
+            directionsRenderer = null;
+          }
           calcRouteSelect(e.target.innerHTML);
+          calcRouteTest(e.target.innerHTML);
+          console.log(e.target.innerHTML);
         }
       });
 
@@ -102,16 +108,15 @@ function initMap() {
       // This event listener calls addMarker() when the map is clicked.
       google.maps.event.addListener(map, "rightclick", (event) => {
         console.log(event);
-        addMarker(event.latLng);
-        addLatLngToPoly(event.latLng, poly);   // fun to draw line on the map
-        addStop();
-
+        // addMarker(event.latLng);
+        // addLatLngToPoly(event.latLng, poly);   // fun to draw line on the map
+        // addStop();
       });
 
-      google.maps.event.addListener(map, "click", (event) => {
-        addCircle(event.latLng, infoWindow);
-        // console.log(event.latLng);    
-      });
+      // google.maps.event.addListener(map, "click", (event) => {
+      //   // addCircle(event.latLng, infoWindow);
+      //   // console.log(event.latLng);
+      // });
 
       // Add a specific "tamusa" marker at the center of the map.
       new google.maps.Marker({
@@ -311,7 +316,7 @@ function initMap() {
         }
       );
     }
-  };
+  }
   // add event listeners for the buttons
   document
     .getElementById("show-markers")
@@ -339,11 +344,6 @@ function initMap() {
 
   }
 
-
-  function addStop() {
-    // fetch('/addstop');
-
-  }
 
   // Removes the markers from the map, but keeps them in the array.
   function hideMarkers() {
@@ -405,6 +405,8 @@ function calcRouteSelect(route) {
    *  - Researching using the polyline from directionsService response
    */
   console.log(route);
+  directionsRenderer = new google.maps.DirectionsRenderer();
+  directionsRenderer.setMap(map);
   var len = DBresult[0][route].length - 1;
   var origin = new google.maps.LatLng(DBresult[0][route][0].Lat, DBresult[0][route][0].Lng);
   var dest = new google.maps.LatLng(DBresult[0][route][len].Lat, DBresult[0][route][len].Lng);
@@ -439,17 +441,25 @@ function calcRouteSelect(route) {
       console.log(status, response);
     }
   });
-};
+}
 
-function calcRouteTest() {
+function calcRouteTest(route) {
   /**
    * Turned this into a test fuction for drawing more hardcoded routes... called by 'Show Route' button  
    */
-  var route = "Route 51 (reverse)"
+  // poly = new google.maps.Polyline({
+  //   strokeColor: "#4cfd48",
+  //   strokeOpacity: 1,
+  //   strokeWeight: 3,
+  // });
+
+  // var route = "Route 660 University Park \u0026 Ride \u200E→ Northwest Vista College"
   var cur = 1;
   var testLen = DBresult[0][route].length;
   var trip = DBresult[0][route];
   var div = 9;
+  path = []
+  bounds = new google.maps.LatLngBounds();
   // console.log(trip);  
 
   function build() {
@@ -477,9 +487,7 @@ function calcRouteTest() {
       travelMode: google.maps.DirectionsTravelMode.DRIVING
     },
       function (result, status) {
-
         console.log(result);
-        
         if (status == google.maps.DirectionsStatus.OK) {
           for (var i = 0, len = result.routes[0].overview_path.length; i < len; i++) {
             console.log(JSON.stringify(result.routes[0].overview_path[i]));
@@ -506,7 +514,7 @@ function calcRouteTest() {
         }
         build();
       });
-  };
+  }
 
   // console.log(trip[0].Lat, trip[0].Lng);
   bounds.extend(new google.maps.LatLng(trip[0].Lat, trip[0].Lng));
@@ -514,7 +522,7 @@ function calcRouteTest() {
 
   poly.setMap(map);
 
-};
+}
 
 
 // function calcRoute(route) {
@@ -584,16 +592,6 @@ function addMarker(location) {
 // not really using at the moment, but it is fun
 function addLatLngToPoly(latLng, poly) {
   path = poly.getPath();
-
-  //.............TESTING...................
-  //   let testDocument = {
-  //     "title": "",
-  //     "latlng": latLng,  
-  //     "route": { "r2": stopNum[stopIndex]}
-  // }
-  //   stopIndex++;
-  //   put('http://localhost:3000/test', testDocument)
-  //..............End TEST..................
 
   // Because path is an MVCArray, we can simply append a new coordinate
   // and it will automatically appear
