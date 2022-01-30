@@ -7,11 +7,12 @@
   <body>
     <%- include('layout/nav.ejs') %>
       <div style="display: none">
-        <!--<input id="origin-input" class="controls" type="text" placeholder="Select an origin location" /> -->
+        <!-- <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location" /> -->
+        <!-- <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location" /> -->
 
-        <input id="destination-input" class="controls" type="text" placeholder="Select a destination location" />
+        <!-- <input id="destination-input" class="controls" type="text" placeholder="Select a route" /> -->
 
-        <div id="origin-input-container" class="dropdown" overflow="auto" height="10px">
+        <div id="origin-input-container" class="dropdown controls" overflow="auto" height="10px">
           <button
             class="btn btn-primary dropdown-toggle"
             type="button"
@@ -25,8 +26,9 @@
             <!-- List items will be added dynamically via index.js -->
           </ul>
         </div>
-
-        <div id="mode-selector" class="controls">
+        
+        <!-- Set to "display: none" to not interfere with index.js while preserving this code -->
+        <div id="mode-selector" class="controls" style="display: none;">  
           <input type="radio" name="type" id="changemode-walking" checked="checked" />
           <label for="changemode-walking">Walking</label>
 
@@ -36,6 +38,7 @@
           <input type="radio" name="type" id="changemode-driving" />
           <label for="changemode-driving">Driving</label>
         </div>
+        
       </div>
       <div id="map"></div>
 

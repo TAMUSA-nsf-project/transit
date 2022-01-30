@@ -1,0 +1,1008 @@
+{
+    "geocoded_waypoints" : [
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJX-pz_MJZXIYRZvwEa7YIEPo",
+           "types" : [ "route" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJm6sDoJVZXIYRQF_Jp_q0Chk",
+           "types" : [ "street_address" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJX-pz_MJZXIYRZvwEa7YIEPo",
+           "types" : [ "route" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJYTIJe85ZXIYR5ub-P0vsxs8",
+           "types" : [ "establishment", "point_of_interest", "transit_station" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJ-0ZGjzpYXIYRT1dEUg_bTt0",
+           "types" : [ "establishment", "point_of_interest", "store" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJIfnANhhYXIYRqa-TqFJS8Q0",
+           "types" : [ "establishment", "point_of_interest", "transit_station" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJty5SmxdYXIYRx__3XYkl1w4",
+           "types" : [ "establishment", "point_of_interest", "transit_station" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJveJNexZYXIYRNrC-lTY9gak",
+           "types" : [ "establishment", "point_of_interest", "transit_station" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJR05IZglYXIYRtUBQngPhy-c",
+           "types" : [ "establishment", "point_of_interest", "transit_station" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJe3sPowxYXIYRKyEte56vMeg",
+           "types" : [ "establishment", "point_of_interest", "transit_station" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJ3RgJR2VYXIYR1--xSE08YwA",
+           "types" : [ "establishment", "point_of_interest", "transit_station" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJ1VZna11YXIYR7ioptcM-wCw",
+           "types" : [ "establishment", "point_of_interest", "transit_station" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJx6JB_K5ZXIYRuWxt7wGYxIg",
+           "types" : [ "establishment", "point_of_interest", "transit_station" ]
+        },
+        {
+           "geocoder_status" : "OK",
+           "place_id" : "ChIJX-pz_MJZXIYRZvwEa7YIEPo",
+           "types" : [ "route" ]
+        }
+     ],
+     "routes" : [
+        {
+           "bounds" : {
+              "northeast" : {
+                 "lat" : 29.3687742,
+                 "lng" : -98.4876702
+              },
+              "southwest" : {
+                 "lat" : 29.3414315,
+                 "lng" : -98.55232909999999
+              }
+           },
+           "copyrights" : "Map data ©2022 Google",
+           "legs" : [
+              {
+                 "distance" : {
+                    "text" : "16.9 mi",
+                    "value" : 27201
+                 },
+                 "duration" : {
+                    "text" : "48 mins",
+                    "value" : 2895
+                 },
+                 "end_address" : "8286-8178 Interstate 35 Access Rd, San Antonio, TX 78224, USA",
+                 "end_location" : {
+                    "lat" : 29.3421147,
+                    "lng" : -98.5491579
+                 },
+                 "start_address" : "8286-8178 Interstate 35 Access Rd, San Antonio, TX 78224, USA",
+                 "start_location" : {
+                    "lat" : 29.3421147,
+                    "lng" : -98.5491579
+                 },
+                 "steps" : [
+                    {
+                       "distance" : {
+                          "text" : "1.0 mi",
+                          "value" : 1674
+                       },
+                       "duration" : {
+                          "text" : "2 mins",
+                          "value" : 108
+                       },
+                       "end_location" : {
+                          "lat" : 29.3499237,
+                          "lng" : -98.53463189999999
+                       },
+                       "html_instructions" : "Head \u003cb\u003enortheast\u003c/b\u003e on \u003cb\u003eInterstate 35 Access Rd\u003c/b\u003e toward \u003cb\u003eW Ansley Blvd\u003c/b\u003e",
+                       "polyline" : {
+                          "points" : "e{arDf{nxQaAcAsCiDwGaIQSACe@i@e@o@EIY_@U]a@w@a@u@g@gAc@iAUq@e@yAOc@iBaGk@kB}@uCa@oAUs@a@yAUo@m@sBk@kBe@}AqAmEi@qBeAkDW{@[gA"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3421147,
+                          "lng" : -98.5491579
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "463 ft",
+                          "value" : 141
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 39
+                       },
+                       "end_location" : {
+                          "lat" : 29.3509245,
+                          "lng" : -98.5341942
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eS Zarzamora St\u003c/b\u003e",
+                       "maneuver" : "turn-left",
+                       "polyline" : {
+                          "points" : "_lcrDl`lxQ[y@Me@s@@E@A?[@G?A?C?w@@"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3499237,
+                          "lng" : -98.53463189999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.9 mi",
+                          "value" : 1373
+                       },
+                       "duration" : {
+                          "text" : "2 mins",
+                          "value" : 90
+                       },
+                       "end_location" : {
+                          "lat" : 29.3456259,
+                          "lng" : -98.54698429999999
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at the 1st cross street onto \u003cb\u003eInterstate 35 Access Rd\u003c/b\u003e",
+                       "maneuver" : "turn-left",
+                       "polyline" : {
+                          "points" : "grcrDt}kxQLf@\\jAp@|BTt@l@fBbA~CZ`Ah@`BBFDNFNHRBFBJv@hCj@fBxB`HlBpGFPt@`CpAlEpBtG\\fArAjEPf@"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3509245,
+                          "lng" : -98.5341942
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.3 mi",
+                          "value" : 495
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 41
+                       },
+                       "end_location" : {
+                          "lat" : 29.3455929,
+                          "lng" : -98.5520868
+                       },
+                       "html_instructions" : "Slight \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eW Hutchins Pl\u003c/b\u003e",
+                       "maneuver" : "turn-slight-right",
+                       "polyline" : {
+                          "points" : "eqbrDrmnxQ@l@?d@?d@BnEArH?xG@x@@j@"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3456259,
+                          "lng" : -98.54698429999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.5 mi",
+                          "value" : 878
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 71
+                       },
+                       "end_location" : {
+                          "lat" : 29.353468,
+                          "lng" : -98.55223400000001
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003ePalo Alto Rd\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "}pbrDpmoxQaBRg@Fm@BmA?qD?eC@{@?{@?W?c@?gA?S?cB?gA?_EF_B@O?_@@Y@E?u@?E?SAW?QCWCUCUE"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3455929,
+                          "lng" : -98.5520868
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.3 mi",
+                          "value" : 517
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 62
+                       },
+                       "end_location" : {
+                          "lat" : 29.357274,
+                          "lng" : -98.5492172
+                       },
+                       "html_instructions" : "Continue onto \u003cb\u003eSomerset Rd\u003c/b\u003e",
+                       "polyline" : {
+                          "points" : "ebdrDlnoxQKAk@QSIMEQIi@YSOgA{@u@k@[YOOIIoC}Bg@c@]W[Wu@o@m@g@QOq@k@"
+                       },
+                       "start_location" : {
+                          "lat" : 29.353468,
+                          "lng" : -98.55223400000001
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.2 mi",
+                          "value" : 296
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 34
+                       },
+                       "end_location" : {
+                          "lat" : 29.35698339999999,
+                          "lng" : -98.54618309999999
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSW Military Dr\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "}ydrDr{nxQNgDHiBDk@DkADi@LkD"
+                       },
+                       "start_location" : {
+                          "lat" : 29.357274,
+                          "lng" : -98.5492172
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.6 mi",
+                          "value" : 949
+                       },
+                       "duration" : {
+                          "text" : "2 mins",
+                          "value" : 115
+                       },
+                       "end_location" : {
+                          "lat" : 29.34846779999999,
+                          "lng" : -98.54654530000001
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e after Taco Bell (on the right)",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "cxdrDrhnxQlAHhAHr@Bn@Dl@B~AJxDTT@\\B@?`A@J?r@?n@?fA?N?zA?fA?lB?nDAhB@`DAR?~@?"
+                       },
+                       "start_location" : {
+                          "lat" : 29.35698339999999,
+                          "lng" : -98.54618309999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "112 ft",
+                          "value" : 34
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 5
+                       },
+                       "end_location" : {
+                          "lat" : 29.348466,
+                          "lng" : -98.54689399999999
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eNavajo St\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "}bcrD|jnxQ@VAj@"
+                       },
+                       "start_location" : {
+                          "lat" : 29.34846779999999,
+                          "lng" : -98.54654530000001
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.2 mi",
+                          "value" : 308
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 38
+                       },
+                       "end_location" : {
+                          "lat" : 29.3457164,
+                          "lng" : -98.54677799999999
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eBarlite Blvd\u003c/b\u003e",
+                       "maneuver" : "turn-left",
+                       "polyline" : {
+                          "points" : "}bcrD`mnxQfA?zA?rC@H?|B?^?JALCVGRI"
+                       },
+                       "start_location" : {
+                          "lat" : 29.348466,
+                          "lng" : -98.54689399999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.3 mi",
+                          "value" : 417
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 36
+                       },
+                       "end_location" : {
+                          "lat" : 29.3441048,
+                          "lng" : -98.5506628
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eInterstate 35 Access Rd\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "wqbrDjlnxQPf@f@`BfDzKb@rAPf@DLHXZ|@"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3457164,
+                          "lng" : -98.54677799999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "1.3 mi",
+                          "value" : 2104
+                       },
+                       "duration" : {
+                          "text" : "2 mins",
+                          "value" : 146
+                       },
+                       "end_location" : {
+                          "lat" : 29.3499237,
+                          "lng" : -98.53463189999999
+                       },
+                       "html_instructions" : "Sharp \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003eInterstate 35 Access Rd\u003c/b\u003e",
+                       "maneuver" : "turn-sharp-left",
+                       "polyline" : {
+                          "points" : "sgbrDrdoxQBDFFBDDHBFFDDDFBL?D?L?NEHAb@Ox@OB?\\GD?`@EVAt@AX?ZA@?D?Z?@?JCBCDE@AFI?ADI@M@SAO@SG[EQkAkCaAcAsCiDwGaIQSACe@i@e@o@EIY_@U]a@w@a@u@g@gAc@iAUq@e@yAOc@iBaGk@kB}@uCa@oAUs@a@yAUo@m@sBk@kBe@}AqAmEi@qBeAkDW{@[gA"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3441048,
+                          "lng" : -98.5506628
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.4 mi",
+                          "value" : 663
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 57
+                       },
+                       "end_location" : {
+                          "lat" : 29.344165,
+                          "lng" : -98.53414199999999
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eS Zarzamora St\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "_lcrDl`lxQDYBIJYZCf@MPEhACPAV?L?R?rAAT?nEClAAj@?lA?D?pA?|@@r@?pD?"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3499237,
+                          "lng" : -98.53463189999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "210 ft",
+                          "value" : 64
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 15
+                       },
+                       "end_location" : {
+                          "lat" : 29.344158,
+                          "lng" : -98.53480499999999
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003ePeterson Ave\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "_hbrDj}kxQ?bC"
+                       },
+                       "start_location" : {
+                          "lat" : 29.344165,
+                          "lng" : -98.53414199999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.1 mi",
+                          "value" : 159
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 35
+                       },
+                       "end_location" : {
+                          "lat" : 29.3436711,
+                          "lng" : -98.53599349999999
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003ePeterson Ave\u003c/b\u003e",
+                       "maneuver" : "turn-left",
+                       "polyline" : {
+                          "points" : "_hbrDnalxQl@@L@F?FBDBDDBF@D@F@N?pA?bB"
+                       },
+                       "start_location" : {
+                          "lat" : 29.344158,
+                          "lng" : -98.53480499999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.1 mi",
+                          "value" : 217
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 38
+                       },
+                       "end_location" : {
+                          "lat" : 29.34562,
+                          "lng" : -98.536
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at the 1st cross street onto \u003cb\u003eCrenshaw St\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "}dbrD|hlxQkB?uA?cE@"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3436711,
+                          "lng" : -98.53599349999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "1.9 mi",
+                          "value" : 3114
+                       },
+                       "duration" : {
+                          "text" : "6 mins",
+                          "value" : 364
+                       },
+                       "end_location" : {
+                          "lat" : 29.34565499999999,
+                          "lng" : -98.503873
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at the 2nd cross street onto \u003cb\u003eW Hutchins Pl\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "cqbrD~hlxQ?kC?iA?mA?qA?yB?]?m@?e@?e@?gD?sDCyF?A?i@@i@?_A?G?I@m@?c@@oB?u@@aA?_A?_@?}@AoA@{B?i@?cB?cD?uDAmEAiC?sA?g@?}E?eD?g@?sC?mC?k@?e@?kB?qGAeB?uF?i@?mH?sB?oD?kD?U?aC?eBAuAEwI@yE@kC"
+                       },
+                       "start_location" : {
+                          "lat" : 29.34562,
+                          "lng" : -98.536
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.2 mi",
+                          "value" : 341
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 32
+                       },
+                       "end_location" : {
+                          "lat" : 29.3425863,
+                          "lng" : -98.5038697
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003ePleasanton Rd\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "iqbrDd`fxQ`@?h@?h@@l@?^?v@Ar@?x@?P?V?|@?pC?"
+                       },
+                       "start_location" : {
+                          "lat" : 29.34565499999999,
+                          "lng" : -98.503873
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.1 mi",
+                          "value" : 172
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 24
+                       },
+                       "end_location" : {
+                          "lat" : 29.3425537,
+                          "lng" : -98.50564370000001
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eW Formosa Blvd\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "e~arDd`fxQ@jB?b@?J?X?F@f@BzB"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3425863,
+                          "lng" : -98.5038697
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.2 mi",
+                          "value" : 346
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 60
+                       },
+                       "end_location" : {
+                          "lat" : 29.3456669,
+                          "lng" : -98.5056609
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eOppenheimer Ave\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "}}arDfkfxQeE?a@?U?iDBaB?eB?"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3425537,
+                          "lng" : -98.50564370000001
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.1 mi",
+                          "value" : 173
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 35
+                       },
+                       "end_location" : {
+                          "lat" : 29.34565499999999,
+                          "lng" : -98.503873
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eW Hutchins Pl\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "mqbrDjkfxQ@yE@kC"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3456669,
+                          "lng" : -98.5056609
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.1 mi",
+                          "value" : 202
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 20
+                       },
+                       "end_location" : {
+                          "lat" : 29.3438357,
+                          "lng" : -98.50387069999999
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003ePleasanton Rd\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "iqbrDd`fxQ`@?h@?h@@l@?^?v@Ar@?x@?"
+                       },
+                       "start_location" : {
+                          "lat" : 29.34565499999999,
+                          "lng" : -98.503873
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.4 mi",
+                          "value" : 569
+                       },
+                       "duration" : {
+                          "text" : "2 mins",
+                          "value" : 96
+                       },
+                       "end_location" : {
+                          "lat" : 29.3489503,
+                          "lng" : -98.50387499999999
+                       },
+                       "html_instructions" : "Make a \u003cb\u003eU-turn\u003c/b\u003e",
+                       "maneuver" : "uturn-left",
+                       "polyline" : {
+                          "points" : "_fbrDd`fxQy@?s@?w@@_@?m@?i@Ai@?a@?kA?]?}@?_@AoE@g@?{A@}@?y@?"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3438357,
+                          "lng" : -98.50387069999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "1.0 mi",
+                          "value" : 1571
+                       },
+                       "duration" : {
+                          "text" : "3 mins",
+                          "value" : 152
+                       },
+                       "end_location" : {
+                          "lat" : 29.3489358,
+                          "lng" : -98.4876702
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eWare Blvd\u003c/b\u003e",
+                       "maneuver" : "turn-right",
+                       "polyline" : {
+                          "points" : "}ecrDf`fxQ?m@AyN?k@?Y?O?aA?k@?wI?qA?cD@{B?sA?S@uOA{D?i@?{K?i@?cA@sD?qE"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3489503,
+                          "lng" : -98.50387499999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "338 ft",
+                          "value" : 103
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 13
+                       },
+                       "end_location" : {
+                          "lat" : 29.3498041,
+                          "lng" : -98.488045
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eS Flores St\u003c/b\u003e",
+                       "maneuver" : "turn-left",
+                       "polyline" : {
+                          "points" : "{ecrD|zbxQA@k@P[JaBh@"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3489358,
+                          "lng" : -98.4876702
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "407 ft",
+                          "value" : 124
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 44
+                       },
+                       "end_location" : {
+                          "lat" : 29.3497166,
+                          "lng" : -98.4893096
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e",
+                       "maneuver" : "turn-left",
+                       "polyline" : {
+                          "points" : "gkcrDf}bxQBPBJ@J?L@n@@r@@^@T?N?LAL"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3498041,
+                          "lng" : -98.488045
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "407 ft",
+                          "value" : 124
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 42
+                       },
+                       "end_location" : {
+                          "lat" : 29.3498041,
+                          "lng" : -98.488045
+                       },
+                       "html_instructions" : "Make a \u003cb\u003eU-turn\u003c/b\u003e",
+                       "maneuver" : "uturn-left",
+                       "polyline" : {
+                          "points" : "wjcrDdecxQ@M?M?OAUA_@As@Ao@?MAKCKCQ"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3497166,
+                          "lng" : -98.4893096
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "1.4 mi",
+                          "value" : 2247
+                       },
+                       "duration" : {
+                          "text" : "4 mins",
+                          "value" : 262
+                       },
+                       "end_location" : {
+                          "lat" : 29.3687742,
+                          "lng" : -98.49604389999999
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eS Flores St\u003c/b\u003e",
+                       "maneuver" : "turn-left",
+                       "polyline" : {
+                          "points" : "gkcrDf}bxQiA^WJcF`Bq@RoFfBq@TsBp@o@RE@mBl@}@XMD_AZKDUFOFk@Po@RSHa@LyA`@WFk@NcA\\WJg@NYLUFuBn@MDk@RmDhAgDdAu@TmDfAs@VkCv@qA`@KDsBn@w@VkCx@_Bf@GBsBp@_AXaAX{@X{DpAUFqEvA"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3498041,
+                          "lng" : -98.488045
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "2.6 mi",
+                          "value" : 4258
+                       },
+                       "duration" : {
+                          "text" : "8 mins",
+                          "value" : 477
+                       },
+                       "end_location" : {
+                          "lat" : 29.3680631,
+                          "lng" : -98.5399036
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eE Southcross\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Subway (on the left in 0.5&nbsp;mi)\u003c/div\u003e",
+                       "maneuver" : "turn-left",
+                       "polyline" : {
+                          "points" : "yagrDfodxQF`@?F@DCdLEbT@l@?XDxA?JBf@@`@@b@BP@BPp@J\\@F@FBNJz@@d@@Z?PDjB?\\@vMBpJ@`FD`XD`K?f@?V?z@A|@?\\?R@d@?v@?B?@@b@?B?@@`@?h@?f@@`@?\\@fB?z@?T@~A@bD?D@`@BpE?^@j@BzD?R@vB@T?b@@d@?dBA`B@~E?zE?zEAzE@xE?tD?^?x@?jA?zA?zE?jA?nC?zE?zE?j@?d@?rA?|@Bd@@RBF"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3687742,
+                          "lng" : -98.49604389999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "1.3 mi",
+                          "value" : 2019
+                       },
+                       "duration" : {
+                          "text" : "4 mins",
+                          "value" : 212
+                       },
+                       "end_location" : {
+                          "lat" : 29.353468,
+                          "lng" : -98.55223400000001
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eSomerset Rd\u003c/b\u003e",
+                       "maneuver" : "turn-left",
+                       "polyline" : {
+                          "points" : "k}frDjamxQNNbCrBjDnCPNpB`Bd@`@|CjCbDlCPNrC~B\\XTPNLr@l@tAhAp@h@d@^NNxEzDd@\\lDxCx@l@hBzAdAz@NNTPXTVTRNNLNLj@d@TNp@j@PNl@f@t@n@ZV\\Vf@b@nC|BHHNNZXt@j@fAz@RNh@XPHLDRHj@PJ@"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3680631,
+                          "lng" : -98.5399036
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.5 mi",
+                          "value" : 878
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 63
+                       },
+                       "end_location" : {
+                          "lat" : 29.3455929,
+                          "lng" : -98.5520868
+                       },
+                       "html_instructions" : "Continue onto \u003cb\u003ePalo Alto Rd\u003c/b\u003e",
+                       "polyline" : {
+                          "points" : "ebdrDlnoxQTDTBVBPBV?R@D?t@?D?XA^AN?~AA~DGfA?bB?R?fA?b@?V?z@?z@?dCApD?lA?l@Cf@G`BS"
+                       },
+                       "start_location" : {
+                          "lat" : 29.353468,
+                          "lng" : -98.55223400000001
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.3 mi",
+                          "value" : 486
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 52
+                       },
+                       "end_location" : {
+                          "lat" : 29.3414315,
+                          "lng" : -98.55088619999999
+                       },
+                       "html_instructions" : "Continue onto \u003cb\u003ePoteet Jourdanton Fwy\u003c/b\u003e",
+                       "polyline" : {
+                          "points" : "}pbrDpmoxQrAk@^OZMn@U@@B@@?B?@?@ABAx@YXQl@Yh@Q\\K`AUdAOdAGh@CV?b@?F?D?PAl@B^B"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3455929,
+                          "lng" : -98.5520868
+                       },
+                       "travel_mode" : "DRIVING"
+                    },
+                    {
+                       "distance" : {
+                          "text" : "0.1 mi",
+                          "value" : 185
+                       },
+                       "duration" : {
+                          "text" : "1 min",
+                          "value" : 17
+                       },
+                       "end_location" : {
+                          "lat" : 29.3421147,
+                          "lng" : -98.5491579
+                       },
+                       "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eInterstate 35 Access Rd\u003c/b\u003e",
+                       "maneuver" : "turn-left",
+                       "polyline" : {
+                          "points" : "}varD`foxQCWG[Ke@ESOq@G[EQkAkC"
+                       },
+                       "start_location" : {
+                          "lat" : 29.3414315,
+                          "lng" : -98.55088619999999
+                       },
+                       "travel_mode" : "DRIVING"
+                    }
+                 ],
+                 "traffic_speed_entry" : [],
+                 "via_waypoint" : [
+                    {
+                       "location" : {
+                          "lat" : 29.3549926,
+                          "lng" : -98.55122919999999
+                       },
+                       "step_index" : 5,
+                       "step_interpolation" : 0.3811664584282246
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.3421147,
+                          "lng" : -98.5491579
+                       },
+                       "step_index" : 11,
+                       "step_interpolation" : 0.204176545110953
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.3441634,
+                          "lng" : -98.5342898
+                       },
+                       "step_index" : 13,
+                       "step_interpolation" : 0.2228803991764229
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.3456217,
+                          "lng" : -98.51641079999999
+                       },
+                       "step_index" : 16,
+                       "step_interpolation" : 0.6097493746382396
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.3425847,
+                          "lng" : -98.503974
+                       },
+                       "step_index" : 18,
+                       "step_interpolation" : 0.05877056030990888
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.34452479999999,
+                          "lng" : -98.50387579999999
+                       },
+                       "step_index" : 21,
+                       "step_interpolation" : 0.621235406353724
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.3489506,
+                          "lng" : -98.50375659999999
+                       },
+                       "step_index" : 23,
+                       "step_interpolation" : 0.00730770667559954
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.3497625,
+                          "lng" : -98.4881853
+                       },
+                       "step_index" : 25,
+                       "step_interpolation" : 0.1160750310813967
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.3549806,
+                          "lng" : -98.490263
+                       },
+                       "step_index" : 27,
+                       "step_interpolation" : 0.2733907902321424
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.3686391,
+                          "lng" : -98.4959877
+                       },
+                       "step_index" : 27,
+                       "step_interpolation" : 0.9928896216247428
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.3683489,
+                          "lng" : -98.5074097
+                       },
+                       "step_index" : 28,
+                       "step_interpolation" : 0.2602383383257786
+                    },
+                    {
+                       "location" : {
+                          "lat" : 29.3681068,
+                          "lng" : -98.5361228
+                       },
+                       "step_index" : 28,
+                       "step_interpolation" : 0.9138262325076038
+                    }
+                 ]
+              }
+           ],
+           "overview_polyline" : {
+              "points" : "e{arDf{nxQuEmFiHuIsAgBo@}@cAmBkAqC{@kCcFgPoBmGqEkOcDaLi@_By@Bg@@C?w@@Lf@nAhEbA|ClCjIZz@`F~O|FrRtFpQDhIAlQBdBiCZ{BBoL@wC?kD?_HHoABgBAuAQyAc@{@c@{AkAqAeAYYqFqEgDsCd@iKRuEvCRpFXnFZpD@dXArA??bA`I@|C?XEj@Qx@hCbFdPd@vAJLT\\LHR?\\El@Q`BWx@GnAAb@A\\?NGNSFW?c@@SG[qA}CuEmFiHuIsAgBo@}@cAmBkAqC{@kCcFgPoBmGqEkOcDaLHc@JYZCx@SzAElCA~IEbF@dF??bCl@@T@LFHLBL@`B?bBkB?yG@?uE?wH?aHCyM@{BBwF@_FCk_@AaaA?sNA{DEwI@yE@kC`@?rA@xDA`D?pC?@jB?n@DdEgLBgE?BeJbD@dEAeE@kJCqKBy@??m@AeP?wC@iU?mj@@eKm@R}Bt@F\\D|BBrAAL@M?]GyCAYG]wJ`DeSrGcGnBqBh@oBl@oBp@}WnIiSlGqH~BqExAqEvAF`@@LIha@FlDDhADt@`@zADVL`BFvDLly@D|N?tC@`BD`HBtIDxGJxP?xV?jS?pa@?bFDx@BFNNnHbGbCpBxJjIxLzJ|LbKbDhCtAjAzAlA`BpAxKdJXXpAdAzAjAz@b@xAb@tAPfB@nAC~GIjD?vC?nLAzBChC[~D_BJB`A]fAk@fA]`AUdAOnBKbA?dBDKs@Qy@WmAqA}C"
+           },
+           "summary" : "Interstate 35 Access Rd",
+           "warnings" : [],
+           "waypoint_order" : []
+        }
+     ],
+     "status" : "OK"
+  }
+   
