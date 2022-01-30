@@ -12,6 +12,14 @@ const allRouteNames = new Set();
 var route1 = [];
 var route2 = [];
 
+/*
+    An InfoWindow used to display a stop's address, number, assigned bus,
+    and next arrival time when user left clicks on it.
+    Because we only need one bus point to show at any given time,
+    we only need one InfoWindow to be shared across all stops.
+*/
+let stopInfoWindow;
+
 let map;
 let poly;
 
@@ -27,6 +35,21 @@ function initMap() {
    * - []color routes to differentiate
    * - []display information to user in a better way
    */
+  
+  const tamusa = new google.maps.LatLng(29.30428893171069, -98.52470397949219);
+  var mapOptions = {
+    // Centered on Tamusa
+    center: tamusa,
+    zoom: 13,
+  }
+  stopInfoWindow = new google.maps.InfoWindow({
+    content: "",
+    disableAutoPan: true,
+  });
+  map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  directionsService = new google.maps.DirectionsService();
+  directionsRenderer = new google.maps.DirectionsRenderer();
+  directionsRenderer.setMap(map);
   // get all the data from DB and then go from there
   fetch('/stops')         // changed for any server
     .then(function (resp) {
@@ -493,14 +516,30 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 // Adds a marker to the map.
 function addMarker(location) {
   console.log(JSON.stringify(location));
-  user_markers.push(new google.maps.Marker({
+
+  const newMarker = new google.maps.Marker({
     position: location,
     // Add the marker at the clicked location, and add the next-available label
     // from the array of alphabetical characters.
     label: labels[labelIndex++ % labels.length],
     title: JSON.stringify(location),
     map: map,
-  }));
+  })
+
+  // Temporary string just to see the layout until I can get stop data to work on my end. - Emmer
+  const testContentString = "<div style='margin-bottom:-10px'><strong><b>1234 Example Street</b></strong></div><br>" +
+    "Stop #: 5678<br>" +
+    "Bus #: 99<br>" +
+    "Next arrival at 11:59 PM";
+
+  newMarker.addListener("click", () => {
+
+    stopInfoWindow.setContent( testContentString );
+    stopInfoWindow.open( map, newMarker );
+
+  });
+
+  user_markers.push( newMarker );
 
 }
 
