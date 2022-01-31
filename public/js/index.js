@@ -1,9 +1,8 @@
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const stopNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 let stopIndex = 0;
 let labelIndex = 0;
 var markers = [];
-var user_markers = [];
+
 var path = [];
 var circles = [];
 // var allStops;
@@ -14,13 +13,14 @@ var route1 = [];
 var route2 = [];
 
 /*
-    An InfoWindow used to display a stop's address, number, assigned bus,
-    and next arrival time when user left clicks on it.
-    Because we only need one bus point to show at any given time,
-    we only need one InfoWindow to be shared across all stops.
+An InfoWindow used to display a stop's address, number, assigned bus,
+and next arrival time when user left clicks on it.
+Because we only need one bus point to show at any given time,
+we only need one InfoWindow to be shared across all stops.
 */
 let stopInfoWindow;
 
+var user_markers = [];
 let map;
 let poly;
 let directionsService;
@@ -39,7 +39,7 @@ function initMap() {
    * - []color routes to differentiate
    * - []display information to user in a better way
    */
-  
+
   const tamusa = new google.maps.LatLng(29.30428893171069, -98.52470397949219);
   var mapOptions = {
     // Centered on Tamusa
@@ -92,6 +92,7 @@ function initMap() {
 
       // Click handler for entire dropdown menu
       container.addEventListener('click', function (e) {
+        deleteMarkers();
         // But only call function for elements added dynamically
         if (e.target.classList.contains('dropdown-item')) {
           if (directionsRenderer != null) {
@@ -185,7 +186,8 @@ function initMap() {
       map.controls[google.maps.ControlPosition.TOP_CENTER].push(routeButton);
       routeButton.addEventListener("click", () => {
         // calls calcRoute for every stop returned from DB... *experimental*
-        calcRouteTest();
+        // calcRouteTest();
+
       })
 
 
@@ -378,6 +380,7 @@ function initMap() {
   function deleteMarkers() {
     hideMarkers();
     user_markers = [];
+    console.log(user_markers, user_markers.length);
     labelIndex = 0;
     poly.setPath([]);
     path = poly.getPath();
@@ -441,7 +444,7 @@ function calcRouteSelect(route) {
       stopover: false
     })
   }
-  
+
   var request = {
     origin: origin,
     destination: dest,
@@ -450,7 +453,7 @@ function calcRouteSelect(route) {
     travelMode: google.maps.DirectionsTravelMode.DRIVING,
     unitSystem: google.maps.UnitSystem.IMPERIAL
   };
-  
+
   console.log(request);
   directionsService.route(request, function (response, status) {
     if (status == 'OK') {
@@ -472,6 +475,7 @@ function calcRouteSelect(route) {
  * @param {String} route the route's name
  */
 function calcRouteTest(route) {
+
   // call fuction to add Markers to each stop
   calcMarkers(route);
 
@@ -479,7 +483,9 @@ function calcRouteTest(route) {
   var testLen = DBresult[0][route].length;
   var trip = DBresult[0][route];
   var div = 9;
-  path = []
+  path = []                                 // new path array
+  // user_markers = [];                        // new markers array
+
   bounds = new google.maps.LatLngBounds();
   // console.log(trip);  
 
@@ -494,7 +500,6 @@ function calcRouteTest(route) {
       map.fitBounds(bounds);
       return;
     }
-  
     var waypoints = [];
     for (var i = cur; i < div; i++) {
       // console.log(DBresult[0][route][i])
@@ -504,9 +509,10 @@ function calcRouteTest(route) {
       })
       bounds.extend(new google.maps.LatLng(trip[i].Lat, trip[i].Lng));
     }
-  
+
     directionsService.route({
-      origin: new google.maps.LatLng(trip[cur-1].Lat, trip[cur-1].Lng),
+      origin: new google.maps.LatLng(trip[cur - 1].Lat, trip[cur - 1].Lng),
+
       destination: new google.maps.LatLng(trip[div].Lat, trip[div].Lng),
       waypoints: waypoints,
       travelMode: google.maps.DirectionsTravelMode.DRIVING
@@ -516,26 +522,27 @@ function calcRouteTest(route) {
         if (status == google.maps.DirectionsStatus.OK) {
           for (var i = 0, len = result.routes[0].overview_path.length; i < len; i++) {
             // console.log(JSON.stringify(result.routes[0].overview_path[i]));
-  
+
             path.push(result.routes[0].overview_path[i]);
           }
         } else {
           path.push(new google.maps.LatLng(trip[cur].Lat, trip[cur].Lng));
         }
-  
+
         // make sure every stop is included
-        if( div + 1 == testLen - 1){
+        if (div + 1 == testLen - 1) {
           cur = testLen - 2;
           div = testLen - 1;
           console.log("Current start/stop index: ", cur, div);
-        } else if ((div + 9 >= testLen - 1) && (div + 1 <= testLen -2) ) {
-          cur = div +1;
-          div = testLen -1;
-          console.log("Current start/stop index: ", cur, div );
+        } else if ((div + 9 >= testLen - 1) && (div + 1 <= testLen - 2)) {
+          cur = div + 1;
+          div = testLen - 1;
+          console.log("Current start/stop index: ", cur, div);
         } else {
           cur = div + 1;
           div = cur + 8;
-          console.log("Current start/stop index: ", cur, div );
+          console.log("Current start/stop index: ", cur, div);
+
         }
         build();
       });
@@ -547,6 +554,14 @@ function calcRouteTest(route) {
   
   poly.setMap(map);
   
+}
+
+  // console.log(trip[0].Lat, trip[0].Lng);
+  bounds.extend(new google.maps.LatLng(trip[0].Lat, trip[0].Lng));
+  build();
+
+  poly.setMap(map);
+
 }
 
 
@@ -565,15 +580,15 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
  * fuction to extract data for marker/infoWindow then call addMarker()
  * @param {String} route 
  */
-function calcMarkers(route){
+function calcMarkers(route) {
   DBresult[0][route].forEach(element => {
-    console.log(element);
+    // console.log(element);
     var location = new google.maps.LatLng(element.Lat, element.Lng);
     var title = element["Stop Name"];
     var stopNum = element["Stop Number"];
     var routeName = element.route;
     var seq = String(element["Order on Route"]);
-    console.log(location, title, stopNum, routeName, seq);
+    // console.log(location, title, stopNum, routeName, seq);
     addMarker(location, title, stopNum, routeName, seq);
   });
 }
@@ -593,7 +608,7 @@ function addMarker(location, title, stopNum, routeName, seq) {
     position: location,
     label: seq,
     title: JSON.stringify(location),
-    map: map,
+    map
   })
 
   // Temporary string just to see the layout until I can get stop data to work on my end. - Emmer
@@ -604,12 +619,12 @@ function addMarker(location, title, stopNum, routeName, seq) {
 
   newMarker.addListener("click", () => {
 
-    stopInfoWindow.setContent( testContentString );
-    stopInfoWindow.open( map, newMarker );
+    stopInfoWindow.setContent(testContentString);
+    stopInfoWindow.open(map, newMarker);
 
   });
 
-  user_markers.push( newMarker );
+  user_markers.push(newMarker);
 
 }
 
