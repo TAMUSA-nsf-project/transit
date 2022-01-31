@@ -472,6 +472,9 @@ function calcRouteSelect(route) {
  * @param {String} route the route's name
  */
 function calcRouteTest(route) {
+  // clear all previous markers
+  user_markers = [];
+
   // call fuction to add Markers to each stop
   calcMarkers(route);
 
