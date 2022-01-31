@@ -2,6 +2,7 @@ const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let stopIndex = 0;
 let labelIndex = 0;
 var markers = [];
+
 var path = [];
 var circles = [];
 // var allStops;
@@ -98,16 +99,6 @@ function initMap() {
             directionsRenderer.setMap(null);
             directionsRenderer = null;
           }
-
-          
-          // // clear all previous markers from map
-          // for (let i = 0; i < user_markers.length; i++) {
-          //   user_markers[i].setMap(null);
-          // }
-
-          // // clear all previous poly lines from map
-          // poly.setPath([]);
-          
           calcRouteSelect(e.target.innerHTML);
           calcRouteTest(e.target.innerHTML);
           console.log(e.target.innerHTML);
@@ -196,6 +187,7 @@ function initMap() {
       routeButton.addEventListener("click", () => {
         // calls calcRoute for every stop returned from DB... *experimental*
         // calcRouteTest();
+
       })
 
 
@@ -484,7 +476,6 @@ function calcRouteSelect(route) {
  */
 function calcRouteTest(route) {
 
-
   // call fuction to add Markers to each stop
   calcMarkers(route);
 
@@ -494,6 +485,7 @@ function calcRouteTest(route) {
   var div = 9;
   path = []                                 // new path array
   // user_markers = [];                        // new markers array
+
   bounds = new google.maps.LatLngBounds();
   // console.log(trip);  
 
@@ -508,7 +500,6 @@ function calcRouteTest(route) {
       map.fitBounds(bounds);
       return;
     }
-
     var waypoints = [];
     for (var i = cur; i < div; i++) {
       // console.log(DBresult[0][route][i])
@@ -521,6 +512,7 @@ function calcRouteTest(route) {
 
     directionsService.route({
       origin: new google.maps.LatLng(trip[cur - 1].Lat, trip[cur - 1].Lng),
+
       destination: new google.maps.LatLng(trip[div].Lat, trip[div].Lng),
       waypoints: waypoints,
       travelMode: google.maps.DirectionsTravelMode.DRIVING
@@ -550,10 +542,19 @@ function calcRouteTest(route) {
           cur = div + 1;
           div = cur + 8;
           console.log("Current start/stop index: ", cur, div);
+
         }
         build();
       });
   }
+  
+  // console.log(trip[0].Lat, trip[0].Lng);
+  bounds.extend(new google.maps.LatLng(trip[0].Lat, trip[0].Lng));
+  build();
+  
+  poly.setMap(map);
+  
+}
 
   // console.log(trip[0].Lat, trip[0].Lng);
   bounds.extend(new google.maps.LatLng(trip[0].Lat, trip[0].Lng));
