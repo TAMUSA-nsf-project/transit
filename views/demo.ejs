@@ -47,7 +47,7 @@
       <input id="delete-markers" type="button" value="Delete Markers" />
 
       <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=<%= api %>&callback=initMap&libraries=places&v=weekly"
+      <script src="https://maps.googleapis.com/maps/api/js?key=<%= api %>&callback=initMap&libraries=places,drawing,geometry&v=weekly"
         async></script>
       <!-- src="https://maps.googleapis.com/maps/api/js?key=<changed to Variable but still shows in GET request>&callback=initMap&v=weekly" -->
       <!-- MDB -->

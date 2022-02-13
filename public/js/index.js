@@ -1,10 +1,9 @@
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const stopNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 let stopIndex = 0;
 let labelIndex = 0;
 var markers = [];
-var user_markers = [];
-let path;
+
+var path = [];
 var circles = [];
 // var allStops;
 var DBresult;
@@ -14,17 +13,19 @@ var route1 = [];
 var route2 = [];
 
 /*
-    An InfoWindow used to display a stop's address, number, assigned bus,
-    and next arrival time when user left clicks on it.
-    Because we only need one bus point to show at any given time,
-    we only need one InfoWindow to be shared across all stops.
+An InfoWindow used to display a stop's address, number, assigned bus,
+and next arrival time when user left clicks on it.
+Because we only need one bus point to show at any given time,
+we only need one InfoWindow to be shared across all stops.
 */
 let stopInfoWindow;
 
+var user_markers = [];
 let map;
 let poly;
 let directionsService;
 let directionsRenderer;
+var bounds;
 
 function initMap() {
   /**
@@ -38,13 +39,14 @@ function initMap() {
    * - []color routes to differentiate
    * - []display information to user in a better way
    */
-  
+
   const tamusa = new google.maps.LatLng(29.30428893171069, -98.52470397949219);
   var mapOptions = {
     // Centered on Tamusa
     center: tamusa,
     zoom: 13,
   }
+
   map = new google.maps.Map(document.getElementById("map"), mapOptions);
   directionsService = new google.maps.DirectionsService();
   directionsRenderer = new google.maps.DirectionsRenderer();
@@ -90,9 +92,16 @@ function initMap() {
 
       // Click handler for entire dropdown menu
       container.addEventListener('click', function (e) {
+        deleteMarkers();
         // But only call function for elements added dynamically
         if (e.target.classList.contains('dropdown-item')) {
+          if (directionsRenderer != null) {
+            directionsRenderer.setMap(null);
+            directionsRenderer = null;
+          }
           calcRouteSelect(e.target.innerHTML);
+          calcRouteTest(e.target.innerHTML);
+          console.log(e.target.innerHTML);
         }
       });
 
@@ -108,16 +117,15 @@ function initMap() {
       // This event listener calls addMarker() when the map is clicked.
       google.maps.event.addListener(map, "rightclick", (event) => {
         console.log(event);
-        addMarker(event.latLng);
-        addLatLngToPoly(event.latLng, poly);   // fun to draw line on the map
-        addStop();
-
+        // addMarker(event.latLng);
+        // addLatLngToPoly(event.latLng, poly);   // fun to draw line on the map
+        // addStop();
       });
 
-      google.maps.event.addListener(map, "click", (event) => {
-        addCircle(event.latLng, infoWindow);
-        // console.log(event.latLng);    
-      });
+      // google.maps.event.addListener(map, "click", (event) => {
+      //   // addCircle(event.latLng, infoWindow);
+      //   // console.log(event.latLng);
+      // });
 
       // Add a specific "tamusa" marker at the center of the map.
       new google.maps.Marker({
@@ -128,6 +136,7 @@ function initMap() {
 
       // Create an info window to share between markers.
       const infoWindow = new google.maps.InfoWindow();
+      stopInfoWindow = new google.maps.InfoWindow();
 
       for (let route in allRoutes) {
         //sorts the stops along route based on data definition... Might be a better way to do this from original DB query
@@ -172,12 +181,13 @@ function initMap() {
 
       // temporary way of giving user ability to see bus route
       const routeButton = document.createElement("button");
-      routeButton.textContent = "see bus route";
+      routeButton.textContent = "Show Route";
       routeButton.classList.add("custom-map-control-button");
       map.controls[google.maps.ControlPosition.TOP_CENTER].push(routeButton);
       routeButton.addEventListener("click", () => {
         // calls calcRoute for every stop returned from DB... *experimental*
-        calcRouteAll();
+        // calcRouteTest();
+
       })
 
 
@@ -234,17 +244,17 @@ function initMap() {
       const originInputContainer = document.getElementById("origin-input-container");
       const destinationInput = document.getElementById("destination-input");
       const modeSelector = document.getElementById("mode-selector");
-      const originAutocomplete = new google.maps.places.Autocomplete(originInput);
+      // const originAutocomplete = new google.maps.places.Autocomplete(originInput);
 
       // Specify just the place data fields that you need.
-      originAutocomplete.setFields(["place_id"]);
+      // originAutocomplete.setFields(["place_id"]);
 
-      const destinationAutocomplete = new google.maps.places.Autocomplete(
-        destinationInput
-      );
+      // const destinationAutocomplete = new google.maps.places.Autocomplete(
+      //   destinationInput
+      // );
 
       // Specify just the place data fields that you need.
-      destinationAutocomplete.setFields(["place_id"]);
+      // destinationAutocomplete.setFields(["place_id"]);
       this.setupClickListener(
         "changemode-walking",
         google.maps.TravelMode.WALKING
@@ -257,8 +267,8 @@ function initMap() {
         "changemode-driving",
         google.maps.TravelMode.DRIVING
       );
-      this.setupPlaceChangedListener(originAutocomplete, "ORIG");
-      this.setupPlaceChangedListener(destinationAutocomplete, "DEST");
+      // this.setupPlaceChangedListener(originAutocomplete, "ORIG");
+      // this.setupPlaceChangedListener(destinationAutocomplete, "DEST");
       // this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
       this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInputContainer);
       this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(
@@ -317,7 +327,7 @@ function initMap() {
         }
       );
     }
-  };
+  }
   // add event listeners for the buttons
   document
     .getElementById("show-markers")
@@ -329,7 +339,9 @@ function initMap() {
     .getElementById("delete-markers")
     .addEventListener("click", deleteMarkers);
 
-  // Sets the map on all markers in the array.
+  /**
+   * Sets the map on all markers in the array.
+   */
   function setMapOnAll(map) {
     for (let i = 0; i < user_markers.length; i++) {
       user_markers[i].setMap(map);
@@ -346,27 +358,29 @@ function initMap() {
   }
 
 
-  function addStop() {
-    // fetch('/addstop');
-
-  }
-
-  // Removes the markers from the map, but keeps them in the array.
+  /** 
+   * Removes the markers from the map, but keeps them in the array.
+   */
   function hideMarkers() {
     setMapOnAll(null);
     poly.setMap(null);
   }
 
-  // Shows any markers currently in the array.
+  /** 
+   * Shows any markers currently in the array.
+   */
   function showMarkers() {
     setMapOnAll(map);
     poly.setMap(map);
   }
 
-  // Deletes all markers in the array by removing references to them.
+  /**
+   * Deletes all markers in the array by removing references to them.
+   */
   function deleteMarkers() {
     hideMarkers();
     user_markers = [];
+    console.log(user_markers, user_markers.length);
     labelIndex = 0;
     poly.setPath([]);
     path = poly.getPath();
@@ -375,6 +389,10 @@ function initMap() {
   }
 }
 
+/**
+ * function to draw a circle on the map
+ * @param {*} center google.maps.LatLng() object
+ */
 function addCircle(center) {
   console.log(JSON.stringify(center));
   circle = new google.maps.Circle({
@@ -403,39 +421,43 @@ function addCircle(center) {
   }
 }
 
+/**
+ * Function calculates and draws route for routes selected from dropdown menu
+ *  - Need to figure better way to draw routes (too many waypoints)
+ *  - Researching breaking the route up (how to draw if multiple route 'chunks')
+ *  - Researching using the polyline from directionsService response
+ *  @param {String} route the route's name
+ */
 function calcRouteSelect(route) {
-  /**
-   * Function calculates and draws route for routes selected from dropdown menu
-   *  - Need to figure better way to draw routes (too many waypoints)
-   *  - Researching breaking the route up (how to draw if multiple route 'chunks')
-   *  - Researching using the polyline from directionsService response
-   */
   console.log(route);
+  directionsRenderer = new google.maps.DirectionsRenderer();
+  directionsRenderer.setMap(map);
   var len = DBresult[0][route].length - 1;
   var origin = new google.maps.LatLng(DBresult[0][route][0].Lat, DBresult[0][route][0].Lng);
   var dest = new google.maps.LatLng(DBresult[0][route][len].Lat, DBresult[0][route][len].Lng);
 
   var waypoints = [];
   for (var i = 1; i < len; i++) {
+    console.log(DBresult[0][route][i])
     waypoints.push({
       location: new google.maps.LatLng(DBresult[0][route][i].Lat, DBresult[0][route][i].Lng),
       stopover: false
     })
   }
 
-  var selectedMode = "DRIVING"
   var request = {
     origin: origin,
     destination: dest,
-    travelMode: google.maps.TravelMode[selectedMode],
     waypoints: waypoints,
     provideRouteAlternatives: false,
-    travelMode: 'DRIVING',
+    travelMode: google.maps.DirectionsTravelMode.DRIVING,
     unitSystem: google.maps.UnitSystem.IMPERIAL
   };
+
+  console.log(request);
   directionsService.route(request, function (response, status) {
     if (status == 'OK') {
-      console.log("Polyline Overview: ", response.routes[0].overview_polyline);
+      console.log("Polyline Overview: ", response.routes[0]);
       console.log(status);
 
       directionsRenderer.setDirections(response);
@@ -446,82 +468,103 @@ function calcRouteSelect(route) {
   });
 }
 
-// function calcRouteAll() {
-//   /**
-//    * Function calculates and draws route for every stop that was returned from the DB query 
-//    */
-//   var origin = new google.maps.LatLng(allStops[0].lat, allStops[0].lng);
-//   var dest = new google.maps.LatLng(allStops[0].lat, allStops[0].lng);
+/**
+ * Turned this into a test fuction for drawing more hardcoded routes.  The map now attempt to draw the route with this fuction
+ * and with 'calcRouteSelect(route)'.  This function works and the other function works sometimes.  Both will be drawn in the
+ * case of the other fuction's success.  
+ * @param {String} route the route's name
+ */
+function calcRouteTest(route) {
 
-//   var waypoints = [];
-//   for (var i = 1; i < allStops.length; i++) {
-//     waypoints.push({
-//       location: new google.maps.LatLng(allStops[i].lat, allStops[i].lng),
-//       stopover: false
-//     })
+  // call fuction to add Markers to each stop
+  calcMarkers(route);
 
-//   }
+  var cur = 1;
+  var testLen = DBresult[0][route].length;
+  var trip = DBresult[0][route];
+  var div = 9;
+  path = []                                 // new path array
+  // user_markers = [];                        // new markers array
 
-//   var selectedMode = "Driving"
-//   var request = {
-//     origin: origin,
-//     destination: dest,
-//     travelMode: google.maps.TravelMode[selectedMode],
-//     waypoints: waypoints,
-//     provideRouteAlternatives: false,
-//     travelMode: 'DRIVING',
-//     unitSystem: google.maps.UnitSystem.IMPERIAL
-//   };
-//   directionsService.route(request, function (response, status) {
-//     if (status == 'OK') {
-//       console.log(response);
-//       console.log(status);
+  bounds = new google.maps.LatLngBounds();
+  // console.log(trip);  
 
-//       directionsRenderer.setDirections(response);
-//     }
-//   });
-// }
-
-function calcRoute(route) {
   /**
-   * Function calculates and draws route based on specific route which is local to data definition of stop
+   * Recursive function to build poly line based on incremental directionsSevices API calls
+   * @returns 
    */
-  // for(let route in routes){
-  console.log("route = ", route);
-
-  var origin = new google.maps.LatLng(allRoutes[route][0].lat, allRoutes[route][0].lng);
-  var dest = new google.maps.LatLng(allRoutes[route][0].lat, allRoutes[route][0].lng);
-
-  var waypoints = [];
-  for (var i = 1; i < allRoutes[route].length; i++) {
-    waypoints.push({
-      location: new google.maps.LatLng(allRoutes[route][i].lat, allRoutes[route][i].lng),
-      stopover: false
-    })
-
-  }
-
-  var selectedMode = "Driving"
-  var request = {
-    origin: origin,
-    destination: dest,
-    travelMode: google.maps.TravelMode[selectedMode],
-    waypoints: waypoints,
-    provideRouteAlternatives: false,
-    travelMode: 'DRIVING',
-    unitSystem: google.maps.UnitSystem.IMPERIAL
-  };
-  directionsService.route(request, function (response, status) {
-    if (status == 'OK') {
-      console.log(response);
-      console.log(status);
-
-      directionsRenderer.setDirections(response);
+  function build() {
+    if (!trip[cur] || !trip[div]) {
+      // build map
+      poly.setPath(path);
+      map.fitBounds(bounds);
+      return;
     }
-  });
+    var waypoints = [];
+    for (var i = cur; i < div; i++) {
+      // console.log(DBresult[0][route][i])
+      waypoints.push({
+        location: new google.maps.LatLng(trip[i].Lat, trip[i].Lng),
+        stopover: false
+      })
+      bounds.extend(new google.maps.LatLng(trip[i].Lat, trip[i].Lng));
+    }
 
-  // }
+    directionsService.route({
+      origin: new google.maps.LatLng(trip[cur - 1].Lat, trip[cur - 1].Lng),
+
+      destination: new google.maps.LatLng(trip[div].Lat, trip[div].Lng),
+      waypoints: waypoints,
+      travelMode: google.maps.DirectionsTravelMode.DRIVING
+    },
+      function (result, status) {
+        console.log(result);
+        if (status == google.maps.DirectionsStatus.OK) {
+          for (var i = 0, len = result.routes[0].overview_path.length; i < len; i++) {
+            // console.log(JSON.stringify(result.routes[0].overview_path[i]));
+
+            path.push(result.routes[0].overview_path[i]);
+          }
+        } else {
+          path.push(new google.maps.LatLng(trip[cur].Lat, trip[cur].Lng));
+        }
+
+        // make sure every stop is included
+        if (div + 1 == testLen - 1) {
+          cur = testLen - 2;
+          div = testLen - 1;
+          console.log("Current start/stop index: ", cur, div);
+        } else if ((div + 9 >= testLen - 1) && (div + 1 <= testLen - 2)) {
+          cur = div + 1;
+          div = testLen - 1;
+          console.log("Current start/stop index: ", cur, div);
+        } else {
+          cur = div + 1;
+          div = cur + 8;
+          console.log("Current start/stop index: ", cur, div);
+
+        }
+        build();
+      });
+  }
+  
+  // console.log(trip[0].Lat, trip[0].Lng);
+  bounds.extend(new google.maps.LatLng(trip[0].Lat, trip[0].Lng));
+  build();
+  
+  poly.setMap(map);
+  
 }
+
+  // console.log(trip[0].Lat, trip[0].Lng);
+  bounds.extend(new google.maps.LatLng(trip[0].Lat, trip[0].Lng));
+  build();
+
+  poly.setMap(map);
+
+}
+
+
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
@@ -533,49 +576,61 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
-// Adds a marker to the map.
-function addMarker(location) {
+/**
+ * fuction to extract data for marker/infoWindow then call addMarker()
+ * @param {String} route 
+ */
+function calcMarkers(route) {
+  DBresult[0][route].forEach(element => {
+    // console.log(element);
+    var location = new google.maps.LatLng(element.Lat, element.Lng);
+    var title = element["Stop Name"];
+    var stopNum = element["Stop Number"];
+    var routeName = element.route;
+    var seq = String(element["Order on Route"]);
+    // console.log(location, title, stopNum, routeName, seq);
+    addMarker(location, title, stopNum, routeName, seq);
+  });
+}
+
+/**
+ * function to create a clickable marker (and resulting infoWindow) for each stop along selected route
+ * @param {Object} location 
+ * @param {String} title 
+ * @param {Number} stopNum 
+ * @param {String} routeName 
+ * @param {String} seq 
+ */
+function addMarker(location, title, stopNum, routeName, seq) {
   console.log(JSON.stringify(location));
 
   const newMarker = new google.maps.Marker({
     position: location,
-    // Add the marker at the clicked location, and add the next-available label
-    // from the array of alphabetical characters.
-    label: labels[labelIndex++ % labels.length],
+    label: seq,
     title: JSON.stringify(location),
-    map: map,
+    map
   })
 
   // Temporary string just to see the layout until I can get stop data to work on my end. - Emmer
-  const testContentString = "<div style='margin-bottom:-10px'><strong><b>1234 Example Street</b></strong></div><br>" +
-    "Stop #: 5678<br>" +
-    "Bus #: 99<br>" +
+  const testContentString = `<div style='margin-bottom:-10px'><strong><b>${title}</b></strong></div><br>` +
+    `Stop #: ${stopNum}<br>` +
+    `Route: ${routeName}<br>` +
     "Next arrival at 11:59 PM";
 
   newMarker.addListener("click", () => {
 
-    stopInfoWindow.setContent( testContentString );
-    stopInfoWindow.open( map, newMarker );
+    stopInfoWindow.setContent(testContentString);
+    stopInfoWindow.open(map, newMarker);
 
   });
 
-  user_markers.push( newMarker );
+  user_markers.push(newMarker);
 
 }
 
 // not really using at the moment, but it is fun
 function addLatLngToPoly(latLng, poly) {
   path = poly.getPath();
-
-  //.............TESTING...................
-  //   let testDocument = {
-  //     "title": "",
-  //     "latlng": latLng,  
-  //     "route": { "r2": stopNum[stopIndex]}
-  // }
-  //   stopIndex++;
-  //   put('http://localhost:3000/test', testDocument)
-  //..............End TEST..................
 
   // Because path is an MVCArray, we can simply append a new coordinate
   // and it will automatically appear
