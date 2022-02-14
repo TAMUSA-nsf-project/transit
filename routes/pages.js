@@ -59,13 +59,6 @@ router.post('/contact', (req, res) => {
         text: 'Name: ' + user + '\nEmail: ' + email + '\n\nMessage: \n\n' + message
     };
 
-    // var mailOptions = {
-    //     from: 'codingstatus@gmail.com',
-    //     to: receiver,
-    //     subject: subject,
-    //     text: message
-    // };
-
     transporter.sendMail(mailMessage, function (error, info) {
         if (error) {
             console.log(error);
@@ -133,23 +126,6 @@ router.get('/stops', (req, res) => {
 //         })
 //         .catch(err => console.log(err));
 // });
-
-router.get('/addstop', (req, res) => {
-    // get JSON with all stops
-    console.log(req.body.stopNum);
-
-    Routec.collection.insertOne({
-        "title": "test",
-        "lat": 123,
-        "lng": 456,
-        "routes": {
-            "r1": 6,
-            "r2": 7
-        }
-    })
-        .then(res => console.log(res))
-        .catch(err => console.log(err));
-});
 
 router.get('/map', (req, res) => {
 
