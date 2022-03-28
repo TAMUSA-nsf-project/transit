@@ -25,15 +25,6 @@ const transporter = Mailer.createTransport({
     }
 });
 
-/*
-// This is a test for the 'mapbox/polyline' package using the actual response from a DirectionsAPI call 
-// (response.routes[0].overview_polyline)
-
-const polyline = require('@mapbox/polyline');
-let array = polyline.decode("}uzqDp_jxQ?aI?eKS?@lE?vF@bO?jU@tIB~AFrAHnAd@hDRdAvAlGdAlEL|@Bz@ErAWtAa@fAe@v@m@v@Y^oA_Ba@e@cDeEkFwGgDkEEQGMiBwB_As@wAu@aBi@_BSy@EuB?eC?UJwQ?aO@a@@MKEC_BAi@?cA?GGMEIEMMGSIYAeB?iOGwd@?{[JuC@g@IUSOUCYDeDdA_@JCjC?vGArJ@nK?dM@fDgD?kJ@aJ??jL@jF?zC?lJ`G@~G?@h@@f@@rCIx@c@hBkAvCkAlCOh@Kx@Aj@Bj@Jx@Hh@WHcANiBByC@@bA@pI@zJ?~CA|KvBBj@JD??W?aH?eHIWU]][KDg@F{ED}U?o@??k@?aDAaP?iC?{L?gCAmC{ATqDh@eJpA_Df@yCBsDGkKB{D@aF@wTDwSAsMHiAB_AKuA@}BqHVMAG@MRUbDkBH?LBFFDRCNKNyBlA");
-console.log(array);
-*/
-
 router.get('/', (req, res) => {
     res.render('home');
 });
@@ -107,29 +98,21 @@ router.get('/stops', (req, res) => {
     
 });
 
-// router.get('/stops', (req, res) => {
-//     // get JSON with all stops
-//     Stop.find().sort({ _id: 1 })  // added sort() function to ensure stops in order
-//         .then(stops => {
-//             // get JSON with all routes
-//             Route.find()
-//                 .then(routes => {
-//                     // send the JSONs to map
-//                     // res.send({ data: [stops, routes]});
-//                     res.send({ data: { stops: stops, routes: routes } });
-//                     // console.log(stops);
-//                     console.log(routes);
-//                 })
-//                 .catch(err => console.log(err));
-//             // res.send({ data: stops });
-//             // console.log(stops);
-//         })
-//         .catch(err => console.log(err));
-// });
-
 router.get('/map', (req, res) => {
 
+    res.render('user');
+
+});
+
+router.get('/user', (req, res) => {
+
     res.render('demo', { api: API_KEY });
+
+});
+
+router.get('/bus', (req, res) => {
+
+    res.render('bus');
 
 });
 
@@ -139,4 +122,3 @@ router.post('/test'), (req, res) => {
 }
 
 module.exports = router;
-

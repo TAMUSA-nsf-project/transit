@@ -1,7 +1,7 @@
 <%- include('layout/header.ejs') %>
   <!-- Custom script tags here... -->
+  <script type="module" src='/socket.io/socket.io.js'></script>
   <script src="js/index.js"></script>
-  <!-- <script src="js/bus.js"></script> -->
   </head>
 
   <body>
@@ -13,22 +13,17 @@
         <!-- <input id="destination-input" class="controls" type="text" placeholder="Select a route" /> -->
 
         <div id="origin-input-container" class="dropdown controls" overflow="auto" height="10px">
-          <button
-            class="btn btn-primary dropdown-toggle"
-            type="button"
-            id="origin-input-button"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <button class="btn btn-primary dropdown-toggle" type="button" id="origin-input-button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
             Select an origin location
           </button>
           <ul id="origin-input-dropdown" class="dropdown-menu" aria-labelledby="origin-input-button" size="5">
             <!-- List items will be added dynamically via index.js -->
           </ul>
         </div>
-        
+
         <!-- Set to "display: none" to not interfere with index.js while preserving this code -->
-        <div id="mode-selector" class="controls" style="display: none;">  
+        <div id="mode-selector" class="controls" style="display: none;">
           <input type="radio" name="type" id="changemode-walking" checked="checked" />
           <label for="changemode-walking">Walking</label>
 
@@ -38,7 +33,7 @@
           <input type="radio" name="type" id="changemode-driving" />
           <label for="changemode-driving">Driving</label>
         </div>
-        
+
       </div>
       <div id="map"></div>
 
@@ -47,7 +42,8 @@
       <input id="delete-markers" type="button" value="Delete Markers" />
 
       <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=<%= api %>&callback=initMap&libraries=places,drawing,geometry&v=weekly"
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=<%= api %>&callback=initMap&libraries=places,drawing,geometry&v=weekly"
         async></script>
       <!-- src="https://maps.googleapis.com/maps/api/js?key=<changed to Variable but still shows in GET request>&callback=initMap&v=weekly" -->
       <!-- MDB -->

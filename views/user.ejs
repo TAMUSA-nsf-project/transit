@@ -1,0 +1,25 @@
+<%- include('layout/header.ejs') %>
+<!-- Custom script tags here... -->
+</head>
+
+<body>
+<%- include('layout/nav.ejs') %>
+
+<!-- Page goes here -->
+<div id="intro" class="bg-image shadow-2-strong">
+    <!-- <img src="img/dsBuffer.jpg" alt="shutterstock_627370652.jpg"> -->
+    <!-- <img src="img/39584_white-bus-on-road-near-in-high-rise-building.jpeg" class="img-fluid" alt="shutterstock_627370652.jpg"> -->
+    <img src="img/shutterstock_627370652.jpg" class="img-fluid" alt="shutterstock_627370652.jpg">
+    <!-- <img src="img/shutterstock_145981052.jpg" class="img-fluid" alt="shutterstock_627370652.jpg"> -->
+
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
+
+        <div class="container text-align-center">
+            <h3>Are you a bus?</h3>
+            <a href="/bus"><button>Yes</button></a>
+            <a href="/user"><button>No</button></a>
+        </div>
+    </div>
+</div>
+
+<%- include('layout/footer.ejs') %>
