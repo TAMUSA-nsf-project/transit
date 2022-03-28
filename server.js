@@ -4,21 +4,22 @@ const bodyParser = require('body-parser');
 const pagesRouter = require('./routes/pages');
 const mongoose = require('mongoose');
 
+var helmet = require('helmet');  //to fix header and server leak info
 /* 
 ** This may be required later if needing to create endpoint to handle client requests **
-
 */
 require('dotenv').config();
 // const API_KEY = process.env.API_KEY;
 const DB_KEY = process.env.DB_KEY;
-
-
 const app = express();
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(helmet.frameguard())
+app.use(helmet.noSniff());
+app.disable('x-powered-by')  //hide the server name, this fix 'server leaks information via http' alert
 app.use('/', pagesRouter);
 
 // Local MongoDB connection
