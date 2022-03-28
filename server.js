@@ -39,8 +39,8 @@ app.use('/', pagesRouter);
 // mongoose.connect('mongodb://localhost:27017/mapData', { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.connect(`mongodb+srv://ahans03:${DB_KEY}@cluster0.aln1v.mongodb.net/mapData?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
-        // app.listen(8080, () => {  // changed for running on gcp...
-        app.listen(3000, () => {  // changed for running on localhost
+        app.listen(8080, () => {  // changed for running on gcp...
+        // app.listen(3000, () => {  // changed for running on localhost
             console.log('MongoDB is connected and Express server is running...');
         });
     });
