@@ -14,7 +14,7 @@ var route2 = [];
 
 /*
 An InfoWindow used to display a stop's address, number, assigned bus,
-and next arrival time when user left clicks on it.
+and next arrival time when U S E R left clicks on it.
 Because we only need one bus point to show at any given time,
 we only need one InfoWindow to be shared across all stops.
 */
@@ -31,13 +31,13 @@ function initMap() {
   /**
    // get the programmed stops
    * 
-   * //TODO:
-   * - [*]reconfigure functionality to load only stops in proximity to user
+   * //----:
+   * - [*]reconfigure functionality to load only stops in proximity to U S E R
    * - [x]give each stop 'clickable' function
    * - [x]define more than one route
    * - []make stop onclick() display all routes associated with stop
    * - []color routes to differentiate
-   * - []display information to user in a better way
+   * - []display information to U S E R in a better way
    */
 
   const tamusa = new google.maps.LatLng(29.30428893171069, -98.52470397949219);
@@ -51,7 +51,7 @@ function initMap() {
   directionsService = new google.maps.DirectionsService();
   directionsRenderer = new google.maps.DirectionsRenderer();
   directionsRenderer.setMap(map);
-  // get all the data from DB and then go from there
+  // get all the data first and then go fm there
   fetch('/stops')         // changed for any server
     .then(function (resp) {
       // console.log(resp);
@@ -70,13 +70,6 @@ function initMap() {
       for (var key in DBresult[0]) {
         console.log(key);
         dropdownOptions += "<li><button id='" + key + "' class='dropdown-item' type='button'>" + key + "</button></li>";
-        // var routeName = Object.getOwnPropertyNames(DBresult[x]);
-        // var routeName = keys;
-        // var stops = Object.values(DBresult[x]);
-        // var myObj = [];
-        // routeName.forEach(element => {
-        //   allRouteNames.add(element); // adds unique route name to set   
-        // });
       }
 
       console.log(allRouteNames);
@@ -139,7 +132,7 @@ function initMap() {
       stopInfoWindow = new google.maps.InfoWindow();
 
       for (let route in allRoutes) {
-        //sorts the stops along route based on data definition... Might be a better way to do this from original DB query
+        //sorts the stops along route based on data definition...
         allRoutes[route].sort((a, b) => a.routes[route] - b.routes[route]);
 
         // Create the markers.
@@ -179,13 +172,13 @@ function initMap() {
       }
 
 
-      // temporary way of giving user ability to see bus route
+      // temporary way of giving U S E R ability to see bus route
       const routeButton = document.createElement("button");
       routeButton.textContent = "Show Route";
       routeButton.classList.add("custom-map-control-button");
       map.controls[google.maps.ControlPosition.TOP_CENTER].push(routeButton);
       routeButton.addEventListener("click", () => {
-        // calls calcRoute for every stop returned from DB... *experimental*
+        // calls calcRoute for every stop returned
         // calcRouteTest();
 
       })
@@ -292,7 +285,7 @@ function initMap() {
         const place = autocomplete.getPlace();
 
         if (!place.place_id) {
-          window.alert("Please select an option from the dropdown list.");
+          window.alert("Please pick an option out of the dropdown list.");
           return;
         }
 
@@ -359,7 +352,7 @@ function initMap() {
 
 
   /** 
-   * Removes the markers from the map, but keeps them in the array.
+   * Removes the markers in the map, but keeps them in the array.
    */
   function hideMarkers() {
     setMapOnAll(null);
@@ -422,10 +415,10 @@ function addCircle(center) {
 }
 
 /**
- * Function calculates and draws route for routes selected from dropdown menu
+ * Function calculates and draws route for routes selected fm dropdown menu
  *  - Need to figure better way to draw routes (too many waypoints)
  *  - Researching breaking the route up (how to draw if multiple route 'chunks')
- *  - Researching using the polyline from directionsService response
+ *  - Researching using the polyline fm directionsService response
  *  @param {String} route the route's name
  */
 function calcRouteSelect(route) {
@@ -502,7 +495,7 @@ function calcRouteTest(route) {
     }
     var waypoints = [];
     for (var i = cur; i < div; i++) {
-      // console.log(DBresult[0][route][i])
+  
       waypoints.push({
         location: new google.maps.LatLng(trip[i].Lat, trip[i].Lng),
         stopover: false
@@ -554,14 +547,6 @@ function calcRouteTest(route) {
   
   poly.setMap(map);
   
-}
-
-  // console.log(trip[0].Lat, trip[0].Lng);
-  bounds.extend(new google.maps.LatLng(trip[0].Lat, trip[0].Lng));
-  build();
-
-  poly.setMap(map);
-
 }
 
 
