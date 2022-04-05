@@ -6,6 +6,8 @@ const Route = require('../models/route');
 const testRoute = require('../models/testRoute');
 const Mailer = require('nodemailer');
 
+
+
 // These next two lines needed to get API_KEY from file
 require('dotenv').config();
 const API_KEY = process.env.API_KEY;
@@ -28,6 +30,9 @@ const transporter = Mailer.createTransport({
 router.get('/', (req, res) => {
     res.render('home');
 });
+// router.delete('/', (req, res) => {
+//     res.end(405, "Method not allowed");
+// });
 
 router.get('/team', (req, res) => {
     res.render('team');
@@ -37,7 +42,7 @@ router.get('/contact', (req, res) => {
     res.render('contact');
 });
 
-router.post('/contact', (req, res) => {
+router.post('/contact',  (req, res) => {
     var user = req.body.name;
     var email = req.body.emailAddress;
     var message = req.body.emailBody;
@@ -107,6 +112,7 @@ router.get('/map', (req, res) => {
 router.get('/user', (req, res) => {
 
     res.render('demo', { api: API_KEY });
+
 
 });
 
