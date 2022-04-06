@@ -1,7 +1,7 @@
 // Schema Model //
-/* will need to refine data definition...
-*   all stop info is experimental at this point
-*   
+/**
+ * will need to refine data definition...
+ * blank model works since we aren't writing anything to the DB
 */
 const mongoose = require('mongoose');
 

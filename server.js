@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-const pagesRouter = require('./routes/pages');
+const pagesRouter = require('./router/pages');
 const mongoose = require('mongoose');
 
 var helmet = require('helmet');  //to fix header and server leak info
@@ -39,7 +39,7 @@ io.on("connection", (socket) => {
             long: null
         }
         busses.push(bus)
-        console.log(bus)
+        console.log("Socket ID: ", bus.socket.id)
     })
 
     socket.on('update', data => {
@@ -50,7 +50,7 @@ io.on("connection", (socket) => {
                 break
             }
         }
-        console.log(data)
+        // console.log(data)
     })
 
     socket.on('disconnect', () => {
@@ -70,8 +70,8 @@ setInterval(() => {
         }
     })
     io.emit('tick', busLocations)
-    console.log(busLocations)
-}, 2000)
+    // console.log(busLocations)
+}, 5000)
 
 });
 // MongoDB Atlas connection

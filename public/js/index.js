@@ -5,12 +5,8 @@ var markers = [];
 
 var path = [];
 var circles = [];
-// var allStops;
 var DBresult;
 var allRoutes = {};
-const allRouteNames = new Set();
-var route1 = [];
-var route2 = [];
 
 /*
 An InfoWindow used to display a stop's address, number, assigned bus,
@@ -51,6 +47,7 @@ function initMap() {
   directionsService = new google.maps.DirectionsService();
   directionsRenderer = new google.maps.DirectionsRenderer();
   directionsRenderer.setMap(map);
+
   // get all the data first and then go fm there
   fetch('/stops')         // changed for any server
     .then(function (resp) {
@@ -58,25 +55,15 @@ function initMap() {
       return resp.json();
     })
     .then(function (sent) {
-      // allStops = sent.data.stops;
-      // allStops = sent.data.routes;
       DBresult = sent.data;
-      console.log(DBresult);
-      // console.log(sent.data.stops);
-      // console.log(sent.data.routes);
+      // console.log(DBresult);
 
       var dropdownOptions = "";
 
       for (var key in DBresult[0]) {
+        // loop to dynamically populate dropdown button with route names
         console.log(key);
         dropdownOptions += "<li><button id='" + key + "' class='dropdown-item' type='button'>" + key + "</button></li>";
-      }
-
-      console.log(allRouteNames);
-
-      for (var route of allRouteNames.values()) {
-        // Populate origin dropdown list
-        // console.log(route);
       }
 
       document.getElementById("origin-input-dropdown").innerHTML = dropdownOptions;
@@ -100,19 +87,16 @@ function initMap() {
 
       new AutocompleteDirectionsHandler(map);
 
-      // needed for drawing line but not used
+      // needed for drawing line.  Used in
       poly = new google.maps.Polyline({
         strokeColor: "#000000",
         strokeOpacity: 1,
         strokeWeight: 3,
       });
 
-      // This event listener calls addMarker() when the map is clicked.
+      // This event listener logs right-clicks on the map.
       google.maps.event.addListener(map, "rightclick", (event) => {
         console.log(event);
-        // addMarker(event.latLng);
-        // addLatLngToPoly(event.latLng, poly);   // fun to draw line on the map
-        // addStop();
       });
 
       // google.maps.event.addListener(map, "click", (event) => {
@@ -217,6 +201,10 @@ function initMap() {
     })
 
   class AutocompleteDirectionsHandler {
+    /**
+     * inner class containing controls for directions input and methods for
+     * rendering directions
+     */
     map;
     originPlaceId;
     destinationPlaceId;
@@ -269,8 +257,13 @@ function initMap() {
       );
       this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(modeSelector);
     }
-    // Sets a listener on a radio button to change the filter type on Places
-    // Autocomplete.
+
+    /**
+     * Sets a listener on a radio button to change the filter type on Places Autocomplete.
+     *
+     * @param id
+     * @param mode
+     */
     setupClickListener(id, mode) {
       const radioButton = document.getElementById(id);
 
@@ -279,6 +272,12 @@ function initMap() {
         this.route();
       });
     }
+
+    /**
+     * Listener for w
+     * @param autocomplete
+     * @param mode
+     */
     setupPlaceChangedListener(autocomplete, mode) {
       autocomplete.bindTo("bounds", this.map);
       autocomplete.addListener("place_changed", () => {
@@ -298,6 +297,10 @@ function initMap() {
         this.route();
       });
     }
+
+    /**
+     * Function to organize input and make a call to the directionsRenderer
+     */
     route() {
       if (!this.originPlaceId || !this.destinationPlaceId) {
         return;
@@ -322,20 +325,33 @@ function initMap() {
     }
   }
 
-  const socket = io('/')
-  let busMarkers = []
+  const socket = io('/')    // creates a connection with socket.io server
+  let busMarkers = []       // variable to hold data from socket.io server
+
+  /**
+   * calls 'tick' function defined in socket.io server
+   * receives busses in callback
+   */
   socket.on('tick', busses => {
     busMarkers.forEach(busMarker => {
+      // nullify every current bus marker
       busMarker.setMap(null)
     })
     busMarkers = busses.map(bus => {
+      console.log(bus)
+
       let marker = new google.maps.Marker({
-        position: { lat: bus.lat, lng: bus.long }
+        position: {lat: bus.lat, lng: bus.long}
       })
-      marker.setMap(map)
+      if (bus.lat != null) {
+        marker.setMap(map)
+
+      }
       return marker
     })
   })
+
+
   // add event listeners for the buttons
   document
     .getElementById("show-markers")
@@ -415,7 +431,7 @@ function addCircle(center) {
     circles[0] = circle;
   }
 
-  // loop throug bus stops
+  // loop through bus stops
   for (var i = 0; i < this.markers.length; i++) {
     var marker = this.markers[i];
     var distance = google.maps.geometry.spherical.computeDistanceBetween(marker.getPosition(), center);
@@ -431,6 +447,7 @@ function addCircle(center) {
 
 /**
  * Function calculates and draws route for routes selected fm dropdown menu
+ * Attempts to draw route via a single API call (each stop a waypoint except 'origin' and 'dest')
  *  - Need to figure better way to draw routes (too many waypoints)
  *  - Researching breaking the route up (how to draw if multiple route 'chunks')
  *  - Researching using the polyline fm directionsService response
@@ -477,25 +494,14 @@ function calcRouteSelect(route) {
 }
 
 /**
- * Turned this into a test fuction for drawing more hardcoded routes.  The map now attempt to draw the route with this fuction
- * and with 'calcRouteSelect(route)'.  This function works and the other function works sometimes.  Both will be drawn in the
- * case of the other fuction's success.
+ * Test function for drawing more hardcoded routes.  
+ * constructs polyline from multiple API calls based on divisions of overall route containing no more than 8 waypoints
  * @param {String} route the route's name
  */
 function calcRouteTest(route) {
 
-  // call fuction to add Markers to each stop
+  // call function to add Markers to each stop
   calcMarkers(route);
-
-  var cur = 1;
-  var testLen = DBresult[0][route].length;
-  var trip = DBresult[0][route];
-  var div = 9;
-  path = []                                 // new path array
-  // user_markers = [];                        // new markers array
-
-  bounds = new google.maps.LatLngBounds();
-  // console.log(trip);
 
   var cur = 1;
   var testLen = DBresult[0][route].length;
@@ -507,7 +513,7 @@ function calcRouteTest(route) {
   // console.log(trip);
 
   /**
-   * Recursive function to build poly line based on incremental directionsSevices API calls
+   * Recursive function to build poly line based on incremental directionsSevices() API calls
    * @returns
    */
   function build() {
@@ -559,7 +565,6 @@ function calcRouteTest(route) {
           cur = div + 1;
           div = cur + 8;
           console.log("Current start/stop index: ", cur, div);
-
         }
         build();
       });
@@ -586,7 +591,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 }
 
 /**
- * fuction to extract data for marker/infoWindow then call addMarker()
+ * function to extract data for marker/infoWindow then call addMarker()
  * @param {String} route
  */
 function calcMarkers(route) {
@@ -637,7 +642,11 @@ function addMarker(location, title, stopNum, routeName, seq) {
 
 }
 
-// not really using at the moment, but it is fun
+/**
+ *
+ * @param latLng
+ * @param poly
+ */
 function addLatLngToPoly(latLng, poly) {
   path = poly.getPath();
 
@@ -653,4 +662,4 @@ function addLatLngToPoly(latLng, poly) {
     // console.log(encodeString);
     // console.log(path);
   }
-}
+};
