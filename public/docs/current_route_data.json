@@ -1,0 +1,4228 @@
+{
+    "_id": {
+        "$oid": "624da3ebeede906f47ee3a5b"
+    },
+    "Route 51 Madla Transit Center ‎→ Navarro Between Travis and Pecan": [{
+        "Stop Name": "Madla Transit Center",
+        "Stop Number": {
+            "$numberInt": "11397"
+        },
+        "Lat": {
+            "$numberDouble": "29.349776912318"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5318971879828"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "1"
+        }
+    }, {
+        "Stop Name": "I-35 Nb Access Rd. at Grosvenor",
+        "Stop Number": {
+            "$numberInt": "58226"
+        },
+        "Lat": {
+            "$numberDouble": "29.3542348423708"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5274684537936"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "2"
+        }
+    }, {
+        "Stop Name": "I35 Sb Acc. Rd. at 2nd Ent. SP Mall",
+        "Stop Number": {
+            "$numberInt": "58227"
+        },
+        "Lat": {
+            "$numberDouble": "29.3537914627669"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5291305180996"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "3"
+        }
+    }, {
+        "Stop Name": "Ih 35 S Access and Zarzamora",
+        "Stop Number": {
+            "$numberInt": "73429"
+        },
+        "Lat": {
+            "$numberDouble": "29.3503307073315"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5357369160666"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "4"
+        }
+    }, {
+        "Stop Name": "Ih 35 S Access and Yarrow Blvd",
+        "Stop Number": {
+            "$numberInt": "73439"
+        },
+        "Lat": {
+            "$numberDouble": "29.3482496322743"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5407047410025"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "5"
+        }
+    }, {
+        "Stop Name": "Navajo St and Ih35 S Access",
+        "Stop Number": {
+            "$numberInt": "74136"
+        },
+        "Lat": {
+            "$numberDouble": "29.3475197561212"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5443233387549"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "6"
+        }
+    }, {
+        "Stop Name": "Barlite and Cascade Pkwy",
+        "Stop Number": {
+            "$numberInt": "53986"
+        },
+        "Lat": {
+            "$numberDouble": "29.3499094943306"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5465151736345"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "7"
+        }
+    }, {
+        "Stop Name": "Barlite Opp. Bobcat Lane (Sioux)",
+        "Stop Number": {
+            "$numberInt": "53946"
+        },
+        "Lat": {
+            "$numberDouble": "29.3522314376437"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5465229719957"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "8"
+        }
+    }, {
+        "Stop Name": "Barlite / Ent. Dr. To SW Gen. Hosp.",
+        "Stop Number": {
+            "$numberInt": "53756"
+        },
+        "Lat": {
+            "$numberDouble": "29.3537717480228"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5465138496342"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "9"
+        }
+    }, {
+        "Stop Name": "Barlite Opposite Briggs",
+        "Stop Number": {
+            "$numberInt": "53456"
+        },
+        "Lat": {
+            "$numberDouble": "29.3551730079535"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5463517639187"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "10"
+        }
+    }, {
+        "Stop Name": "Barlite and S.W. Military Dr.",
+        "Stop Number": {
+            "$numberInt": "53156"
+        },
+        "Lat": {
+            "$numberDouble": "29.3567615242466"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5461664965473"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "11"
+        }
+    }, {
+        "Stop Name": "Kendalia and Somerset",
+        "Stop Number": {
+            "$numberInt": "43376"
+        },
+        "Lat": {
+            "$numberDouble": "29.3602579802635"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5463815685402"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "12"
+        }
+    }, {
+        "Stop Name": "Somerset and Mayfield",
+        "Stop Number": {
+            "$numberInt": "43816"
+        },
+        "Lat": {
+            "$numberDouble": "29.3618847244045"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5452060042935"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "13"
+        }
+    }, {
+        "Stop Name": "Somerset and Pyron",
+        "Stop Number": {
+            "$numberInt": "34726"
+        },
+        "Lat": {
+            "$numberDouble": "29.3630925372367"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5441627384837"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "14"
+        }
+    }, {
+        "Stop Name": "Somerset and Wagner",
+        "Stop Number": {
+            "$numberInt": "34456"
+        },
+        "Lat": {
+            "$numberDouble": "29.3647511188397"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5427227780552"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "15"
+        }
+    }, {
+        "Stop Name": "Somerset and Vickers",
+        "Stop Number": {
+            "$numberInt": "34196"
+        },
+        "Lat": {
+            "$numberDouble": "29.3666969191535"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5410349515233"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "16"
+        }
+    }, {
+        "Stop Name": "Somerset and W. Southcross",
+        "Stop Number": {
+            "$numberInt": "25736"
+        },
+        "Lat": {
+            "$numberDouble": "29.3679288290533"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5399592985279"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "17"
+        }
+    }, {
+        "Stop Name": "Somerset and Milvid",
+        "Stop Number": {
+            "$numberInt": "25376"
+        },
+        "Lat": {
+            "$numberDouble": "29.3697134431126"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5384063359199"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "18"
+        }
+    }, {
+        "Stop Name": "Somerset and Brunswick",
+        "Stop Number": {
+            "$numberInt": "16926"
+        },
+        "Lat": {
+            "$numberDouble": "29.3713577796672"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5369701005388"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "19"
+        }
+    }, {
+        "Stop Name": "Somerset and Stonewall",
+        "Stop Number": {
+            "$numberInt": "16676"
+        },
+        "Lat": {
+            "$numberDouble": "29.3733363118866"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5352480729775"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "20"
+        }
+    }, {
+        "Stop Name": "Zarzamora Between Elks and Flanders",
+        "Stop Number": {
+            "$numberInt": "20406"
+        },
+        "Lat": {
+            "$numberDouble": "29.374301021315"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5340198220466"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "21"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Keats",
+        "Stop Number": {
+            "$numberInt": "17136"
+        },
+        "Lat": {
+            "$numberDouble": "29.37595625998"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5330254010426"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "22"
+        }
+    }, {
+        "Stop Name": "Nogalitos Opposite Burgess",
+        "Stop Number": {
+            "$numberInt": "97746"
+        },
+        "Lat": {
+            "$numberDouble": "29.376999701838"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5320324421493"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "23"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Division",
+        "Stop Number": {
+            "$numberInt": "97496"
+        },
+        "Lat": {
+            "$numberDouble": "29.3796497757667"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5297297966426"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "24"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Surrey",
+        "Stop Number": {
+            "$numberInt": "88946"
+        },
+        "Lat": {
+            "$numberDouble": "29.3812631486578"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5283605059802"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "25"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Gladstone",
+        "Stop Number": {
+            "$numberInt": "88866"
+        },
+        "Lat": {
+            "$numberDouble": "29.3822039599006"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5275446399836"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "26"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Sims",
+        "Stop Number": {
+            "$numberInt": "88596"
+        },
+        "Lat": {
+            "$numberDouble": "29.3831041753158"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5267623377045"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "27"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Hoover",
+        "Stop Number": {
+            "$numberInt": "89236"
+        },
+        "Lat": {
+            "$numberDouble": "29.3845338059049"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5255209339699"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "28"
+        }
+    }, {
+        "Stop Name": "Nogalitos In Front Of 2920",
+        "Stop Number": {
+            "$numberInt": "79886"
+        },
+        "Lat": {
+            "$numberDouble": "29.3866331547926"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5236992164873"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "29"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Theo",
+        "Stop Number": {
+            "$numberInt": "71516"
+        },
+        "Lat": {
+            "$numberDouble": "29.3877814815932"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5226978739596"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "30"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Conception",
+        "Stop Number": {
+            "$numberInt": "71256"
+        },
+        "Lat": {
+            "$numberDouble": "29.3895594100554"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5211611864902"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "31"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Recio",
+        "Stop Number": {
+            "$numberInt": "61896"
+        },
+        "Lat": {
+            "$numberDouble": "29.3911570748425"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5197752721105"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "32"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Saldana",
+        "Stop Number": {
+            "$numberInt": "62626"
+        },
+        "Lat": {
+            "$numberDouble": "29.3920245466648"
+        },
+        "Lng": {
+            "$numberDouble": "-98.519022983564"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "33"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Ripford",
+        "Stop Number": {
+            "$numberInt": "62446"
+        },
+        "Lat": {
+            "$numberDouble": "29.3932638569372"
+        },
+        "Lng": {
+            "$numberDouble": "-98.517937427265"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "34"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Big Foot",
+        "Stop Number": {
+            "$numberInt": "62196"
+        },
+        "Lat": {
+            "$numberDouble": "29.3950727401694"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5163685751807"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "35"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Maury",
+        "Stop Number": {
+            "$numberInt": "53646"
+        },
+        "Lat": {
+            "$numberDouble": "29.3975814049096"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5141474669542"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "36"
+        }
+    }, {
+        "Stop Name": "Nogalitos In Front Of 1400",
+        "Stop Number": {
+            "$numberInt": "53286"
+        },
+        "Lat": {
+            "$numberDouble": "29.3997328021699"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5122712687436"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "37"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Edwards",
+        "Stop Number": {
+            "$numberInt": "44746"
+        },
+        "Lat": {
+            "$numberDouble": "29.401383434133"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5108918079855"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "38"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Glass",
+        "Stop Number": {
+            "$numberInt": "44576"
+        },
+        "Lat": {
+            "$numberDouble": "29.4027716594452"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5096839735704"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "39"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Furnish",
+        "Stop Number": {
+            "$numberInt": "35926"
+        },
+        "Lat": {
+            "$numberDouble": "29.404870821719"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5078929303382"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "40"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Stribling (Zavalla)",
+        "Stop Number": {
+            "$numberInt": "35866"
+        },
+        "Lat": {
+            "$numberDouble": "29.4057977750521"
+        },
+        "Lng": {
+            "$numberDouble": "-98.506400214325"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "41"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Fest",
+        "Stop Number": {
+            "$numberInt": "36436"
+        },
+        "Lat": {
+            "$numberDouble": "29.4079955645633"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5030244311983"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "42"
+        }
+    }, {
+        "Stop Name": "Nogalitos and S. Flores",
+        "Stop Number": {
+            "$numberInt": "36296"
+        },
+        "Lat": {
+            "$numberDouble": "29.4089362406936"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5015357488189"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "43"
+        }
+    }, {
+        "Stop Name": "S. Flores and Sprr",
+        "Stop Number": {
+            "$numberInt": "27726"
+        },
+        "Lat": {
+            "$numberDouble": "29.4106171559543"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5006887114043"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "44"
+        }
+    }, {
+        "Stop Name": "S. Alamo Opposite Nathan",
+        "Stop Number": {
+            "$numberInt": "27753"
+        },
+        "Lat": {
+            "$numberDouble": "29.4106660760599"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4994858578914"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "45"
+        }
+    }, {
+        "Stop Name": "S. Alamo and Blue Star Pl.",
+        "Stop Number": {
+            "$numberInt": "28956"
+        },
+        "Lat": {
+            "$numberDouble": "29.4102054200609"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4954603099461"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "46"
+        }
+    }, {
+        "Stop Name": "S. Alamo and Wickes",
+        "Stop Number": {
+            "$numberInt": "29636"
+        },
+        "Lat": {
+            "$numberDouble": "29.411499814998"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4933505680405"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "47"
+        }
+    }, {
+        "Stop Name": "S. Alamo Opposite E. Sheridan",
+        "Stop Number": {
+            "$numberInt": "29646"
+        },
+        "Lat": {
+            "$numberDouble": "29.4127380476005"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4917172258527"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "48"
+        }
+    }, {
+        "Stop Name": "S. Alamo and Cedar",
+        "Stop Number": {
+            "$numberInt": "29196"
+        },
+        "Lat": {
+            "$numberDouble": "29.4141631347664"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4906733422581"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "49"
+        }
+    }, {
+        "Stop Name": "S. St. Mary's and Cesar Chavez Blvd",
+        "Stop Number": {
+            "$numberInt": "11216"
+        },
+        "Lat": {
+            "$numberDouble": "29.4180699952466"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4902499236722"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "50"
+        }
+    }, {
+        "Stop Name": "S St Marys Bet. Cesar Cha/Arciniega",
+        "Stop Number": {
+            "$numberInt": "99986"
+        },
+        "Lat": {
+            "$numberDouble": "29.4190959284999"
+        },
+        "Lng": {
+            "$numberDouble": "-98.490662771343"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "51"
+        }
+    }, {
+        "Stop Name": "S.St.Mary's and Nueva",
+        "Stop Number": {
+            "$numberInt": "99586"
+        },
+        "Lat": {
+            "$numberDouble": "29.4209962426614"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4908615181868"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "52"
+        }
+    }, {
+        "Stop Name": "Navarro Opposite Villita",
+        "Stop Number": {
+            "$numberInt": "99396"
+        },
+        "Lat": {
+            "$numberDouble": "29.4225630681723"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4903482793225"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "53"
+        }
+    }, {
+        "Stop Name": "Navarro Between Travis and Pecan",
+        "Stop Number": {
+            "$numberInt": "81226"
+        },
+        "Lat": {
+            "$numberDouble": "29.428050056409198"
+        },
+        "Lng": {
+            "$numberDouble": "-98.48974354172348"
+        },
+        "route": "Route 51",
+        "Order on Route": {
+            "$numberInt": "54"
+        }
+    }],
+    "Route 51 Martin and Navarro ‎→ Madla Transit Center": [{
+        "Stop Name": "Martin and Navarro",
+        "Stop Number": {
+            "$numberInt": "71839"
+        },
+        "Lat": {
+            "$numberDouble": "29.4292967372542"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4896367814859"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "1"
+        }
+    }, {
+        "Stop Name": "St. Mary's and Pecan",
+        "Stop Number": {
+            "$numberInt": "79977"
+        },
+        "Lat": {
+            "$numberDouble": "29.4287382991585"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4913847766962"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "2"
+        }
+    }, {
+        "Stop Name": "St. Mary's Between Travis and Houston",
+        "Stop Number": {
+            "$numberInt": "89377"
+        },
+        "Lat": {
+            "$numberDouble": "29.4271835958624"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4913810368203"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "3"
+        }
+    }, {
+        "Stop Name": "St Marys Bet. Market and Villita",
+        "Stop Number": {
+            "$numberInt": "99157"
+        },
+        "Lat": {
+            "$numberDouble": "29.423398997437"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4918705223788"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "4"
+        }
+    }, {
+        "Stop Name": "S. St. Mary's and King William",
+        "Stop Number": {
+            "$numberInt": "19397"
+        },
+        "Lat": {
+            "$numberDouble": "29.4178781384188"
+        },
+        "Lng": {
+            "$numberDouble": "-98.49035383021"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "5"
+        }
+    }, {
+        "Stop Name": "S. St. Mary's and Alamo",
+        "Stop Number": {
+            "$numberInt": "11727"
+        },
+        "Lat": {
+            "$numberDouble": "29.4157541538457"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4896261284428"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "6"
+        }
+    }, {
+        "Stop Name": "S. Alamo and Beauregard",
+        "Stop Number": {
+            "$numberInt": "29197"
+        },
+        "Lat": {
+            "$numberDouble": "29.4141938264494"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4907542348255"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "7"
+        }
+    }, {
+        "Stop Name": "S. Alamo and E. Sheridan",
+        "Stop Number": {
+            "$numberInt": "29367"
+        },
+        "Lat": {
+            "$numberDouble": "29.4127515499946"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4918204642051"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "8"
+        }
+    }, {
+        "Stop Name": "S. Alamo and Johnson",
+        "Stop Number": {
+            "$numberInt": "29547"
+        },
+        "Lat": {
+            "$numberDouble": "29.4117481292314"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4929985679325"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "9"
+        }
+    }, {
+        "Stop Name": "S. Alamo at the San Antonio River",
+        "Stop Number": {
+            "$numberInt": "28947"
+        },
+        "Lat": {
+            "$numberDouble": "29.410626318497"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4948913518914"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "10"
+        }
+    }, {
+        "Stop Name": "S. Alamo and Nathan",
+        "Stop Number": {
+            "$numberInt": "27759"
+        },
+        "Lat": {
+            "$numberDouble": "29.4108074341464"
+        },
+        "Lng": {
+            "$numberDouble": "-98.499399375987"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "11"
+        }
+    }, {
+        "Stop Name": "S. Flores and Sprr",
+        "Stop Number": {
+            "$numberInt": "27727"
+        },
+        "Lat": {
+            "$numberDouble": "29.4109722640524"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5007375618461"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "12"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Keller",
+        "Stop Number": {
+            "$numberInt": "36277"
+        },
+        "Lat": {
+            "$numberDouble": "29.4085431484295"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5023135164607"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "13"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Rehman",
+        "Stop Number": {
+            "$numberInt": "36357"
+        },
+        "Lat": {
+            "$numberDouble": "29.4079044349514"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5033177791573"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "14"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Zavalla",
+        "Stop Number": {
+            "$numberInt": "35857"
+        },
+        "Lat": {
+            "$numberDouble": "29.4057014761342"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5067460661344"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "15"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Furnish",
+        "Stop Number": {
+            "$numberInt": "35927"
+        },
+        "Lat": {
+            "$numberDouble": "29.4050744678959"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5077248195556"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "16"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Powell",
+        "Stop Number": {
+            "$numberInt": "44577"
+        },
+        "Lat": {
+            "$numberDouble": "29.4027380834921"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5098445660336"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "17"
+        }
+    }, {
+        "Stop Name": "Nogalitos Opposite Cass",
+        "Stop Number": {
+            "$numberInt": "44827"
+        },
+        "Lat": {
+            "$numberDouble": "29.4009653040055"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5113953511759"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "18"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Drake",
+        "Stop Number": {
+            "$numberInt": "53287"
+        },
+        "Lat": {
+            "$numberDouble": "29.399330771324"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5127877845046"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "19"
+        }
+    }, {
+        "Stop Name": "Nogalitos and S. Park",
+        "Stop Number": {
+            "$numberInt": "53457"
+        },
+        "Lat": {
+            "$numberDouble": "29.3982569078719"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5137222322432"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "20"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Roslyn",
+        "Stop Number": {
+            "$numberInt": "53647"
+        },
+        "Lat": {
+            "$numberDouble": "29.3973910680055"
+        },
+        "Lng": {
+            "$numberDouble": "-98.514472208584"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "21"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Taft",
+        "Stop Number": {
+            "$numberInt": "62187"
+        },
+        "Lat": {
+            "$numberDouble": "29.3949841578631"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5165685925334"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "22"
+        }
+    }, {
+        "Stop Name": "Nogalitos and E. Thompson",
+        "Stop Number": {
+            "$numberInt": "62447"
+        },
+        "Lat": {
+            "$numberDouble": "29.3933840297017"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5179661153851"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "23"
+        }
+    }, {
+        "Stop Name": "Nogalitos Opposite Recio",
+        "Stop Number": {
+            "$numberInt": "61897"
+        },
+        "Lat": {
+            "$numberDouble": "29.391380187868"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5197125758221"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "24"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Hearne",
+        "Stop Number": {
+            "$numberInt": "71257"
+        },
+        "Lat": {
+            "$numberDouble": "29.3896425834007"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5212122572528"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "25"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Theo",
+        "Stop Number": {
+            "$numberInt": "71517"
+        },
+        "Lat": {
+            "$numberDouble": "29.3881636873044"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5224951794427"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "26"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Royston",
+        "Stop Number": {
+            "$numberInt": "79867"
+        },
+        "Lat": {
+            "$numberDouble": "29.3864798900393"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5239658816312"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "27"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Hoover",
+        "Stop Number": {
+            "$numberInt": "89237"
+        },
+        "Lat": {
+            "$numberDouble": "29.3847362081458"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5254769900142"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "28"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Sims",
+        "Stop Number": {
+            "$numberInt": "88597"
+        },
+        "Lat": {
+            "$numberDouble": "29.3835694893786"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5264887839057"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "29"
+        }
+    }, {
+        "Stop Name": "Nogalitos Opposite Gladstone",
+        "Stop Number": {
+            "$numberInt": "88867"
+        },
+        "Lat": {
+            "$numberDouble": "29.3823853144019"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5275285740697"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "30"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Culberson",
+        "Stop Number": {
+            "$numberInt": "88947"
+        },
+        "Lat": {
+            "$numberDouble": "29.381262003741"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5284988927426"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "31"
+        }
+    }, {
+        "Stop Name": "Nogalitos Opposite Division",
+        "Stop Number": {
+            "$numberInt": "97497"
+        },
+        "Lat": {
+            "$numberDouble": "29.3796653319608"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5299206023481"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "32"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Burgess",
+        "Stop Number": {
+            "$numberInt": "97757"
+        },
+        "Lat": {
+            "$numberDouble": "29.3772834816885"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5319978466941"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "33"
+        }
+    }, {
+        "Stop Name": "Nogalitos and Centennial",
+        "Stop Number": {
+            "$numberInt": "97937"
+        },
+        "Lat": {
+            "$numberDouble": "29.3759528504964"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5332484804476"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "34"
+        }
+    }, {
+        "Stop Name": "Somerset Opposite Stonewall",
+        "Stop Number": {
+            "$numberInt": "16667"
+        },
+        "Lat": {
+            "$numberDouble": "29.3737437438251"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5350463276071"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "35"
+        }
+    }, {
+        "Stop Name": "Somerset Opposite Brunswick",
+        "Stop Number": {
+            "$numberInt": "16927"
+        },
+        "Lat": {
+            "$numberDouble": "29.3716549640133"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5368568004856"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "36"
+        }
+    }, {
+        "Stop Name": "Somerset Opposite Milvid",
+        "Stop Number": {
+            "$numberInt": "25377"
+        },
+        "Lat": {
+            "$numberDouble": "29.36970895897"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5385479055617"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "37"
+        }
+    }, {
+        "Stop Name": "Somerset and W. Southcross",
+        "Stop Number": {
+            "$numberInt": "25727"
+        },
+        "Lat": {
+            "$numberDouble": "29.3683349595196"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5397400071419"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "38"
+        }
+    }, {
+        "Stop Name": "Somerset Opposite Vickers",
+        "Stop Number": {
+            "$numberInt": "34197"
+        },
+        "Lat": {
+            "$numberDouble": "29.3665844236401"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5412686595676"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "39"
+        }
+    }, {
+        "Stop Name": "Somerset and Lovett",
+        "Stop Number": {
+            "$numberInt": "34457"
+        },
+        "Lat": {
+            "$numberDouble": "29.3649142426298"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5427282859375"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "40"
+        }
+    }, {
+        "Stop Name": "Somerset and King",
+        "Stop Number": {
+            "$numberInt": "34717"
+        },
+        "Lat": {
+            "$numberDouble": "29.3631448286579"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5442687350065"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "41"
+        }
+    }, {
+        "Stop Name": "Somerset and Fenfield",
+        "Stop Number": {
+            "$numberInt": "43177"
+        },
+        "Lat": {
+            "$numberDouble": "29.3613829114348"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5457824813155"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "42"
+        }
+    }, {
+        "Stop Name": "Barlite and Kendalia",
+        "Stop Number": {
+            "$numberInt": "43387"
+        },
+        "Lat": {
+            "$numberDouble": "29.3598519267379"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5462477963119"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "43"
+        }
+    }, {
+        "Stop Name": "Barlite and S.W. Military Dr.",
+        "Stop Number": {
+            "$numberInt": "53147"
+        },
+        "Lat": {
+            "$numberDouble": "29.357350723287"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5462399561894"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "44"
+        }
+    }, {
+        "Stop Name": "Barlite and S.W. Military Dr.",
+        "Stop Number": {
+            "$numberInt": "53157"
+        },
+        "Lat": {
+            "$numberDouble": "29.355957838433"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5463747955936"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "45"
+        }
+    }, {
+        "Stop Name": "Barlite Opp. Ent.To S.W.Gen.Hosp.",
+        "Stop Number": {
+            "$numberInt": "53757"
+        },
+        "Lat": {
+            "$numberDouble": "29.3542492518906"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5465727893067"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "46"
+        }
+    }, {
+        "Stop Name": "Barlite and Bobcat Lane (Sioux)",
+        "Stop Number": {
+            "$numberInt": "53947"
+        },
+        "Lat": {
+            "$numberDouble": "29.3521407419787"
+        },
+        "Lng": {
+            "$numberDouble": "-98.546632591066"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "47"
+        }
+    }, {
+        "Stop Name": "Barlite Opp. 7838",
+        "Stop Number": {
+            "$numberInt": "53987"
+        },
+        "Lat": {
+            "$numberDouble": "29.3500995384291"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5466263709816"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "48"
+        }
+    }, {
+        "Stop Name": "Navajo and S. Panam",
+        "Stop Number": {
+            "$numberInt": "74117"
+        },
+        "Lat": {
+            "$numberDouble": "29.3473093755681"
+        },
+        "Lng": {
+            "$numberDouble": "-98.544324026856"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "49"
+        }
+    }, {
+        "Stop Name": "S. Panam and Barlite",
+        "Stop Number": {
+            "$numberInt": "73449"
+        },
+        "Lat": {
+            "$numberDouble": "29.3458217194918"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5466512253"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "50"
+        }
+    }, {
+        "Stop Name": "Ih35s Acc Betw. Hutch Pl./Pote Jour",
+        "Stop Number": {
+            "$numberInt": "73459"
+        },
+        "Lat": {
+            "$numberDouble": "29.3449166750975"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5488501923055"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "51"
+        }
+    }, {
+        "Stop Name": "Ih 35 N Access and Marek St",
+        "Stop Number": {
+            "$numberInt": "73453"
+        },
+        "Lat": {
+            "$numberDouble": "29.3481240235172"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5390896155544"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "52"
+        }
+    }, {
+        "Stop Name": "Ih35n Access Front Of Park South",
+        "Stop Number": {
+            "$numberInt": "73433"
+        },
+        "Lat": {
+            "$numberDouble": "29.3491497939539"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5365669558614"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "53"
+        }
+    }, {
+        "Stop Name": "Ih 35 N Access and Zarzamora",
+        "Stop Number": {
+            "$numberInt": "73423"
+        },
+        "Lat": {
+            "$numberDouble": "29.3498756488743"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5347156110709"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "54"
+        }
+    }, {
+        "Stop Name": "Madla Transit Center",
+        "Stop Number": {
+            "$numberInt": "11397"
+        },
+        "Lat": {
+            "$numberDouble": "29.349776912318"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5318971879828"
+        },
+        "route": "Route 51 (reverse)",
+        "Order on Route": {
+            "$numberInt": "55"
+        }
+    }],
+    "Route 93 La Cantera at Hobby Lobby ‎→ Centro Plaza - Mid Block East": [{
+        "Stop Name": "La Cantera at Hobby Lobby",
+        "Stop Number": {
+            "$numberInt": "75379"
+        },
+        "Lat": {
+            "$numberDouble": "29.6111118680462"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5951684057002"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "1"
+        }
+    }, {
+        "Stop Name": "La Cantera and Vance Jackson",
+        "Stop Number": {
+            "$numberInt": "75359"
+        },
+        "Lat": {
+            "$numberDouble": "29.6081417626945"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5976326049695"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "2"
+        }
+    }, {
+        "Stop Name": "La Cantera and Rim Drive",
+        "Stop Number": {
+            "$numberInt": "75369"
+        },
+        "Lat": {
+            "$numberDouble": "29.6067129656901"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5997924702464"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "3"
+        }
+    }, {
+        "Stop Name": "La Cantera and Fiesta Texas Dr.",
+        "Stop Number": {
+            "$numberInt": "75229"
+        },
+        "Lat": {
+            "$numberDouble": "29.6046563063584"
+        },
+        "Lng": {
+            "$numberDouble": "-98.60370367387"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "4"
+        }
+    }, {
+        "Stop Name": "La Cantera Pkwy and La Cantera Terrace",
+        "Stop Number": {
+            "$numberInt": "75219"
+        },
+        "Lat": {
+            "$numberDouble": "29.6057638896647"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6099504390848"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "5"
+        }
+    }, {
+        "Stop Name": "La Cantera In Front Of 16211",
+        "Stop Number": {
+            "$numberInt": "72279"
+        },
+        "Lat": {
+            "$numberDouble": "29.604449802393"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6146613752924"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "6"
+        }
+    }, {
+        "Stop Name": "La Cantera In Front Of 16641",
+        "Stop Number": {
+            "$numberInt": "72427"
+        },
+        "Lat": {
+            "$numberDouble": "29.602175012495"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6153965233805"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "7"
+        }
+    }, {
+        "Stop Name": "La Cantera and Cantera Vista",
+        "Stop Number": {
+            "$numberInt": "99377"
+        },
+        "Lat": {
+            "$numberDouble": "29.5975235911965"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6166723985115"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "8"
+        }
+    }, {
+        "Stop Name": "La Cantera Opp. Entr/Shops La Cant.",
+        "Stop Number": {
+            "$numberInt": "11667"
+        },
+        "Lat": {
+            "$numberDouble": "29.5948498520372"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6189954353469"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "9"
+        }
+    }, {
+        "Stop Name": "La Cantera and Loop 1604 W Access R",
+        "Stop Number": {
+            "$numberInt": "11517"
+        },
+        "Lat": {
+            "$numberDouble": "29.5893455884849"
+        },
+        "Lng": {
+            "$numberDouble": "-98.619811390029"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "10"
+        }
+    }, {
+        "Stop Name": "Utsa Loop 1604 Campus",
+        "Stop Number": {
+            "$numberInt": "11907"
+        },
+        "Lat": {
+            "$numberDouble": "29.586908385688773"
+        },
+        "Lng": {
+            "$numberDouble": "-98.61892381004235"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "11"
+        }
+    }, {
+        "Stop Name": "Loop 1604 E Acces Rd and Valero Way",
+        "Stop Number": {
+            "$numberInt": "14423"
+        },
+        "Lat": {
+            "$numberDouble": "29.5894672869877"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6075107284891"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "12"
+        }
+    }, {
+        "Stop Name": "University Park and Ride",
+        "Stop Number": {
+            "$numberInt": "17116"
+        },
+        "Lat": {
+            "$numberDouble": "29.5908014639659"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5979995527233"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "13"
+        }
+    }, {
+        "Stop Name": "Crossroads Park and Ride",
+        "Stop Number": {
+            "$numberInt": "32167"
+        },
+        "Lat": {
+            "$numberDouble": "29.4938455674208"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5482826429783"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "14"
+        }
+    }, {
+        "Stop Name": "Laredo and Medina",
+        "Stop Number": {
+            "$numberInt": "86577"
+        },
+        "Lat": {
+            "$numberDouble": "29.4322988568676"
+        },
+        "Lng": {
+            "$numberDouble": "-98.501775645362"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "15"
+        }
+    }, {
+        "Stop Name": "Martin and Leona",
+        "Stop Number": {
+            "$numberInt": "76779"
+        },
+        "Lat": {
+            "$numberDouble": "29.4300155068158"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5019839731467"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "16"
+        }
+    }, {
+        "Stop Name": "Centro Plaza - Mid Block East",
+        "Stop Number": {
+            "$numberInt": "60017"
+        },
+        "Lat": {
+            "$numberDouble": "29.4274087604366"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5037954587798"
+        },
+        "route": "Route 93",
+        "Order on Route": {
+            "$numberInt": "17"
+        }
+    }],
+    "Route 93 Commerce and Presa ‎→ La Cantera at Hobby Lobby": [{
+        "Stop Name": "Commerce and Presa",
+        "Stop Number": {
+            "$numberInt": "91139"
+        },
+        "Lat": {
+            "$numberDouble": "29.4240258277816"
+        },
+        "Lng": {
+            "$numberDouble": "-98.48888708879"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "1"
+        }
+    }, {
+        "Stop Name": "Commerce and Navarro",
+        "Stop Number": {
+            "$numberInt": "81929"
+        },
+        "Lat": {
+            "$numberDouble": "29.424187794106"
+        },
+        "Lng": {
+            "$numberDouble": "-98.489701387413"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "2"
+        }
+    }, {
+        "Stop Name": "Commerce and St. Mary's",
+        "Stop Number": {
+            "$numberInt": "89869"
+        },
+        "Lat": {
+            "$numberDouble": "29.4244973304154"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4911246255969"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "3"
+        }
+    }, {
+        "Stop Name": "Commerce and Main",
+        "Stop Number": {
+            "$numberInt": "54339"
+        },
+        "Lat": {
+            "$numberDouble": "29.4250728002954"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4936298756008"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "4"
+        }
+    }, {
+        "Stop Name": "Commerce and Flores",
+        "Stop Number": {
+            "$numberInt": "88779"
+        },
+        "Lat": {
+            "$numberDouble": "29.4252160822284"
+        },
+        "Lng": {
+            "$numberDouble": "-98.4950509654365"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "5"
+        }
+    }, {
+        "Stop Name": "Commerce and Santa Rosa",
+        "Stop Number": {
+            "$numberInt": "87799"
+        },
+        "Lat": {
+            "$numberDouble": "29.4253080262719"
+        },
+        "Lng": {
+            "$numberDouble": "-98.497787844392"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "6"
+        }
+    }, {
+        "Stop Name": "Commerce and San Saba",
+        "Stop Number": {
+            "$numberInt": "87639"
+        },
+        "Lat": {
+            "$numberDouble": "29.4257250865573"
+        },
+        "Lng": {
+            "$numberDouble": "-98.499991952096"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "7"
+        }
+    }, {
+        "Stop Name": "Pecos-La Trinidad and Buena Vista",
+        "Stop Number": {
+            "$numberInt": "86877"
+        },
+        "Lat": {
+            "$numberDouble": "29.4238626445867"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5018696628644"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "8"
+        }
+    }, {
+        "Stop Name": "S. Frio In Front Of Utsa Downtown C",
+        "Stop Number": {
+            "$numberInt": "86926"
+        },
+        "Lat": {
+            "$numberDouble": "29.4233642034236"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5040816257292"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "9"
+        }
+    }, {
+        "Stop Name": "Centro Plaza - SW Corner",
+        "Stop Number": {
+            "$numberInt": "60029"
+        },
+        "Lat": {
+            "$numberDouble": "29.4270765192744"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5048155841294"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "10"
+        }
+    }, {
+        "Stop Name": "Martin Opposite Leona",
+        "Stop Number": {
+            "$numberInt": "76773"
+        },
+        "Lat": {
+            "$numberDouble": "29.4298300853023"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5023247247252"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "11"
+        }
+    }, {
+        "Stop Name": "Crossroads Park and Ride",
+        "Stop Number": {
+            "$numberInt": "32166"
+        },
+        "Lat": {
+            "$numberDouble": "29.4935290498701"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5489138999051"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "12"
+        }
+    }, {
+        "Stop Name": "University Park and Ride",
+        "Stop Number": {
+            "$numberInt": "17116"
+        },
+        "Lat": {
+            "$numberDouble": "29.5908014639659"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5979995527233"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "13"
+        }
+    }, {
+        "Stop Name": "Loop 1604 W Access/Entr. La Cantera",
+        "Stop Number": {
+            "$numberInt": "22479"
+        },
+        "Lat": {
+            "$numberDouble": "29.5897598519977"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6123818109454"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "14"
+        }
+    }, {
+        "Stop Name": "Utsa Loop 1604 Campus",
+        "Stop Number": {
+            "$numberInt": "11907"
+        },
+        "Lat": {
+            "$numberDouble": "29.586908385688773"
+        },
+        "Lng": {
+            "$numberDouble": "-98.61892381004235"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "15"
+        }
+    }, {
+        "Stop Name": "John Peace and Loop 1604 E Access R",
+        "Stop Number": {
+            "$numberInt": "11636"
+        },
+        "Lat": {
+            "$numberDouble": "29.5885598991142"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6194670364804"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "16"
+        }
+    }, {
+        "Stop Name": "La Cantera Entran. Shops La Cantera",
+        "Stop Number": {
+            "$numberInt": "11666"
+        },
+        "Lat": {
+            "$numberDouble": "29.5954112898299"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6182145935612"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "17"
+        }
+    }, {
+        "Stop Name": "La Cantera Opposite 16505",
+        "Stop Number": {
+            "$numberInt": "99376"
+        },
+        "Lat": {
+            "$numberDouble": "29.5974133086044"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6164999427394"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "18"
+        }
+    }, {
+        "Stop Name": "La Cantera Opp Lacantera-Westin Res",
+        "Stop Number": {
+            "$numberInt": "72426"
+        },
+        "Lat": {
+            "$numberDouble": "29.6021722655674"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6152152063942"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "19"
+        }
+    }, {
+        "Stop Name": "La Cantera Opposite 16211",
+        "Stop Number": {
+            "$numberInt": "72293"
+        },
+        "Lat": {
+            "$numberDouble": "29.6047770307846"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6140376194277"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "20"
+        }
+    }, {
+        "Stop Name": "La Cantera Pkwy Opposite La Cantera Terrace",
+        "Stop Number": {
+            "$numberInt": "75313"
+        },
+        "Lat": {
+            "$numberDouble": "29.6055840602114"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6097869472823"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "21"
+        }
+    }, {
+        "Stop Name": "Fiesta Texas Opp Entr. To Employee",
+        "Stop Number": {
+            "$numberInt": "83469"
+        },
+        "Lat": {
+            "$numberDouble": "29.6005726029472"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6059802730002"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "22"
+        }
+    }, {
+        "Stop Name": "Fiesta Texas Main Entrance",
+        "Stop Number": {
+            "$numberInt": "82459"
+        },
+        "Lat": {
+            "$numberDouble": "29.5988802357811"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6073076245993"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "23"
+        }
+    }, {
+        "Stop Name": "Fiesta Texas Employee Entrance",
+        "Stop Number": {
+            "$numberInt": "83463"
+        },
+        "Lat": {
+            "$numberDouble": "29.6004943967487"
+        },
+        "Lng": {
+            "$numberDouble": "-98.605973317268"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "24"
+        }
+    }, {
+        "Stop Name": "La Cantera and Fiesta Texas Dr.",
+        "Stop Number": {
+            "$numberInt": "75323"
+        },
+        "Lat": {
+            "$numberDouble": "29.604327780235"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6038312819841"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "25"
+        }
+    }, {
+        "Stop Name": "Worth Pkwy at Side Bass Pro Shops",
+        "Stop Number": {
+            "$numberInt": "75393"
+        },
+        "Lat": {
+            "$numberDouble": "29.6128164973024"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6005219034038"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "26"
+        }
+    }, {
+        "Stop Name": "La Cantera at Hobby Lobby",
+        "Stop Number": {
+            "$numberInt": "75379"
+        },
+        "Lat": {
+            "$numberDouble": "29.6111118680462"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5951684057002"
+        },
+        "route": "Route 93 (reverse)",
+        "Order on Route": {
+            "$numberInt": "27"
+        }
+    }],
+    "Route 660 Northwest Vista College ‎→ University Park and Ride": [{
+        "Stop Name": "Northwest Vista College",
+        "Stop Number": {
+            "$numberInt": "83439"
+        },
+        "Lat": {
+            "$numberDouble": "29.4700227104889"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7064141145465"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "1"
+        }
+    }, {
+        "Stop Name": "Ellison Dr. and Wiseman Blvd.",
+        "Stop Number": {
+            "$numberInt": "84643"
+        },
+        "Lat": {
+            "$numberDouble": "29.4676745723921"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7052417610101"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "2"
+        }
+    }, {
+        "Stop Name": "Ellison Dr. Opp. Westover Link",
+        "Stop Number": {
+            "$numberInt": "84733"
+        },
+        "Lat": {
+            "$numberDouble": "29.4659158301811"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7010112750428"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "3"
+        }
+    }, {
+        "Stop Name": "Ellison Dr. and Westover Hills",
+        "Stop Number": {
+            "$numberInt": "16327"
+        },
+        "Lat": {
+            "$numberDouble": "29.4624075269884"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6977606496521"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "4"
+        }
+    }, {
+        "Stop Name": "Westover Hills and Hwy. 151 W. (Ns)",
+        "Stop Number": {
+            "$numberInt": "98863"
+        },
+        "Lat": {
+            "$numberDouble": "29.462013120887"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6935769817983"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "5"
+        }
+    }, {
+        "Stop Name": "Westover Hills and Hwy. 151 W. (Fs)",
+        "Stop Number": {
+            "$numberInt": "98843"
+        },
+        "Lat": {
+            "$numberDouble": "29.463393571191"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6900818360229"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "6"
+        }
+    }, {
+        "Stop Name": "Rogers and Hyatt Resort Dr",
+        "Stop Number": {
+            "$numberInt": "98597"
+        },
+        "Lat": {
+            "$numberDouble": "29.4595799778259"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6854850065589"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "7"
+        }
+    }, {
+        "Stop Name": "Rogers Btwn Hyatt Resort Dr and Natio",
+        "Stop Number": {
+            "$numberInt": "98607"
+        },
+        "Lat": {
+            "$numberDouble": "29.4573506637267"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6848321732108"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "8"
+        }
+    }, {
+        "Stop Name": "Nationwide Dr Btwn Rogers and Sh 151",
+        "Stop Number": {
+            "$numberInt": "98609"
+        },
+        "Lat": {
+            "$numberDouble": "29.4555414950519"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6852549646405"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "9"
+        }
+    }, {
+        "Stop Name": "Hyatt Resort Dr Btwn 151 and Rogers",
+        "Stop Number": {
+            "$numberInt": "98603"
+        },
+        "Lat": {
+            "$numberDouble": "29.4593310484584"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6868731683952"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "10"
+        }
+    }, {
+        "Stop Name": "Rogers and Westover Hills",
+        "Stop Number": {
+            "$numberInt": "98586"
+        },
+        "Lat": {
+            "$numberDouble": "29.4659727988137"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6892006298448"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "11"
+        }
+    }, {
+        "Stop Name": "Rogers Btwen Rogers Run and Western",
+        "Stop Number": {
+            "$numberInt": "98556"
+        },
+        "Lat": {
+            "$numberDouble": "29.4716653269476"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6920700579782"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "12"
+        }
+    }, {
+        "Stop Name": "Rogers at Entrance To Chase Service",
+        "Stop Number": {
+            "$numberInt": "98536"
+        },
+        "Lat": {
+            "$numberDouble": "29.4753044197055"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6930933918193"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "13"
+        }
+    }, {
+        "Stop Name": "Rogers Rd. and Wiseman Blvd",
+        "Stop Number": {
+            "$numberInt": "98406"
+        },
+        "Lat": {
+            "$numberDouble": "29.4776602957187"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6938049629362"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "14"
+        }
+    }, {
+        "Stop Name": "Rogers Btw Wiseman and Mt Evans",
+        "Stop Number": {
+            "$numberInt": "98506"
+        },
+        "Lat": {
+            "$numberDouble": "29.4818858918514"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6999750787778"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "15"
+        }
+    }, {
+        "Stop Name": "Rogers Between Mt Evans and Mt Baker",
+        "Stop Number": {
+            "$numberInt": "41406"
+        },
+        "Lat": {
+            "$numberDouble": "29.4851050316138"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7001836256569"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "16"
+        }
+    }, {
+        "Stop Name": "Rogers Rd. and Mountain View",
+        "Stop Number": {
+            "$numberInt": "41306"
+        },
+        "Lat": {
+            "$numberDouble": "29.4903950515301"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7000638842071"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "17"
+        }
+    }, {
+        "Stop Name": "Culebra Opposite Heb Plus",
+        "Stop Number": {
+            "$numberInt": "41339"
+        },
+        "Lat": {
+            "$numberDouble": "29.492482626624"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7003865461996"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "18"
+        }
+    }, {
+        "Stop Name": "Westwood Loop and Culebra",
+        "Stop Number": {
+            "$numberInt": "81116"
+        },
+        "Lat": {
+            "$numberDouble": "29.4965126619506"
+        },
+        "Lng": {
+            "$numberDouble": "-98.709317886952"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "19"
+        }
+    }, {
+        "Stop Name": "Westwood Loop Opposite Walmart",
+        "Stop Number": {
+            "$numberInt": "81143"
+        },
+        "Lat": {
+            "$numberDouble": "29.49889792812"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7044337475655"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "20"
+        }
+    }, {
+        "Stop Name": "Oscar Wood Pl. Opp. Ceders Pl.",
+        "Stop Number": {
+            "$numberInt": "81179"
+        },
+        "Lat": {
+            "$numberDouble": "29.5119676446219"
+        },
+        "Lng": {
+            "$numberDouble": "-98.700133487349"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "21"
+        }
+    }, {
+        "Stop Name": "Oscar Wood and Bluegrass Pond",
+        "Stop Number": {
+            "$numberInt": "81186"
+        },
+        "Lat": {
+            "$numberDouble": "29.513520791926"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7017007327332"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "22"
+        }
+    }, {
+        "Stop Name": "Oscar Wood and Expedition Crk",
+        "Stop Number": {
+            "$numberInt": "81196"
+        },
+        "Lat": {
+            "$numberDouble": "29.5158671818195"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7005343880763"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "23"
+        }
+    }, {
+        "Stop Name": "Shaenfield and Leslie Rd.",
+        "Stop Number": {
+            "$numberInt": "81193"
+        },
+        "Lat": {
+            "$numberDouble": "29.5160745191428"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6973032652586"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "24"
+        }
+    }, {
+        "Stop Name": "Loop 1604 N Access Rd and Bet Bowens Crossing and New Guilbeau",
+        "Stop Number": {
+            "$numberInt": "81236"
+        },
+        "Lat": {
+            "$numberDouble": "29.5276301021258"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6859803061232"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "25"
+        }
+    }, {
+        "Stop Name": "Loop 1604 N Access Rd and Braun",
+        "Stop Number": {
+            "$numberInt": "81266"
+        },
+        "Lat": {
+            "$numberDouble": "29.5367631288741"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6811040519937"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "26"
+        }
+    }, {
+        "Stop Name": "1604 Access and Las Palapas",
+        "Stop Number": {
+            "$numberInt": "77136"
+        },
+        "Lat": {
+            "$numberDouble": "29.5509412120823"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6688283876142"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "27"
+        }
+    }, {
+        "Stop Name": "Loop 1604 N Access Rd and Bandera",
+        "Stop Number": {
+            "$numberInt": "77156"
+        },
+        "Lat": {
+            "$numberDouble": "29.5551800125627"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6644168599439"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "28"
+        }
+    }, {
+        "Stop Name": "L1604n Acc Rd Front Nisd Sports Com",
+        "Stop Number": {
+            "$numberInt": "77166"
+        },
+        "Lat": {
+            "$numberDouble": "29.5648808502259"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6546919256359"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "29"
+        }
+    }, {
+        "Stop Name": "L1604 N Acc Rd In Front 8202",
+        "Stop Number": {
+            "$numberInt": "77176"
+        },
+        "Lat": {
+            "$numberDouble": "29.5730343372217"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6481689672802"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "30"
+        }
+    }, {
+        "Stop Name": "Loop 1604n Acc Rd and Kyle Seale",
+        "Stop Number": {
+            "$numberInt": "77186"
+        },
+        "Lat": {
+            "$numberDouble": "29.5769665894767"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6444571076884"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "31"
+        }
+    }, {
+        "Stop Name": "Loop 1604 N Access Rd In Front 7502",
+        "Stop Number": {
+            "$numberInt": "77196"
+        },
+        "Lat": {
+            "$numberDouble": "29.5840995374798"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6380977445634"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "32"
+        }
+    }, {
+        "Stop Name": "Babcock Opposite Green Glen",
+        "Stop Number": {
+            "$numberInt": "16786"
+        },
+        "Lat": {
+            "$numberDouble": "29.5885341482766"
+        },
+        "Lng": {
+            "$numberDouble": "-98.630526184235"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "33"
+        }
+    }, {
+        "Stop Name": "Babcock Opposite Shady Hollow",
+        "Stop Number": {
+            "$numberInt": "17126"
+        },
+        "Lat": {
+            "$numberDouble": "29.5909885940939"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6290981467762"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "34"
+        }
+    }, {
+        "Stop Name": "Babcock at Rear Ent. To Chase Hill",
+        "Stop Number": {
+            "$numberInt": "86996"
+        },
+        "Lat": {
+            "$numberDouble": "29.5935671908261"
+        },
+        "Lng": {
+            "$numberDouble": "-98.629016446367"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "35"
+        }
+    }, {
+        "Stop Name": "Chase Hill Blvd. and Babcock",
+        "Stop Number": {
+            "$numberInt": "87827"
+        },
+        "Lat": {
+            "$numberDouble": "29.5963891107051"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6287282715694"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "36"
+        }
+    }, {
+        "Stop Name": "Chase Hill Blvd. at Chase Hill Apts",
+        "Stop Number": {
+            "$numberInt": "98627"
+        },
+        "Lat": {
+            "$numberDouble": "29.5937900190862"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6259464025016"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "37"
+        }
+    }, {
+        "Stop Name": "Chase Hill Blvd. In Front Of 15651",
+        "Stop Number": {
+            "$numberInt": "18367"
+        },
+        "Lat": {
+            "$numberDouble": "29.5906544539976"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6248608127682"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "38"
+        }
+    }, {
+        "Stop Name": "Chase Hill Blvd. and 1604 W Access",
+        "Stop Number": {
+            "$numberInt": "18777"
+        },
+        "Lat": {
+            "$numberDouble": "29.5886546587319"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6240182614651"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "39"
+        }
+    }, {
+        "Stop Name": "Utsa Loop 1604 Campus",
+        "Stop Number": {
+            "$numberInt": "11907"
+        },
+        "Lat": {
+            "$numberDouble": "29.586908385688773"
+        },
+        "Lng": {
+            "$numberDouble": "-98.61892381004235"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "40"
+        }
+    }, {
+        "Stop Name": "Loop 1604 E Acces Rd and Valero Way",
+        "Stop Number": {
+            "$numberInt": "14423"
+        },
+        "Lat": {
+            "$numberDouble": "29.5894550092858"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6075282438144"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "41"
+        }
+    }, {
+        "Stop Name": "University Park and Ride",
+        "Stop Number": {
+            "$numberInt": "17116"
+        },
+        "Lat": {
+            "$numberDouble": "29.5908038767791"
+        },
+        "Lng": {
+            "$numberDouble": "-98.597991175366"
+        },
+        "route": "Route 660",
+        "Order on Route": {
+            "$numberInt": "42"
+        }
+    }],
+    "Route 660 University Park and Ride ‎→ Northwest Vista College": [{
+        "Stop Name": "University Park and Ride",
+        "Stop Number": {
+            "$numberInt": "17116"
+        },
+        "Lat": {
+            "$numberDouble": "29.5908038767791"
+        },
+        "Lng": {
+            "$numberDouble": "-98.597991175366"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "1"
+        }
+    }, {
+        "Stop Name": "Loop 1604 W Access/Entr. La Cantera",
+        "Stop Number": {
+            "$numberInt": "22479"
+        },
+        "Lat": {
+            "$numberDouble": "29.5897645900823"
+        },
+        "Lng": {
+            "$numberDouble": "-98.61240653718"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "2"
+        }
+    }, {
+        "Stop Name": "Utsa Loop 1604 Campus",
+        "Stop Number": {
+            "$numberInt": "11907"
+        },
+        "Lat": {
+            "$numberDouble": "29.586908385688773"
+        },
+        "Lng": {
+            "$numberDouble": "-98.61892381004235"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "3"
+        }
+    }, {
+        "Stop Name": "Chase Hill Blvd. and 1604 W Access",
+        "Stop Number": {
+            "$numberInt": "18676"
+        },
+        "Lat": {
+            "$numberDouble": "29.5891219288824"
+        },
+        "Lng": {
+            "$numberDouble": "-98.623797260216"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "4"
+        }
+    }, {
+        "Stop Name": "Chase Hill Blvd. Opposite 15651",
+        "Stop Number": {
+            "$numberInt": "18366"
+        },
+        "Lat": {
+            "$numberDouble": "29.5907300134229"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6247549730757"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "5"
+        }
+    }, {
+        "Stop Name": "Chase Hill Blvd. at Las Colimas Apt",
+        "Stop Number": {
+            "$numberInt": "98626"
+        },
+        "Lat": {
+            "$numberDouble": "29.5940054991509"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6260153492926"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "6"
+        }
+    }, {
+        "Stop Name": "Chase Hill Blvd. and Babcock",
+        "Stop Number": {
+            "$numberInt": "87836"
+        },
+        "Lat": {
+            "$numberDouble": "29.5972575422612"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6297771344978"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "7"
+        }
+    }, {
+        "Stop Name": "Babcock Opp. Rear Entrance To Chase",
+        "Stop Number": {
+            "$numberInt": "86987"
+        },
+        "Lat": {
+            "$numberDouble": "29.5936984665101"
+        },
+        "Lng": {
+            "$numberDouble": "-98.629161993449"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "8"
+        }
+    }, {
+        "Stop Name": "Babcock and Shady Hollow",
+        "Stop Number": {
+            "$numberInt": "17137"
+        },
+        "Lat": {
+            "$numberDouble": "29.5912122348947"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6291734898655"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "9"
+        }
+    }, {
+        "Stop Name": "Babcock and 1604 W Access Rd.",
+        "Stop Number": {
+            "$numberInt": "16877"
+        },
+        "Lat": {
+            "$numberDouble": "29.5882071069041"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6308584347037"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "10"
+        }
+    }, {
+        "Stop Name": "Loop 1604 S Access Rd and Cotton Tail",
+        "Stop Number": {
+            "$numberInt": "77197"
+        },
+        "Lat": {
+            "$numberDouble": "29.5858006297479"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6373433840835"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "11"
+        }
+    }, {
+        "Stop Name": "Loop 1604 S Access Rd and Red Robin (Nearside)",
+        "Stop Number": {
+            "$numberInt": "77217"
+        },
+        "Lat": {
+            "$numberDouble": "29.5834985948754"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6398476017536"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "12"
+        }
+    }, {
+        "Stop Name": "Loop 1604 S Access Rd and Kyle Seale",
+        "Stop Number": {
+            "$numberInt": "77187"
+        },
+        "Lat": {
+            "$numberDouble": "29.5773254714454"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6460343196769"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "13"
+        }
+    }, {
+        "Stop Name": "Loop 1604 S Access Rd and Hausman",
+        "Stop Number": {
+            "$numberInt": "77177"
+        },
+        "Lat": {
+            "$numberDouble": "29.5714786442082"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6513378227496"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "14"
+        }
+    }, {
+        "Stop Name": "Loop 1604 S Access Rd In Front 8603",
+        "Stop Number": {
+            "$numberInt": "77167"
+        },
+        "Lat": {
+            "$numberDouble": "29.5602669339631"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6603276227015"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "15"
+        }
+    }, {
+        "Stop Name": "Loop 1604 S Access Rd In Front 9111",
+        "Stop Number": {
+            "$numberInt": "77157"
+        },
+        "Lat": {
+            "$numberDouble": "29.557617894048"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6636942791071"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "16"
+        }
+    }, {
+        "Stop Name": "1604 Access and Silverado Theatre",
+        "Stop Number": {
+            "$numberInt": "77127"
+        },
+        "Lat": {
+            "$numberDouble": "29.5513869474839"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6703280978066"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "17"
+        }
+    }, {
+        "Stop Name": "Loop 1604 N Access and Brimhall",
+        "Stop Number": {
+            "$numberInt": "81227"
+        },
+        "Lat": {
+            "$numberDouble": "29.5464451116922"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6747402321834"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "18"
+        }
+    }, {
+        "Stop Name": "Loop 1604 S Access Rd In Front 9681",
+        "Stop Number": {
+            "$numberInt": "81267"
+        },
+        "Lat": {
+            "$numberDouble": "29.5344086877188"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6836709145269"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "19"
+        }
+    }, {
+        "Stop Name": "Loop 1604 S Access Rd Opp N Guibeau",
+        "Stop Number": {
+            "$numberInt": "81237"
+        },
+        "Lat": {
+            "$numberDouble": "29.5301781380644"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6851125836354"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "20"
+        }
+    }, {
+        "Stop Name": "Shaenfield And Leslie Rd.",
+        "Stop Number": {
+            "$numberInt": "81199"
+        },
+        "Lat": {
+            "$numberDouble": "29.5160186506398"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6966453221768"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "21"
+        }
+    }, {
+        "Stop Name": "Oscar Wood and Expedition Crk",
+        "Stop Number": {
+            "$numberInt": "81197"
+        },
+        "Lat": {
+            "$numberDouble": "29.5161763262589"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7004773460353"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "22"
+        }
+    }, {
+        "Stop Name": "Oscar Wood and Vollmer",
+        "Stop Number": {
+            "$numberInt": "81187"
+        },
+        "Lat": {
+            "$numberDouble": "29.5133086693214"
+        },
+        "Lng": {
+            "$numberDouble": "-98.701780543637"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "23"
+        }
+    }, {
+        "Stop Name": "Oscar Wood and Ceders Pl.",
+        "Stop Number": {
+            "$numberInt": "81173"
+        },
+        "Lat": {
+            "$numberDouble": "29.5120266417647"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7005944818114"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "24"
+        }
+    }, {
+        "Stop Name": "Leslie Rd and Creston Gate",
+        "Stop Number": {
+            "$numberInt": "81177"
+        },
+        "Lat": {
+            "$numberDouble": "29.5051949624312"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6999938269232"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "25"
+        }
+    }, {
+        "Stop Name": "Westwood at Walmart",
+        "Stop Number": {
+            "$numberInt": "81149"
+        },
+        "Lat": {
+            "$numberDouble": "29.499066766462"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7045690524118"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "26"
+        }
+    }, {
+        "Stop Name": "Culebra and Westwood Loop",
+        "Stop Number": {
+            "$numberInt": "81123"
+        },
+        "Lat": {
+            "$numberDouble": "29.4957130438304"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7091209168102"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "27"
+        }
+    }, {
+        "Stop Name": "Culebra at Heb Plus",
+        "Stop Number": {
+            "$numberInt": "41333"
+        },
+        "Lat": {
+            "$numberDouble": "29.4929058779405"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7019302933754"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "28"
+        }
+    }, {
+        "Stop Name": "Rogers Rd. Opposite Mountain View",
+        "Stop Number": {
+            "$numberInt": "41307"
+        },
+        "Lat": {
+            "$numberDouble": "29.4901194953786"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7002563872434"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "29"
+        }
+    }, {
+        "Stop Name": "Rogers Between Mt Baker and Mt Evans",
+        "Stop Number": {
+            "$numberInt": "41407"
+        },
+        "Lat": {
+            "$numberDouble": "29.4851138813068"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7003749403251"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "30"
+        }
+    }, {
+        "Stop Name": "Rogers Btwn Mt Evans and Wiseman",
+        "Stop Number": {
+            "$numberInt": "98507"
+        },
+        "Lat": {
+            "$numberDouble": "29.4809020975519"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6992680337271"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "31"
+        }
+    }, {
+        "Stop Name": "Rogers Rs. and Wiseman Blvd",
+        "Stop Number": {
+            "$numberInt": "98407"
+        },
+        "Lat": {
+            "$numberDouble": "29.477377894493"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6938359212671"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "32"
+        }
+    }, {
+        "Stop Name": "Rogers Opp Chase Service Center",
+        "Stop Number": {
+            "$numberInt": "98537"
+        },
+        "Lat": {
+            "$numberDouble": "29.4757536815992"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6932946731269"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "33"
+        }
+    }, {
+        "Stop Name": "Rogers Opp Rogers Run",
+        "Stop Number": {
+            "$numberInt": "98557"
+        },
+        "Lat": {
+            "$numberDouble": "29.470924575671"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6916759481604"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "34"
+        }
+    }, {
+        "Stop Name": "Rogers and Westover Hills",
+        "Stop Number": {
+            "$numberInt": "98587"
+        },
+        "Lat": {
+            "$numberDouble": "29.4652083729055"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6888906431172"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "35"
+        }
+    }, {
+        "Stop Name": "Rogers and Hyatt Resort Dr",
+        "Stop Number": {
+            "$numberInt": "98597"
+        },
+        "Lat": {
+            "$numberDouble": "29.4595799778259"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6854850065589"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "36"
+        }
+    }, {
+        "Stop Name": "Rogers Btwn Hyatt Resort Dr and Natio",
+        "Stop Number": {
+            "$numberInt": "98607"
+        },
+        "Lat": {
+            "$numberDouble": "29.4573506637267"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6848321732108"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "37"
+        }
+    }, {
+        "Stop Name": "Nationwide Dr Btwn Rogers and Sh 151",
+        "Stop Number": {
+            "$numberInt": "98609"
+        },
+        "Lat": {
+            "$numberDouble": "29.4555414950519"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6852549646405"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "38"
+        }
+    }, {
+        "Stop Name": "Westover Hills and Hwy. 151 (Fs)",
+        "Stop Number": {
+            "$numberInt": "98869"
+        },
+        "Lat": {
+            "$numberDouble": "29.462269649458"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6935945484589"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "39"
+        }
+    }, {
+        "Stop Name": "Ellison Dr. and Westover Hills",
+        "Stop Number": {
+            "$numberInt": "16336"
+        },
+        "Lat": {
+            "$numberDouble": "29.4617345232951"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6971318975385"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "40"
+        }
+    }, {
+        "Stop Name": "Ellison Dr. and Entrance To Christus Santa Rosa",
+        "Stop Number": {
+            "$numberInt": "84729"
+        },
+        "Lat": {
+            "$numberDouble": "29.4646082932743"
+        },
+        "Lng": {
+            "$numberDouble": "-98.6987825864319"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "41"
+        }
+    }, {
+        "Stop Name": "Ellison Dr. and Wiseman Blvd.",
+        "Stop Number": {
+            "$numberInt": "84749"
+        },
+        "Lat": {
+            "$numberDouble": "29.4672140502365"
+        },
+        "Lng": {
+            "$numberDouble": "-98.704406648811"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "42"
+        }
+    }, {
+        "Stop Name": "Northwest Vista College",
+        "Stop Number": {
+            "$numberInt": "83439"
+        },
+        "Lat": {
+            "$numberDouble": "29.4676745723921"
+        },
+        "Lng": {
+            "$numberDouble": "-98.7052417610101"
+        },
+        "route": "Route 660 (reverse)",
+        "Order on Route": {
+            "$numberInt": "43"
+        }
+    }],
+    "Route 672 TAMUSA ‎→ Madla Transit Center": [{
+        "Stop Name": "Verano Pkwy and University Way",
+        "Stop Number": {
+            "$numberInt": "26183"
+        },
+        "Lat": {
+            "$numberDouble": "29.3053789270092"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5242501304062"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "1"
+        }
+    }, {
+        "Stop Name": "Zarzamora Opp. Hunter's Pond",
+        "Stop Number": {
+            "$numberInt": "26206"
+        },
+        "Lat": {
+            "$numberDouble": "29.3077731849319"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5349121294295"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "2"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora Btwn Jennifer Dr and Vil",
+        "Stop Number": {
+            "$numberInt": "27626"
+        },
+        "Lat": {
+            "$numberDouble": "29.3245724472011"
+        },
+        "Lng": {
+            "$numberDouble": "-98.53254022852"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "3"
+        }
+    }, {
+        "Stop Name": "Villaret Btwn Rhoda and Cadiz",
+        "Stop Number": {
+            "$numberInt": "24699"
+        },
+        "Lat": {
+            "$numberDouble": "29.3255090845949"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5388255643489"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "4"
+        }
+    }, {
+        "Stop Name": "Palo Alto College",
+        "Stop Number": {
+            "$numberInt": "23953"
+        },
+        "Lat": {
+            "$numberDouble": "29.3245875087721"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5439863087328"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "5"
+        }
+    }, {
+        "Stop Name": "Lytle and Bruni",
+        "Stop Number": {
+            "$numberInt": "24486"
+        },
+        "Lat": {
+            "$numberDouble": "29.3270274580387"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5411765809445"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "6"
+        }
+    }, {
+        "Stop Name": "Lytle and Mally",
+        "Stop Number": {
+            "$numberInt": "24196"
+        },
+        "Lat": {
+            "$numberDouble": "29.3282557132703"
+        },
+        "Lng": {
+            "$numberDouble": "-98.541182981134"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "7"
+        }
+    }, {
+        "Stop Name": "Lytle and Gillette",
+        "Stop Number": {
+            "$numberInt": "14696"
+        },
+        "Lat": {
+            "$numberDouble": "29.3300485296992"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5411827009558"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "8"
+        }
+    }, {
+        "Stop Name": "Gillete and Rhoda",
+        "Stop Number": {
+            "$numberInt": "15783"
+        },
+        "Lat": {
+            "$numberDouble": "29.3301242951326"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5379052594094"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "9"
+        }
+    }, {
+        "Stop Name": "Gillete In Front Of 1134",
+        "Stop Number": {
+            "$numberInt": "16783"
+        },
+        "Lat": {
+            "$numberDouble": "29.3301373367682"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5350958501265"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "10"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Hunter",
+        "Stop Number": {
+            "$numberInt": "96996"
+        },
+        "Lat": {
+            "$numberDouble": "29.3328754796464"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5336932770055"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "11"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Ansley",
+        "Stop Number": {
+            "$numberInt": "96596"
+        },
+        "Lat": {
+            "$numberDouble": "29.3354717977063"
+        },
+        "Lng": {
+            "$numberDouble": "-98.534011803806"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "12"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora In Front Of Garden Valley",
+        "Stop Number": {
+            "$numberInt": "96196"
+        },
+        "Lat": {
+            "$numberDouble": "29.3375685978086"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5340261854689"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "13"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora In Front Of St. Leonards",
+        "Stop Number": {
+            "$numberInt": "86786"
+        },
+        "Lat": {
+            "$numberDouble": "29.3401675029252"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5340403819186"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "14"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora In Front Of Bethesda",
+        "Stop Number": {
+            "$numberInt": "86386"
+        },
+        "Lat": {
+            "$numberDouble": "29.3418331258311"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5340520984197"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "15"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Peterson",
+        "Stop Number": {
+            "$numberInt": "76786"
+        },
+        "Lat": {
+            "$numberDouble": "29.3441163625912"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5340701987041"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "16"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Hutchins",
+        "Stop Number": {
+            "$numberInt": "76486"
+        },
+        "Lat": {
+            "$numberDouble": "29.3453281231155"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5340432248791"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "17"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora Opposite Vestal",
+        "Stop Number": {
+            "$numberInt": "66986"
+        },
+        "Lat": {
+            "$numberDouble": "29.3472679354282"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5340684523038"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "18"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora Opposite Cantrell",
+        "Stop Number": {
+            "$numberInt": "66786"
+        },
+        "Lat": {
+            "$numberDouble": "29.3492531532432"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5340645904603"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "19"
+        }
+    }, {
+        "Stop Name": "Madla Transit Center",
+        "Stop Number": {
+            "$numberInt": "11346"
+        },
+        "Lat": {
+            "$numberDouble": "29.3502457731536"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5324420555703"
+        },
+        "route": "Route 672",
+        "Order on Route": {
+            "$numberInt": "20"
+        }
+    }],
+    "Route 672 Madla Transit Center ‎→ TAMUSA": [{
+        "Stop Name": "Madla Transit Center",
+        "Stop Number": {
+            "$numberInt": "11137"
+        },
+        "Lat": {
+            "$numberDouble": "29.3502362288988"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5321902108779"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "1"
+        }
+    }, {
+        "Stop Name": "I-35 Nb Access Rd. at Grosvenor",
+        "Stop Number": {
+            "$numberInt": "58226"
+        },
+        "Lat": {
+            "$numberDouble": "29.3542376001374"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5274687510976"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "2"
+        }
+    }, {
+        "Stop Name": "I35 Sb Acc. Rd. at 2nd Ent. SP Mall",
+        "Stop Number": {
+            "$numberInt": "58227"
+        },
+        "Lat": {
+            "$numberDouble": "29.3537939128825"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5291257264282"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "3"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Cantrell",
+        "Stop Number": {
+            "$numberInt": "66787"
+        },
+        "Lat": {
+            "$numberDouble": "29.349175107996"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5342837580617"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "4"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Vestal",
+        "Stop Number": {
+            "$numberInt": "66987"
+        },
+        "Lat": {
+            "$numberDouble": "29.3472567299064"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5342418241303"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "5"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Hutchins",
+        "Stop Number": {
+            "$numberInt": "76487"
+        },
+        "Lat": {
+            "$numberDouble": "29.3459264949931"
+        },
+        "Lng": {
+            "$numberDouble": "-98.53424303726"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "6"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Peterson",
+        "Stop Number": {
+            "$numberInt": "76787"
+        },
+        "Lat": {
+            "$numberDouble": "29.3443369700045"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5342548944493"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "7"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora In Front Of Bethesda",
+        "Stop Number": {
+            "$numberInt": "86387"
+        },
+        "Lat": {
+            "$numberDouble": "29.3422308003118"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5342499388465"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "8"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora Opp. 8606",
+        "Stop Number": {
+            "$numberInt": "86878"
+        },
+        "Lat": {
+            "$numberDouble": "29.3395013096126"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5342402777193"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "9"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora Opp. Ent To Garden Val",
+        "Stop Number": {
+            "$numberInt": "96197"
+        },
+        "Lat": {
+            "$numberDouble": "29.3380210171509"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5342291091081"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "10"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora Opposite Ansley",
+        "Stop Number": {
+            "$numberInt": "96587"
+        },
+        "Lat": {
+            "$numberDouble": "29.3361017871364"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5342197509796"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "11"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Hunter",
+        "Stop Number": {
+            "$numberInt": "96997"
+        },
+        "Lat": {
+            "$numberDouble": "29.3334728053947"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5340334221081"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "12"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Gillette",
+        "Stop Number": {
+            "$numberInt": "17627"
+        },
+        "Lat": {
+            "$numberDouble": "29.3304265880652"
+        },
+        "Lng": {
+            "$numberDouble": "-98.533331312203"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "13"
+        }
+    }, {
+        "Stop Name": "Gillette and Rhoda",
+        "Stop Number": {
+            "$numberInt": "15699"
+        },
+        "Lat": {
+            "$numberDouble": "29.330284892288"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5372943171768"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "14"
+        }
+    }, {
+        "Stop Name": "Gillette and Lytle",
+        "Stop Number": {
+            "$numberInt": "14689"
+        },
+        "Lat": {
+            "$numberDouble": "29.3302732419598"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5404237927716"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "15"
+        }
+    }, {
+        "Stop Name": "Lytle and Mally",
+        "Stop Number": {
+            "$numberInt": "24297"
+        },
+        "Lat": {
+            "$numberDouble": "29.3283650265052"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5412502337408"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "16"
+        }
+    }, {
+        "Stop Name": "Lytle Opposite Bruni",
+        "Stop Number": {
+            "$numberInt": "24397"
+        },
+        "Lat": {
+            "$numberDouble": "29.3271887053476"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5412516698199"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "17"
+        }
+    }, {
+        "Stop Name": "Lytle and Villaret",
+        "Stop Number": {
+            "$numberInt": "24697"
+        },
+        "Lat": {
+            "$numberDouble": "29.32557325694"
+        },
+        "Lng": {
+            "$numberDouble": "-98.541252865801"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "18"
+        }
+    }, {
+        "Stop Name": "Palo Alto College",
+        "Stop Number": {
+            "$numberInt": "23953"
+        },
+        "Lat": {
+            "$numberDouble": "29.3245875087721"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5439863087328"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "19"
+        }
+    }, {
+        "Stop Name": "Villaret and Rhoda",
+        "Stop Number": {
+            "$numberInt": "25693"
+        },
+        "Lat": {
+            "$numberDouble": "29.3254418688233"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5378077245173"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "20"
+        }
+    }, {
+        "Stop Name": "S. Zarzamora and Villaret",
+        "Stop Number": {
+            "$numberInt": "27637"
+        },
+        "Lat": {
+            "$numberDouble": "29.3250451224723"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5327493919905"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "21"
+        }
+    }, {
+        "Stop Name": "Zarzamora and Hunter's Pond",
+        "Stop Number": {
+            "$numberInt": "26207"
+        },
+        "Lat": {
+            "$numberDouble": "29.3078773149448"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5350647034303"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "22"
+        }
+    }, {
+        "Stop Name": "Verano Pkwy and University Way",
+        "Stop Number": {
+            "$numberInt": "26183"
+        },
+        "Lat": {
+            "$numberDouble": "29.3053789270092"
+        },
+        "Lng": {
+            "$numberDouble": "-98.5242501304062"
+        },
+        "route": "Route 672 (reverse)",
+        "Order on Route": {
+            "$numberInt": "23"
+        }
+    }]
+}
