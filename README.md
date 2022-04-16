@@ -25,3 +25,12 @@ Now all commits will go to your branch!
 ***Notes***:
 - DB_KEY is specific to my MongoDB accout at this time (see line 39 of server.js).  (better solutions for defining and keeping our data will be implemented as we go)
 - API_KEY is for google APIs like 'maps', 'directions', 'distance matrix', etc.  
+
+
+### TODO: WebStorm Instructions
+1. Download WebStorm
+2. Get educational license for WebStorm: https://www.jetbrains.com/community/education/#students
+3. Clone or fork this repository in WebStorm
+4. Download Node.js: https://nodejs.org/en/download/
+5. Open a terminal in WebStorm and execute:  npm install
+6. TODO
