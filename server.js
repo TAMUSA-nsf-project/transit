@@ -22,8 +22,10 @@ app.use(helmet.noSniff());
 app.disable('x-powered-by')  //hide the server name, this fix 'server leaks information via http' alert
 app.use('/', pagesRouter);
 
+var httpsServer = require('https').createServer();
 const server = require('http').createServer(app);
-const io = require('socket.io')(server)
+let io = require("socket.io")(server)
+io.attach(httpsServer)
 const busses = []
 io.on("connection", (socket) => {
     console.log("initial transport", socket.conn.transport.name);
@@ -79,7 +81,7 @@ setInterval(() => {
 mongoose.connect(`mongodb+srv://ahans03:${DB_KEY}@cluster0.aln1v.mongodb.net/mapData?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         // app.listen(8080, () => {  // changed for running on gcp...
-        server.listen(3000, () => {  // changed for running on localhost
+        server.listen(8000, () => {  // changed for running on localhost
             console.log('MongoDB is connected and Express server is running...');
         });
     });
