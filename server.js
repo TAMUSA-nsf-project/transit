@@ -52,7 +52,7 @@ io.on("connection", (socket) => {
                 break
             }
         }
-        // console.log(data)
+        console.log(data)
     })
 
     socket.on('disconnect', () => {
@@ -72,7 +72,7 @@ setInterval(() => {
         }
     })
     io.emit('tick', busLocations)
-    // console.log(busLocations)
+    console.log(busLocations)
 }, 5000)
 
 });
@@ -81,7 +81,7 @@ setInterval(() => {
 mongoose.connect(`mongodb+srv://ahans03:${DB_KEY}@cluster0.aln1v.mongodb.net/mapData?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         // app.listen(8080, () => {  // changed for running on gcp...
-        server.listen(8000, () => {  // changed for running on localhost
+        server.listen(8080, () => {  // changed for running on localhost
             console.log('MongoDB is connected and Express server is running...');
         });
     });

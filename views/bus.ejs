@@ -9,11 +9,11 @@
         import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
 
         const socket = io();
-        socket.emit("hello", "world", (response) => {
-            console.log(response); // "got it"
-            socket.emit('busConnection')
-        });
-        socket.on('tick', busses => {
+        // socket.emit("hello", "world", (response) => {
+        //     console.log(response); // "got it"
+        //     socket.emit('busConnection')
+        // });
+        socket.on('busConnection', busses => {
             navigator.geolocation.watchPosition(pos => {
                 const lat = pos.coords.latitude
                 const long = pos.coords.longitude
