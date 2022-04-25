@@ -339,7 +339,7 @@ function initMap() {
         busMarker.setMap(null)
       }
     })
-    busMarkers = busses.map(bus => {
+    busMarkers.push(busses.map(bus => {
       console.log(bus)
       if (bus.lat != null) {
         let blah = String(bus.id).substring(18)
@@ -355,7 +355,7 @@ function initMap() {
 
       }
 
-    })
+    }))
   })
 
 
