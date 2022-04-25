@@ -335,20 +335,26 @@ function initMap() {
   socket.on('tick', busses => {
     busMarkers.forEach(busMarker => {
       // nullify every current bus marker
-      busMarker.setMap(null)
+      if (busMarker){
+        busMarker.setMap(null)
+      }
     })
     busMarkers = busses.map(bus => {
       console.log(bus)
-
-      let marker = new google.maps.Marker({
-        position: {lat: bus.lat, lng: bus.long}
-      })
       if (bus.lat != null) {
+        let blah = String(bus.id).substring(18)
+        let marker = new google.maps.Marker({
+          position: {lat: bus.lat, lng: bus.long},
+          title: bus.id,
+          label: blah
+        })
+
         marker.setMap(map)
         // busMarkers.push(marker)
+        return marker
 
       }
-      return marker
+
     })
   })
 

@@ -40,18 +40,20 @@ io.on("connection", socket => {
     });
 
     socket.on('busConnection', () => {
+        // define bus here... can add values based on route the bus is on which will be retrieved by map
         const bus = {
-            socket,
+            // route: <some code from client where bus actually picks which route it is on>
+            id: socket.id,
             lat: null,
             long: null
         }
         busses.push(bus)
-        console.log("from BUSCONNECTION function... Socket ID: ", bus.socket.id)
+        console.log("from BUSCONNECTION function... Socket ID: ", bus.id)
     })
 
     socket.on('update', data => {
         for (let i = 0; i < busses.length; i++) {
-            if (busses[i].socket.id === socket.id) {
+            if (busses[i].id === socket.id) {
                 busses[i].lat = data.lat
                 busses[i].long = data.long
                 console.log('From UPDATE function:', busses[i])
@@ -63,7 +65,7 @@ io.on("connection", socket => {
 
     socket.on('disconnect', () => {
         for (let i = 0; i < busses.length; i++) {
-            if (busses[i].socket.id === socket.id) {
+            if (busses[i].id === socket.id) {
                 busses.splice(i, 1)
                 break
             }
@@ -73,12 +75,14 @@ io.on("connection", socket => {
 setInterval(() => {
     const busLocations = busses.map(bus => {
         return {
+            //route: bus.route
+            id: bus.id,
             lat: bus.lat,
             long: bus.long
         }
     })
     io.emit('tick', busLocations)
-    console.log(busLocations)
+    // console.log(busLocations)
 }, 5000)
 
 });
@@ -87,7 +91,7 @@ setInterval(() => {
 mongoose.connect(`mongodb+srv://ahans03:${DB_KEY}@cluster0.aln1v.mongodb.net/mapData?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         // app.listen(8080, () => {  // changed for running on gcp...
-        server.listen(8000, () => {  // changed for running on localhost
+        server.listen(8080, () => {  // changed for running on localhost
             console.log('MongoDB is connected and Express server is running...');
         });
     });
