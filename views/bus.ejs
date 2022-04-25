@@ -1,7 +1,7 @@
 <%- include('layout/header.ejs') %>
     <!-- Custom script tags here... -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="javascript" src="/socket.io/socket.io.js"></script>
+<!--    <script type="javascript" src="/socket.io/socket.io.js"></script>-->
     <!-- <script>
     const socket = io();
 </script> -->
@@ -9,21 +9,29 @@
         import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
 
         const socket = io();
+        socket.emit('busConnection');
+        // socket.emit('update', () => {
+            navigator.geolocation.watchPosition(position => {
+                const lat = position.coords.latitude
+                const long = position.coords.longitude
+                socket.emit('update', {lat, long});
+            })
+        // })
         // socket.emit("hello", "world", (response) => {
         //     console.log(response); // "got it"
         //     socket.emit('busConnection')
         // });
-        socket.on('busConnection', busses => {
-            navigator.geolocation.watchPosition(pos => {
-                const lat = pos.coords.latitude
-                const long = pos.coords.longitude
-                socket.emit('update', { lat, long })
-                // console.log(pos)
-            })
-        })
+        // socket.on('tick', () => {
+        //     navigator.geolocation.watchPosition(pos => {
+        //         const lat = pos.coords.latitude
+        //         const long = pos.coords.longitude
+        //         socket.emit('update', { lat, long })
+        //         // console.log(pos)
+        //     })
+        // })
 
     </script>
-    <script src="js/bus.js"></script>
+<!--    <script src="js/bus.js"></script>-->
 
 
     </head>

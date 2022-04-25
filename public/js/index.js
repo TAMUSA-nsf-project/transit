@@ -325,8 +325,8 @@ function initMap() {
     }
   }
 
-  const socket = io('/')    // creates a connection with socket.io server
-  let busMarkers = []       // variable to hold data from socket.io server
+  const socket = io()    // creates a connection with socket.io server
+  var busMarkers = []       // variable to hold data from socket.io server
 
   /**
    * calls 'tick' function defined in socket.io server
@@ -345,6 +345,7 @@ function initMap() {
       })
       if (bus.lat != null) {
         marker.setMap(map)
+        // busMarkers.push(marker)
 
       }
       return marker

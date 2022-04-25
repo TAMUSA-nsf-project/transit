@@ -26,9 +26,14 @@ var httpsServer = require('https').createServer();
 const server = require('http').createServer(app);
 let io = require("socket.io")(server)
 io.attach(httpsServer)
-const busses = []
-io.on("connection", (socket) => {
-    console.log("initial transport", socket.conn.transport.name);
+
+var busses = []
+io.on("connection", socket => {
+    // console.log("initial transport", socket.conn.transport.name);
+
+    for(let i = 0; i < busses.length; i++) {
+        socket.emit("locations", busses[i]);
+    }
     socket.on("hello", (arg, callback) => {
         console.log(arg); // "world"
         callback("got it");
@@ -41,7 +46,7 @@ io.on("connection", (socket) => {
             long: null
         }
         busses.push(bus)
-        console.log("Socket ID: ", bus.socket.id)
+        console.log("from BUSCONNECTION function... Socket ID: ", bus.socket.id)
     })
 
     socket.on('update', data => {
@@ -49,10 +54,11 @@ io.on("connection", (socket) => {
             if (busses[i].socket.id === socket.id) {
                 busses[i].lat = data.lat
                 busses[i].long = data.long
+                console.log('From UPDATE function:', busses[i])
                 break
             }
         }
-        console.log(data)
+        // console.log('From UPDATE function:', data)
     })
 
     socket.on('disconnect', () => {
@@ -81,7 +87,7 @@ setInterval(() => {
 mongoose.connect(`mongodb+srv://ahans03:${DB_KEY}@cluster0.aln1v.mongodb.net/mapData?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         // app.listen(8080, () => {  // changed for running on gcp...
-        server.listen(8080, () => {  // changed for running on localhost
+        server.listen(8000, () => {  // changed for running on localhost
             console.log('MongoDB is connected and Express server is running...');
         });
     });
