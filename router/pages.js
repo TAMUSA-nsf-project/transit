@@ -94,7 +94,7 @@ router.get('/stops', (req, res) => {
     newRoute.find({}).select('-_id') // returns all documents minus the '_id' field
         .then(result => {
             
-            console.log(result);
+            // console.log(result);
             res.send({data: result});
         })
         .catch(err => console.log(err));
