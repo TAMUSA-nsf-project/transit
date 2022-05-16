@@ -41,3 +41,25 @@ Open a terminal in WebStorm and execute the following commands.
 
 The address of the server is printed to the terminal. Copy/paste
 it to a browser.
+
+#### Debugging
+Click 'Add Configuration...' at top of WebStorm window.
+
+<img src="user-guide-images/Screen Shot 2022-05-16 at 11.01.11 AM.png" width="300" height="auto" alt="">
+
+Click the "+" symbol at the top left. Scroll down and select "npm".
+
+<img src="user-guide-images/Screen Shot 2022-05-16 at 11.03.14 AM.png" width="600" height="auto" alt="">
+
+Select "start" in the dropdown next to "Command:". Click "OK".
+
+<img src="user-guide-images/Screen Shot 2022-05-16 at 11.04.14 AM.png" width="600" height="auto" alt="">
+
+Click in a file's gutter to add a breakpoint.
+
+<img src="user-guide-images/Screen Shot 2022-05-16 at 11.41.01 AM.png" width="500" height="auto" alt="">
+
+Click the green bug icon to run the server in debug mode. (You can use the green play button for regular mode.)
+
+<img src="user-guide-images/Screen Shot 2022-05-16 at 11.04.47 AM.png" width="300" height="auto" alt="">
+
