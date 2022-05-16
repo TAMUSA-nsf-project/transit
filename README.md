@@ -27,10 +27,17 @@ Now all commits will go to your branch!
 - API_KEY is for google APIs like 'maps', 'directions', 'distance matrix', etc.  
 
 
-### TODO: WebStorm Instructions
+## WebStorm Instructions
+#### Installation 
 1. Download WebStorm
 2. Get educational license for WebStorm: https://www.jetbrains.com/community/education/#students
 3. Clone or fork this repository in WebStorm
 4. Download Node.js: https://nodejs.org/en/download/
-5. Open a terminal in WebStorm and execute:  npm install
-6. TODO
+
+#### Running the server
+Open a terminal in WebStorm and execute the following commands.
+1. npm install
+2. npm start
+
+The address of the server is printed to the terminal. Copy/paste
+it to a browser.
