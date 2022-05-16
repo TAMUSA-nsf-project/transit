@@ -86,12 +86,20 @@ setInterval(() => {
 }, 5000)
 
 });
+
+// Define server port and a string of the server address for use in message printed to stdout
+// that notifies the user that the server is running and to copy/paste the address into their browser
+const SERVER_PORT = 8080
+const SERVER_ADDRESS = `localhost:${SERVER_PORT}`
+
 // MongoDB Atlas connection
 // mongoose.connect('mongodb://localhost:27017/mapData', { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.connect(`mongodb+srv://ahans03:${DB_KEY}@cluster0.aln1v.mongodb.net/mapData?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         // app.listen(8080, () => {  // changed for running on gcp...
-        server.listen(8080, () => {  // changed for running on localhost
-            console.log('MongoDB is connected and Express server is running...');
+        server.listen(SERVER_PORT, () => {  // changed for running on localhost
+            console.log('MongoDB is connected and express server is running.\n' +
+                'Copy/paste the following URL into your browser:\n  ' +
+                SERVER_ADDRESS);
         });
     });
