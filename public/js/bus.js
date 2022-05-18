@@ -5,6 +5,8 @@ var geoLoc;
 const socket = io()
 
 function showLocation(position) {
+    // This emits or broadcasts the location via web sockets
+    // anyone connected to the socket can see the location
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
     alert("Latitude : " + latitude + " Longitude: " + longitude);
@@ -20,6 +22,9 @@ function errorHandler(err) {
 }
 
 function getLocationUpdate(){
+    // This uses geolocation.watchPosition method to get the user's location and invoke a callback function
+    // whenever it changes. Callback function is showLocation, which broadcasts the user's coordinates using
+    // web sockets.
 
     if(navigator.geolocation){
 

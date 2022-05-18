@@ -31,6 +31,8 @@ var busses = []
 io.on("connection", socket => {
     // console.log("initial transport", socket.conn.transport.name);
 
+
+    // possibly not used
     for(let i = 0; i < busses.length; i++) {
         socket.emit("locations", busses[i]);
     }
@@ -38,6 +40,8 @@ io.on("connection", socket => {
         console.log(arg); // "world"
         callback("got it");
     });
+    // end
+
 
     socket.on('busConnection', () => {
         // define bus here... can add values based on route the bus is on which will be retrieved by map

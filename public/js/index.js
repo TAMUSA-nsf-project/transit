@@ -115,6 +115,7 @@ function initMap() {
       const infoWindow = new google.maps.InfoWindow();
       stopInfoWindow = new google.maps.InfoWindow();
 
+      //TODO May 18, following for-loop possibly not used
       for (let route in allRoutes) {
         //sorts the stops along route based on data definition...
         allRoutes[route].sort((a, b) => a.routes[route] - b.routes[route]);
@@ -421,6 +422,7 @@ function initMap() {
 }
 
 /**
+ * May 18: Unused
  * function to draw a circle on the map
  * @param {*} center google.maps.LatLng() object
  */
@@ -453,6 +455,8 @@ function addCircle(center) {
 }
 
 /**
+ * May 18: does not need to be used, basically replaced by calcRouteTest
+ *
  * Function calculates and draws route for routes selected fm dropdown menu
  * Attempts to draw route via a single API call (each stop a waypoint except 'origin' and 'dest')
  *  - Need to figure better way to draw routes (too many waypoints)
@@ -492,6 +496,7 @@ function calcRouteSelect(route) {
       console.log("Polyline Overview: ", response.routes[0]);
       console.log(status);
 
+      // draw route (see request var)
       directionsRenderer.setDirections(response);
     }
     else {
@@ -650,7 +655,7 @@ function addMarker(location, title, stopNum, routeName, seq) {
 }
 
 /**
- *
+ * May 18: Not used
  * @param latLng
  * @param poly
  */

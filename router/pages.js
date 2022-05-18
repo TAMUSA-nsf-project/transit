@@ -1,8 +1,13 @@
+
+// "require" is an import-like statement
+
+// This file handles all URL/routes requests
+
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const Route = require('../models/route');
-const newRoute = require('../models/newRoute');
+const newRoute = require('../models/newRoute');  // import empty table from models/newRoute
 const Mailer = require('nodemailer');
 
 
@@ -91,7 +96,7 @@ router.get('/ETA_research', (req, res) => {
  * Ultimately would like to request and return only one object
 */
 router.get('/stops', (req, res) => {
-    newRoute.find({}).select('-_id') // returns all documents minus the '_id' field
+    newRoute.find({}).select('-_id')  // returns all documents minus the '_id' field
         .then(result => {
             
             // console.log(result);
