@@ -43,6 +43,8 @@ The address of the server is printed to the terminal. Copy/paste
 it to a browser.
 
 #### Debugging
+_You must have the Chrome web browser installed first._
+
 Click 'Add Configuration...' at top of WebStorm window.
 
 <img src="user-guide-images/Screen Shot 2022-05-16 at 11.01.11 AM.png" width="300" height="auto" alt="">
@@ -51,15 +53,24 @@ Click the "+" symbol at the top left. Scroll down and select "npm".
 
 <img src="user-guide-images/Screen Shot 2022-05-16 at 11.03.14 AM.png" width="600" height="auto" alt="">
 
-Select "start" in the dropdown next to "Command:". Click "OK".
+Select "start" in the dropdown next to "Command:". Click "Apply".
 
 <img src="user-guide-images/Screen Shot 2022-05-16 at 11.04.14 AM.png" width="600" height="auto" alt="">
+
+Add another configuration: click "+" again and select "JavaScript Debug". Configure the settings as shown. Click "OK".
+
+<img src="user-guide-images/Screen Shot 2022-05-19 at 1.54.45 PM.png" width="600" height="auto" alt="">
+
 
 Click in a file's gutter to add a breakpoint.
 
 <img src="user-guide-images/Screen Shot 2022-05-16 at 11.41.01 AM.png" width="500" height="auto" alt="">
 
-Click the green bug icon to run the server in debug mode. (You can use the green play button for regular mode.)
+Select the "npm start" configuration from the dropdown. Click the green bug icon to run the server in debug mode. 
 
 <img src="user-guide-images/Screen Shot 2022-05-16 at 11.04.47 AM.png" width="300" height="auto" alt="">
 
+Then select the "js_debug" configuration from the same dropdown and click the green bug icon again.
+<img src="user-guide-images/Screen Shot 2022-05-19 at 2.11.02 PM.png" width="300" height="auto" alt="">
+
+Interact with the website to hit breakpoints.
