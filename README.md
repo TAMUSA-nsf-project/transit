@@ -71,6 +71,7 @@ Select the "npm start" configuration from the dropdown. Click the green bug icon
 <img src="user-guide-images/Screen Shot 2022-05-16 at 11.04.47 AM.png" width="300" height="auto" alt="">
 
 Then select the "js_debug" configuration from the same dropdown and click the green bug icon again.
+
 <img src="user-guide-images/Screen Shot 2022-05-19 at 2.11.02 PM.png" width="300" height="auto" alt="">
 
-Interact with the website to hit breakpoints.
+Then interact with the website to hit breakpoints.
