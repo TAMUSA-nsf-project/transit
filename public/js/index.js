@@ -6,13 +6,13 @@ var markers = [];
 var path = [];
 var circles = [];
 var DBresult;
-var allRoutes = {};
 
 /*
 An InfoWindow used to display a stop's address, number, assigned bus,
 and next arrival time when U S E R left clicks on it.
 Because we only need one bus point to show at any given time,
 we only need one InfoWindow to be shared across all stops.
+https://developers.google.com/maps/documentation/javascript/infowindows?hl=en
 */
 let stopInfoWindow;
 
@@ -22,6 +22,7 @@ let poly;
 let directionsService;
 let directionsRenderer;
 var bounds;
+
 
 function initMap() {
   /**
@@ -35,7 +36,8 @@ function initMap() {
    * - []color routes to differentiate
    * - []display information to U S E R in a better way
    */
-
+  const infoWindow = new google.maps.InfoWindow();
+  const originInputContainer = document.getElementById("origin-input-container");
   const tamusa = new google.maps.LatLng(29.30428893171069, -98.52470397949219);
   var mapOptions = {
     // Centered on Tamusa
@@ -47,6 +49,37 @@ function initMap() {
   directionsService = new google.maps.DirectionsService();
   directionsRenderer = new google.maps.DirectionsRenderer();
   directionsRenderer.setMap(map);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInputContainer);
+
+  const locationButton = document.createElement("button");
+
+  locationButton.textContent = "Pan to Current Location";
+  locationButton.classList.add("custom-map-control-button");
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+  locationButton.addEventListener("click", () => {
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const pos = { // use this position for radius search
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+            };
+            // console.log(pos);  *prints*  Object { lat: 2*.******, lng: -9*.******* }
+            infoWindow.setPosition(pos);
+            infoWindow.setContent("Here I am!");
+            infoWindow.open(map);
+            map.setCenter(pos);
+          },
+          () => {
+            handleLocationError(true, infoWindow, map.getCenter());
+          }
+      );
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
+  });
 
   // get all the data first and then go fm there
   fetch('/stops')         // changed for any server
@@ -85,9 +118,10 @@ function initMap() {
         }
       });
 
-      new AutocompleteDirectionsHandler(map);
+      // new AutocompleteDirectionsHandler(map);
 
       // needed for drawing line.  Used in
+      // https://developers.google.com/maps/documentation/javascript/geometry?hl=en
       poly = new google.maps.Polyline({
         strokeColor: "#000000",
         strokeOpacity: 1,
@@ -99,11 +133,6 @@ function initMap() {
         console.log(event);
       });
 
-      // google.maps.event.addListener(map, "click", (event) => {
-      //   // addCircle(event.latLng, infoWindow);
-      //   // console.log(event.latLng);
-      // });
-
       // Add a specific "tamusa" marker at the center of the map.
       new google.maps.Marker({
         position: tamusa,
@@ -112,100 +141,14 @@ function initMap() {
       });
 
       // Create an info window to share between markers.
-      const infoWindow = new google.maps.InfoWindow();
       stopInfoWindow = new google.maps.InfoWindow();
-
-      //TODO May 18, following for-loop possibly not used
-      for (let route in allRoutes) {
-        //sorts the stops along route based on data definition...
-        allRoutes[route].sort((a, b) => a.routes[route] - b.routes[route]);
-
-        // Create the markers.
-        for (var i = 0; i < allRoutes[route].length; i++) {
-          var data = allRoutes[route][i];
-          var label = JSON.stringify(data.routes);
-          console.log('label=', label);
-          // console.log(allStops[i]);
-          var myLatlng = new google.maps.LatLng(data.lat, data.lng);
-          // if(data.routes.length() > 1)
-          const marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            label: `${i + 1}`,
-            // label: label,
-            title: data.title,
-            optimized: false,
-            visible: false,
-          });
-
-          // Add a click listener for each marker, and set up the info window.
-          marker.addListener("click", () => {
-            infoWindow.close();
-            // infoWindow.setContent(marker.getTitle());
-            infoWindow.setContent(`<h3>${marker.getTitle()}</h3>`);
-            infoWindow.open(marker.getMap(), marker);
-            // gives each marker the ability to call calcRoute() for stops along routes specific marker is associated with
-            calcRoute(route)
-          });
-
-          // add marker to markers array
-          markers.push(marker);
-        }
-        // *information purposes*
-        console.log(markers);
-        console.log(data.routes);
-      }
-
-
-      // temporary way of giving U S E R ability to see bus route
-      const routeButton = document.createElement("button");
-      routeButton.textContent = "Show Route";
-      routeButton.classList.add("custom-map-control-button");
-      map.controls[google.maps.ControlPosition.TOP_CENTER].push(routeButton);
-      routeButton.addEventListener("click", () => {
-        // calls calcRoute for every stop returned
-        // calcRouteTest();
-
-      })
-
-
-      const locationButton = document.createElement("button");
-
-      locationButton.textContent = "Pan to Current Location";
-      locationButton.classList.add("custom-map-control-button");
-      map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-      locationButton.addEventListener("click", () => {
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(
-            (position) => {
-              const pos = { // use this position for radius search
-                lat: position.coords.latitude,
-                lng: position.coords.longitude,
-              };
-              // console.log(pos);  *prints*  Object { lat: 2*.******, lng: -9*.******* }
-              infoWindow.setPosition(pos);
-              infoWindow.setContent("Here I am!");
-              infoWindow.open(map);
-              map.setCenter(pos);
-            },
-            () => {
-              handleLocationError(true, infoWindow, map.getCenter());
-            }
-          );
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
-      });
-
     })
 
+  /**
+   * inner class containing controls for directions input and
+   * methods for rendering directions
+   */
   class AutocompleteDirectionsHandler {
-    /**
-     * inner class containing controls for directions input and methods for
-     * rendering directions
-     */
     map;
     originPlaceId;
     destinationPlaceId;
@@ -395,7 +338,7 @@ function initMap() {
    */
   function hideMarkers() {
     setMapOnAll(null);
-    poly.setMap(null);
+    // poly.setMap(null);
   }
 
   /**
@@ -462,6 +405,7 @@ function addCircle(center) {
  *  - Need to figure better way to draw routes (too many waypoints)
  *  - Researching breaking the route up (how to draw if multiple route 'chunks')
  *  - Researching using the polyline fm directionsService response
+ *  https://developers.google.com/maps/documentation/directions/get-directions
  *  @param {String} route the route's name
  */
 function calcRouteSelect(route) {
@@ -508,6 +452,7 @@ function calcRouteSelect(route) {
 /**
  * Test function for drawing more hardcoded routes.  
  * constructs polyline from multiple API calls based on divisions of overall route containing no more than 8 waypoints
+ * https://developers.google.com/maps/documentation/directions/get-directions
  * @param {String} route the route's name
  */
 function calcRouteTest(route) {
@@ -626,6 +571,7 @@ function calcMarkers(route) {
  * @param {Number} stopNum
  * @param {String} routeName
  * @param {String} seq
+ * https://developers.google.com/maps/documentation/javascript/custom-markers?hl=en#maps_custom_markers-javascript
  */
 function addMarker(location, title, stopNum, routeName, seq) {
   console.log(JSON.stringify(location));
