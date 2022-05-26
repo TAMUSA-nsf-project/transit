@@ -33,6 +33,11 @@ Now all commits will go to your branch!
 2. Get educational license for WebStorm: https://www.jetbrains.com/community/education/#students
 3. Clone or fork this repository in WebStorm
 4. Download Node.js: https://nodejs.org/en/download/
+5. Windows users: You may have to add nodejs to Environment Variables
+   1. Control Panel > System and Security > System > Advanced System Settings > Environment Variables
+   2. Under System Variables, double-click Path, click New, add C:\Program Files (x86)\nodejs
+      1. Your nodejs may be in C:\Program Files\nodejs,
+      2. Type nodejs in start menu > right-click the icon > Open File Location > right-click the shortcut > Properties. The path is shown in Target. 
 
 #### Running the server
 Open a terminal in WebStorm and execute the following commands.
